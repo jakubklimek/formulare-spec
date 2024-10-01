@@ -674,7 +674,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727090395762-22d7-cef3-878b#xsdCoreSchema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/místo/2022-07.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/místo/2022-07.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/místo/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
@@ -759,7 +759,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727090395762-22d7-cef3-878b#xmlschema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/místo/schema.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/místo/schema.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/místo/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
@@ -844,7 +844,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727090395762-22d7-cef3-878b#xsltlifting",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/místo/lifting.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/místo/lifting.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/místo/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
@@ -929,7 +929,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727090395762-22d7-cef3-878b#xsltlowering",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/místo/lowering.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/místo/lowering.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/místo/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
@@ -1014,7 +1014,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xsdCoreSchema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/person-in-relationship-with-a-document/2022-07.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/2022-07.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/person-in-relationship-with-a-document/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
@@ -1099,7 +1099,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xmlschema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/person-in-relationship-with-a-document/schema.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/schema.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/person-in-relationship-with-a-document/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
@@ -1184,7 +1184,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xsltlifting",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/person-in-relationship-with-a-document/lifting.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/lifting.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/person-in-relationship-with-a-document/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
@@ -1269,7 +1269,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xsltlowering",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/person-in-relationship-with-a-document/lowering.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/lowering.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/person-in-relationship-with-a-document/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
@@ -1354,7 +1354,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727280238901-bab4-be49-8eaa#xsdCoreSchema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/fyzická-osoba/2022-07.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba/2022-07.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
@@ -1439,7 +1439,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727280238901-bab4-be49-8eaa#xmlschema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/fyzická-osoba/schema.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba/schema.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
@@ -1524,7 +1524,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727280238901-bab4-be49-8eaa#xsltlifting",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/fyzická-osoba/lifting.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba/lifting.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
@@ -1609,7 +1609,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727280238901-bab4-be49-8eaa#xsltlowering",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/fyzická-osoba/lowering.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba/lowering.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
@@ -1694,7 +1694,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727420049542-1d3e-47d7-ac6f#xsdCoreSchema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
@@ -1779,7 +1779,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727420049542-1d3e-47d7-ac6f#xmlschema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/osoba-ve-vztahu-k-dokumentu/schema.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/osoba-ve-vztahu-k-dokumentu/schema.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/osoba-ve-vztahu-k-dokumentu/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
@@ -1864,7 +1864,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727420049542-1d3e-47d7-ac6f#xsltlifting",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/osoba-ve-vztahu-k-dokumentu/lifting.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/osoba-ve-vztahu-k-dokumentu/lifting.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/osoba-ve-vztahu-k-dokumentu/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
@@ -1949,7 +1949,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727420049542-1d3e-47d7-ac6f#xsltlowering",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/osoba-ve-vztahu-k-dokumentu/lowering.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/osoba-ve-vztahu-k-dokumentu/lowering.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/osoba-ve-vztahu-k-dokumentu/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
@@ -2034,7 +2034,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423135170-02c0-d8e7-9d66#xsdCoreSchema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/právnická-osoba/2022-07.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba/2022-07.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
@@ -2119,7 +2119,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423135170-02c0-d8e7-9d66#xmlschema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/právnická-osoba/schema.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba/schema.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
@@ -2204,7 +2204,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423135170-02c0-d8e7-9d66#xsltlifting",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/právnická-osoba/lifting.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba/lifting.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
@@ -2289,7 +2289,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423135170-02c0-d8e7-9d66#xsltlowering",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/právnická-osoba/lowering.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba/lowering.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
@@ -2374,7 +2374,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423545873-04c2-2468-bad8#xsdCoreSchema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/2022-07.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-zapsaná-v-or/2022-07.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
@@ -2459,7 +2459,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423545873-04c2-2468-bad8#xmlschema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/schema.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-zapsaná-v-or/schema.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
@@ -2544,7 +2544,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423545873-04c2-2468-bad8#xsltlifting",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/lifting.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-zapsaná-v-or/lifting.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
@@ -2629,7 +2629,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423545873-04c2-2468-bad8#xsltlowering",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/lowering.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-zapsaná-v-or/lowering.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
@@ -2714,7 +2714,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423899926-2eb3-32cb-91d2#xsdCoreSchema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/2022-07.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-nezapsaná-v-or/2022-07.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
@@ -2799,7 +2799,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423899926-2eb3-32cb-91d2#xmlschema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/schema.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-nezapsaná-v-or/schema.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
@@ -2884,7 +2884,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423899926-2eb3-32cb-91d2#xsltlifting",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/lifting.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-nezapsaná-v-or/lifting.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
@@ -2969,7 +2969,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727423899926-2eb3-32cb-91d2#xsltlowering",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/lowering.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-nezapsaná-v-or/lowering.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
@@ -3054,7 +3054,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727776513724-427a-75da-99a7#xsdCoreSchema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
@@ -3139,7 +3139,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727776513724-427a-75da-99a7#xmlschema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
@@ -3224,7 +3224,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727776513724-427a-75da-99a7#xsltlifting",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
@@ -3309,7 +3309,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727776513724-427a-75da-99a7#xsltlowering",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
@@ -3394,7 +3394,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727776932619-4ffe-30a2-b379#xsdCoreSchema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
@@ -3479,7 +3479,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727776932619-4ffe-30a2-b379#xmlschema",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
+                "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
@@ -3564,7 +3564,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727776932619-4ffe-30a2-b379#xsltlifting",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
@@ -3649,7 +3649,7 @@
                 "iri": "https://ofn.gov.cz/schema/1727776932619-4ffe-30a2-b379#xsltlowering",
                 "name": null,
                 "type": "schema",
-                "outputPath": "společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
+                "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
@@ -3734,7 +3734,7 @@
                 "iri": "https://ofn.gov.cz/data-specification/003168eb-5d54-419f-9856-78853865371a#plantUml",
                 "name": null,
                 "type": "documentation",
-                "outputPath": "společné-specifikace/konceptuální-model.plantuml",
+                "outputPath": "společné-části-elektronických-dokumentů/konceptuální-model.plantuml",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/konceptuální-model.plantuml",
                 "generator": "plant-uml",
                 "configuration": {
@@ -3819,7 +3819,7 @@
                 "iri": "https://ofn.gov.cz/data-specification/003168eb-5d54-419f-9856-78853865371a#plantUmlImage",
                 "name": null,
                 "type": "documentation",
-                "outputPath": "společné-specifikace/konceptuální-model.svg",
+                "outputPath": "společné-části-elektronických-dokumentů/konceptuální-model.svg",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/konceptuální-model.svg",
                 "generator": "plant-uml/image",
                 "configuration": {
@@ -3904,7 +3904,7 @@
                 "iri": "https://ofn.gov.cz/data-specification/003168eb-5d54-419f-9856-78853865371a#respec",
                 "name": null,
                 "type": "documentation",
-                "outputPath": "společné-specifikace/index.html",
+                "outputPath": "společné-části-elektronických-dokumentů/index.html",
                 "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/index.html",
                 "generator": "https://schemas.dataspecer.com/generator/template-artifact",
                 "configuration": {

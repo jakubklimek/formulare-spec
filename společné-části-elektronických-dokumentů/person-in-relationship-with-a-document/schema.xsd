@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" xmlns:místa="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místa" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+  <xs:import namespace="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místa" schemaLocation="../místo/schema.xsd"/>
+  <xs:complexType name="langString">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute ref="xml:lang" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="právnická_osoba" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/právnická-osoba-jako-osoba-ve-vztahu-k-dokumentu">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/právnická-osoba-jako-osoba-ve-vztahu-k-dokumentu
+Název (cs): Právnická osoba jako osoba ve vztahu k dokumentu</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="obchodní_firma" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/obchodní-firma">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/obchodní-firma
+Název (cs): obchodní firma
+Popis (cs): Pojmenovává osobu obchodní firmou, který je jejím oficiálním pojmenováním. Jedná se o referenční údaj.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ičo" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/identifikační-číslo-osoby">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/identifikační-číslo-osoby
+Název (cs): identifikační číslo osoby
+Popis (cs): Identifikační číslo osoby je jednoznačné číslo, jehož přidělení je spojeno s registrací nebo evidencí osoby.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:sequence minOccurs="0">
+        <xs:element name="datová_schránka" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-datové-schránky">
+          <xs:annotation>
+            <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-datové-schránky
+Název (cs): Má identifikátor datové schránky
+Popis (cs): Jednoznačný identifikátor datové schránky.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+      <xs:sequence minOccurs="0">
+        <xs:element name="sídlo" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-místo-sídla">
+          <xs:annotation>
+            <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-místo-sídla
+Název (cs): má místo sídla</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+      <xs:element minOccurs="0" name="doručovací_místo" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo
+Název (cs): doručovací místo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="eIDAS_ID" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-právnické-osoby">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-právnické-osoby
+Název (cs): jedinečný identifikátor právnické osoby vytvořený odesílajícím členským státem
+Popis (cs): jedinečný identifikátor vytvořený odesílajícím členským státem v souladu s technickými specifikacemi pro účely přeshraniční identifikace a pokud možno následně neměnný</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="současný_oficiální_název" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současný-oficiální-název">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současný-oficiální-název
+Název (cs): současný oficiální název
+Popis (cs): </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="současná_adresa_právnické_osoby" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současná-adresa-právnické-osoby">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současná-adresa-právnické-osoby
+Název (cs): současná adresa právnické osoby
+Popis (cs): </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="eori" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/registrační-a-identifikační-číslo-hospodářských-subjektů-eori-uvedené-v-prováděcím-nařízení-komise-eu-č.-1352-2013">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/registrační-a-identifikační-číslo-hospodářských-subjektů-eori-uvedené-v-prováděcím-nařízení-komise-eu-č.-1352-2013
+Název (cs): registrační a identifikační číslo hospodářských subjektů (EORI)
+Popis (cs): registrační a identifikační číslo hospodářských subjektů (EORI) uvedené v prováděcím nařízení Komise (EU) č. 1352/2013</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="identifikační_kód_2009_101_es" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/identifikační-kód-uvedený-v-čl.-3-odst.-1-směrnice-evropského-parlamentu-a-rady-2009-101-es">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/identifikační-kód-uvedený-v-čl.-3-odst.-1-směrnice-evropského-parlamentu-a-rady-2009-101-es
+Název (cs): identifikační kód 2009/101/ES
+Popis (cs): identifikační kód uvedený v čl. 3 odst. 1 směrnice Evropského parlamentu a Rady 2009/101/ES</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="identifikační_kód_1247_2012" type="xs:anySimpleType" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/identifikační-kód-právnické-osoby-uvedený-v-prováděcím-nařízení-komise-eu-č.-1247-2012">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/identifikační-kód-právnické-osoby-uvedený-v-prováděcím-nařízení-komise-eu-č.-1247-2012
+Název (cs): identifikační kód právnické osoby
+Popis (cs): identifikační kód právnické osoby uvedený v prováděcím nařízení Komise (EU) č. 1247/2012</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="číslo_pro_účely_spotřebních_daní" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/číslo-pro-účely-spotřebních-daní-stanovené-v-čl.-2-bodu-12-nařízení-rady-es-č.-389-2012">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/číslo-pro-účely-spotřebních-daní-stanovené-v-čl.-2-bodu-12-nařízení-rady-es-č.-389-2012
+Název (cs): číslo pro účely spotřebních daní
+Popis (cs): číslo pro účely spotřebních daní stanovené v čl. 2 bodu 12 nařízení Rady (ES) č. 389/2012 (SEED - System for Exchange of Excise Data)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="identifikační_číslo_pro_účely_dph" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/identifikační-číslo-pro-účely-dph">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/identifikační-číslo-pro-účely-dph
+Název (cs): identifikační číslo pro účely DPH</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="daňové_registrační_číslo" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/daňové-registrační-číslo">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/daňové-registrační-číslo
+Název (cs): daňové registrační číslo
+Popis (cs): </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fyzická_osoba" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu
+Název (cs): Fyzická osoba jako osoba ve vztahu k dokumentu</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="jméno" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/jméno-fyzické-osoby">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/jméno-fyzické-osoby
+Název (cs): jméno fyzické osoby
+Popis (cs): Jméno člověka je jeho osobní jméno a příjmení, popřípadě jeho další jména a rodné příjmení, která mu podle zákona náležejí. Každý člověk má právo užívat své jméno v právním styku, stejně jako právo na ochranu svého jména a na úctu k němu.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="další_jména" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/další-jméno-fyzické-osoby">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/další-jméno-fyzické-osoby
+Název (cs): další jméno fyzické osoby</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="současná_jména" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současné-jméno-jména">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současné-jméno-jména
+Název (cs): současné jméno (jména)
+Popis (cs): </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="současná_příjmení" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současné-příjmení">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současné-příjmení
+Název (cs): současné (současná) příjmení
+Popis (cs): současné (současná) příjmení</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="datum_narození" type="xs:date" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/datum-narození">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/datum-narození
+Název (cs): datum narození
+Popis (cs): </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="eIDAS_ID" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby
+Název (cs): jedinečný identifikátor fyzické osoby vytvořený odesílajícím členským státem
+Popis (cs): jedinečný identifikátor vytvořený odesílajícím členským státem v souladu s technickými specifikacemi pro účely přeshraniční identifikace a pokud možno následně neměnný</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:sequence>
+        <xs:element name="trvalé_bydliště" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-místo-bydliště">
+          <xs:annotation>
+            <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-místo-bydliště
+Název (cs): má místo bydliště</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+      <xs:element minOccurs="0" name="doručovací_místo" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo
+Název (cs): doručovací místo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="současná_adresa" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současná-adresa-fyzické-osoby">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současná-adresa-fyzické-osoby
+Název (cs): současná adresa fyzické osoby
+Popis (cs): </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="podnikající_fyzická_osoba_zapsaná_v_or" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/podnikající-fyzická-osoba-zapsaná-v-obchodním-rejstříku-jako-osoba-ve-vztahu-k-dokumentu">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/podnikající-fyzická-osoba-zapsaná-v-obchodním-rejstříku-jako-osoba-ve-vztahu-k-dokumentu
+Název (cs): Podnikající fyzická osoba zapsaná v obchodním rejstříku jako osoba ve vztahu k dokumentu</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="obchodní_firma" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/obchodní-firma">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/obchodní-firma
+Název (cs): obchodní firma</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ičo" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/identifikační-číslo-osoby">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/identifikační-číslo-osoby
+Název (cs): identifikační číslo osoby
+Popis (cs): Identifikační číslo osoby je jednoznačné číslo, jehož přidělení je spojeno s registrací nebo evidencí osoby.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:sequence minOccurs="0">
+        <xs:element name="datová_schránka" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-datové-schránky">
+          <xs:annotation>
+            <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-datové-schránky
+Název (cs): Má identifikátor datové schránky
+Popis (cs): Jednoznačný identifikátor datové schránky.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+      <xs:sequence>
+        <xs:element name="trvalé_bydliště" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-místo-bydliště">
+          <xs:annotation>
+            <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-místo-bydliště
+Název (cs): má místo bydliště</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+      <xs:element minOccurs="0" name="doručovací_místo" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo
+Název (cs): doručovací místo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="podnikající_fyzická_osoba_nezapsaná_v_or" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/podnikající-fyzická-osoba-nezapsaná-v-obchodním-rejstříku-jako-osoba-ve-vztahu-k-dokumentu">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/podnikající-fyzická-osoba-nezapsaná-v-obchodním-rejstříku-jako-osoba-ve-vztahu-k-dokumentu
+Název (cs): Podnikající fyzická osoba nezapsaná v obchodním rejstříku jako osoba ve vztahu k dokumentu</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="jméno" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/jméno-fyzické-osoby">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/jméno-fyzické-osoby
+Název (cs): jméno fyzické osoby
+Popis (cs): Jméno člověka je jeho osobní jméno a příjmení, popřípadě jeho další jména a rodné příjmení, která mu podle zákona náležejí. Každý člověk má právo užívat své jméno v právním styku, stejně jako právo na ochranu svého jména a na úctu k němu.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="další_jména" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/další-jméno-fyzické-osoby">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/další-jméno-fyzické-osoby
+Název (cs): další jméno fyzické osoby</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="příjmení" type="xs:anySimpleType" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/příjmení-fyzické-osoby">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/příjmení-fyzické-osoby
+Název (cs): příjmení fyzické osoby</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="datum_narození" type="xs:date" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/datum-narození">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/datum-narození
+Název (cs): datum narození
+Popis (cs): </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="dodatek" type="osoby:langString" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/dodatky-charakterizující-blíže-osobu-podnikatele-nebo-obchodní-závod">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/dodatky-charakterizující-blíže-osobu-podnikatele-nebo-obchodní-závod
+Název (cs): dodatky charakterizující blíže osobu podnikatele nebo obchodní závod</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:sequence>
+        <xs:element name="trvalé_bydliště" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-místo-bydliště">
+          <xs:annotation>
+            <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-místo-bydliště
+Název (cs): má místo bydliště</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+      <xs:element minOccurs="0" name="doručovací_místo" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo
+Název (cs): doručovací místo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:sequence minOccurs="0">
+        <xs:element name="datová_schránka" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-datové-schránky">
+          <xs:annotation>
+            <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-datové-schránky
+Název (cs): Má identifikátor datové schránky
+Popis (cs): Jednoznačný identifikátor datové schránky.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="osoba">
+    <xs:choice>
+      <xs:element name="právnická_osoba" type="osoby:právnická_osoba"/>
+      <xs:element name="fyzická_osoba" type="osoby:fyzická_osoba"/>
+      <xs:element name="podnikající_fyzická_osoba_zapsaná_v_or" type="osoby:podnikající_fyzická_osoba_zapsaná_v_or"/>
+      <xs:element name="podnikající_fyzická_osoba_nezapsaná_v_or" type="osoby:podnikající_fyzická_osoba_nezapsaná_v_or"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="osoba" type="osoby:osoba"/>
+</xs:schema>

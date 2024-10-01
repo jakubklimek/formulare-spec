@@ -1179,6 +1179,54 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept zástupce je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/zástupce">zástupce</a>.</dd>
 </section>
+<section id="konceptuální-vlastnost-oprávnění-k-zastupování-vytvořeno-na-základě-šablony">
+<h4>Vztah (asociace): vytvořeno na základě šablony</h4>
+<dl>
+<dt>Jméno</dt>
+<dd>vytvořeno na základě šablony</dd>
+<dt>Povinnost</dt>
+<dd>povinné</dd>
+<dt>Kardinalita</dt>
+<dd>1 - 1</dd>
+<dt>Typ</dt>
+<dd><a href="#konceptuální-třída-šablona">Šablona</a></dd>
+<dt>Význam</dt>
+<dd>Koncept vytvořeno na základě šablony je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/vytvořeno-na-základě-šablony">vytvořeno na základě šablony</a>.</dd>
+</section>
+</section>
+<section id="konceptuální-třída-šablona">
+<h3>Šablona</h3>
+<dl>
+<dt>Význam</dt>
+<dd>Koncept Šablona je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/šablona">Šablona</a>.</dd>
+</dl>
+
+<section id="konceptuální-vlastnost-šablona-kód-šablony">
+<h4>kód šablony</h4>
+<dl>
+<dt>Jméno</dt>
+<dd>kód šablony</dd>
+<dt>Povinnost</dt>
+<dd>nepovinné</dd>
+<dt>Kardinalita</dt>
+<dd>0 - 1</dd>
+<dt>Význam</dt>
+<dd>Koncept kód šablony je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/kód-šablony">kód šablony</a>.</dd>
+</section>
+<section id="konceptuální-vlastnost-šablona-vytvořeno-na-základě-šablony">
+<h4>Vztah (asociace): vytvořeno na základě šablony</h4>
+<dl>
+<dt>Jméno</dt>
+<dd>vytvořeno na základě šablony</dd>
+<dt>Povinnost</dt>
+<dd>nepovinné</dd>
+<dt>Kardinalita</dt>
+<dd>0 - ∞</dd>
+<dt>Typ</dt>
+<dd><a href="#konceptuální-třída-oprávnění-k-zastupování">Oprávnění k zastupování</a></dd>
+<dt>Význam</dt>
+<dd>Koncept vytvořeno na základě šablony je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/vytvořeno-na-základě-šablony">vytvořeno na základě šablony</a>.</dd>
+</section>
 </section>
 
 </section>
@@ -1194,13 +1242,18 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 </p>
 
   <dt>Namespace</dt>
-  <dd><a href="https://ofn.gov.cz/jmenný-prostor/podání">https://ofn.gov.cz/jmenný-prostor/podání</a> (prefix: podání)</dd>
+  <dd><a href="https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04">https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04</a> (prefix: formuláře)</dd>
 
 <dt>Importy</dt>
   <dd>
     <strong>Prefix:</strong> [object Promise]<br>
     <strong>Namespace:</strong> [object Promise]<br>
     <strong>Schema Location:</strong> .&#x2F;společné-specifikace&#x2F;person-in-relationship-with-a-document&#x2F;schema.xsd
+  </dd>
+  <dd>
+    <strong>Prefix:</strong> [object Promise]<br>
+    <strong>Namespace:</strong> [object Promise]<br>
+    <strong>Schema Location:</strong> .&#x2F;společné-specifikace&#x2F;fyzická-osoba&#x2F;schema.xsd
   </dd>
 
 

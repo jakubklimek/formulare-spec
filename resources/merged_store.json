@@ -143,7 +143,12 @@
             "https://ofn.gov.cz/association-end/1727774658417-55bf-aab1-9ec9",
             "https://ofn.gov.cz/association/1727774658491-53f3-9e7d-b401",
             "https://ofn.gov.cz/association-end/1727774658491-0e53-825d-bb4a",
-            "https://ofn.gov.cz/association-end/1727774658491-4885-6ad3-adc3"
+            "https://ofn.gov.cz/association-end/1727774658491-4885-6ad3-adc3",
+            "https://ofn.gov.cz/class/1727794661830-2f1a-ba24-a43c",
+            "https://ofn.gov.cz/association/1727794661852-236b-9b23-80e9",
+            "https://ofn.gov.cz/association-end/1727794661852-8e34-62d0-81bc",
+            "https://ofn.gov.cz/association-end/1727794661852-9e81-3048-bdeb",
+            "https://ofn.gov.cz/attribute/1727794673267-e7fd-32fa-83ee"
         ]
     },
     "https://ofn.gov.cz/class/1727173141546-4523-34a4-85ab": {
@@ -2334,7 +2339,7 @@
         "pimOwnerClass": "https://ofn.gov.cz/class/1727774623050-f847-d36d-a8da",
         "pimCardinalityMin": 1,
         "pimCardinalityMax": 1,
-        "pimRegex": null,
+        "pimRegex": "[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}",
         "pimExample": null
     },
     "https://ofn.gov.cz/association/1727774658417-b4f6-4527-b9d4": {
@@ -2422,6 +2427,86 @@
         "pimPart": "https://ofn.gov.cz/class/1727193015769-310d-e79e-9548",
         "pimCardinalityMin": 1,
         "pimCardinalityMax": 1
+    },
+    "https://ofn.gov.cz/class/1727794661830-2f1a-ba24-a43c": {
+        "types": [
+            "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "https://ofn.gov.cz/class/1727794661830-2f1a-ba24-a43c",
+        "pimInterpretation": "https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/šablona",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+            "cs": "Šablona"
+        },
+        "pimHumanDescription": {},
+        "pimExtends": [],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null
+    },
+    "https://ofn.gov.cz/association/1727794661852-236b-9b23-80e9": {
+        "types": [
+            "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "https://ofn.gov.cz/association/1727794661852-236b-9b23-80e9",
+        "pimInterpretation": "https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/vytvořeno-na-základě-šablony",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+            "cs": "vytvořeno na základě šablony"
+        },
+        "pimHumanDescription": {},
+        "pimEnd": [
+            "https://ofn.gov.cz/association-end/1727794661852-8e34-62d0-81bc",
+            "https://ofn.gov.cz/association-end/1727794661852-9e81-3048-bdeb"
+        ],
+        "pimIsOriented": true
+    },
+    "https://ofn.gov.cz/association-end/1727794661852-8e34-62d0-81bc": {
+        "types": [
+            "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "https://ofn.gov.cz/association-end/1727794661852-8e34-62d0-81bc",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "https://ofn.gov.cz/class/1727774623050-f847-d36d-a8da",
+        "pimCardinalityMin": 0,
+        "pimCardinalityMax": null
+    },
+    "https://ofn.gov.cz/association-end/1727794661852-9e81-3048-bdeb": {
+        "types": [
+            "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "https://ofn.gov.cz/association-end/1727794661852-9e81-3048-bdeb",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "https://ofn.gov.cz/class/1727794661830-2f1a-ba24-a43c",
+        "pimCardinalityMin": 1,
+        "pimCardinalityMax": 1
+    },
+    "https://ofn.gov.cz/attribute/1727794673267-e7fd-32fa-83ee": {
+        "types": [
+            "https://ofn.gov.cz/slovník/pim/Attribute"
+        ],
+        "iri": "https://ofn.gov.cz/attribute/1727794673267-e7fd-32fa-83ee",
+        "pimInterpretation": "https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/kód-šablony",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+            "cs": "kód šablony"
+        },
+        "pimHumanDescription": {},
+        "pimDatatype": "https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/řetězec",
+        "pimLanguageStringRequiredLanguages": null,
+        "pimOwnerClass": "https://ofn.gov.cz/class/1727794661830-2f1a-ba24-a43c",
+        "pimCardinalityMin": 0,
+        "pimCardinalityMax": 1,
+        "pimRegex": "[a-zA-Z]{3}-\\d-\\d",
+        "pimExample": null
     },
     "https://ofn.gov.cz/schema/1727173003869-aa57-bd0b-8a42": {
         "types": [
@@ -2528,12 +2613,15 @@
             "https://ofn.gov.cz/class-reference/1727776440403-e221-c68e-abe7",
             "https://ofn.gov.cz/class-reference/1727776449425-83e5-6d39-86fa",
             "https://ofn.gov.cz/class-reference/1727776456055-8fb6-e594-a55e",
-            "https://ofn.gov.cz/class-reference/1727776459564-fcbf-5ac1-b3c4"
+            "https://ofn.gov.cz/class-reference/1727776459564-fcbf-5ac1-b3c4",
+            "https://ofn.gov.cz/class/1727794661831-9919-bd9c-ad9c",
+            "https://ofn.gov.cz/association/1727794661853-503d-0493-8677",
+            "https://ofn.gov.cz/attribute/1727794673268-5c68-c438-b0c3"
         ],
         "extensions": {
             "https://ofn.gov.cz/slovník/psm/extensions/xml": {
-                "namespace": "https://ofn.gov.cz/jmenný-prostor/podání",
-                "namespacePrefix": "podání"
+                "namespace": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04",
+                "namespacePrefix": "formuláře"
             }
         }
     },
@@ -3468,6 +3556,7 @@
         "dataPsmExtends": [],
         "dataPsmParts": [
             "https://ofn.gov.cz/attribute/1727774658354-1a2a-3be5-981c",
+            "https://ofn.gov.cz/association/1727794661853-503d-0493-8677",
             "https://ofn.gov.cz/association/1727774658417-0b3f-9d36-b9af",
             "https://ofn.gov.cz/association/1727774658492-d93c-aec2-b7fd"
         ],
@@ -3584,13 +3673,51 @@
         "dataPsmSpecification": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535",
         "dataPsmClass": "https://ofn.gov.cz/or/1727191874033-c17f-68d6-9b66"
     },
+    "https://ofn.gov.cz/class/1727794661831-9919-bd9c-ad9c": {
+        "types": [
+            "https://ofn.gov.cz/slovník/psm/Class"
+        ],
+        "iri": "https://ofn.gov.cz/class/1727794661831-9919-bd9c-ad9c",
+        "dataPsmHumanLabel": null,
+        "dataPsmHumanDescription": null,
+        "dataPsmTechnicalLabel": "šablona",
+        "dataPsmInterpretation": "https://ofn.gov.cz/class/1727794661830-2f1a-ba24-a43c",
+        "dataPsmExtends": [],
+        "dataPsmParts": [
+            "https://ofn.gov.cz/attribute/1727794673268-5c68-c438-b0c3"
+        ],
+        "dataPsmIsClosed": null
+    },
+    "https://ofn.gov.cz/association/1727794661853-503d-0493-8677": {
+        "types": [
+            "https://ofn.gov.cz/slovník/psm/AssociationEnd"
+        ],
+        "iri": "https://ofn.gov.cz/association/1727794661853-503d-0493-8677",
+        "dataPsmHumanLabel": null,
+        "dataPsmHumanDescription": null,
+        "dataPsmTechnicalLabel": "vytvořeno_na_základě_šablony",
+        "dataPsmInterpretation": "https://ofn.gov.cz/association-end/1727794661852-9e81-3048-bdeb",
+        "dataPsmPart": "https://ofn.gov.cz/class/1727794661831-9919-bd9c-ad9c",
+        "dataPsmIsDematerialize": true
+    },
+    "https://ofn.gov.cz/attribute/1727794673268-5c68-c438-b0c3": {
+        "types": [
+            "https://ofn.gov.cz/slovník/psm/Attribute"
+        ],
+        "iri": "https://ofn.gov.cz/attribute/1727794673268-5c68-c438-b0c3",
+        "dataPsmHumanLabel": null,
+        "dataPsmHumanDescription": null,
+        "dataPsmTechnicalLabel": "kód_šablony",
+        "dataPsmInterpretation": "https://ofn.gov.cz/attribute/1727794673267-e7fd-32fa-83ee",
+        "dataPsmDatatype": "https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/řetězec"
+    },
     "https://ofn.gov.cz/schema/1727090341724-c314-d3f1-ac8f": {
         "types": [
             "https://ofn.gov.cz/slovník/pim/Schema"
         ],
         "iri": "https://ofn.gov.cz/schema/1727090341724-c314-d3f1-ac8f",
         "pimHumanLabel": {
-            "en": "Společné specifikace"
+            "en": "Společné části elektronických dokumentů"
         },
         "pimHumanDescription": {},
         "pimParts": [
@@ -7294,7 +7421,7 @@
         ],
         "extensions": {
             "https://ofn.gov.cz/slovník/psm/extensions/xml": {
-                "namespace": "https://ofn.gov.cz/jmenný-prostor/podání/místa",
+                "namespace": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místa",
                 "namespacePrefix": "místa"
             }
         }
@@ -8160,7 +8287,7 @@
         ],
         "extensions": {
             "https://ofn.gov.cz/slovník/psm/extensions/xml": {
-                "namespace": "https://ofn.gov.cz/jmenný-prostor/podání/osoby",
+                "namespace": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby",
                 "namespacePrefix": "osoby"
             }
         }
@@ -8999,7 +9126,7 @@
         ],
         "extensions": {
             "https://ofn.gov.cz/slovník/psm/extensions/xml": {
-                "namespace": "https://ofn.gov.cz/jmenný-prostor/podání/osoby",
+                "namespace": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby",
                 "namespacePrefix": "osoby"
             }
         }
@@ -9224,7 +9351,7 @@
         ],
         "extensions": {
             "https://ofn.gov.cz/slovník/psm/extensions/xml": {
-                "namespace": "https://ofn.gov.cz/jmenný-prostor/podání/osoby",
+                "namespace": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby",
                 "namespacePrefix": "osoby"
             }
         }
@@ -9535,7 +9662,7 @@
         ],
         "extensions": {
             "https://ofn.gov.cz/slovník/psm/extensions/xml": {
-                "namespace": "https://ofn.gov.cz/jmenný-prostor/podání/osoby",
+                "namespace": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby",
                 "namespacePrefix": "osoby"
             }
         }
@@ -9855,7 +9982,7 @@
         ],
         "extensions": {
             "https://ofn.gov.cz/slovník/psm/extensions/xml": {
-                "namespace": "https://ofn.gov.cz/jmenný-prostor/podání/osoby",
+                "namespace": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby",
                 "namespacePrefix": "osoby"
             }
         }
@@ -10069,7 +10196,7 @@
         ],
         "extensions": {
             "https://ofn.gov.cz/slovník/psm/extensions/xml": {
-                "namespace": "https://ofn.gov.cz/jmenný-prostor/podání/osoby",
+                "namespace": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby",
                 "namespacePrefix": "osoby"
             }
         }
