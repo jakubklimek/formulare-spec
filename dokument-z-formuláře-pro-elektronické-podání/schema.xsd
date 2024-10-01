@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04" xmlns:formuláře="https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
-  <xs:import namespace="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" schemaLocation="./společné-specifikace/person-in-relationship-with-a-document/schema.xsd"/>
-  <xs:import namespace="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" schemaLocation="./společné-specifikace/fyzická-osoba/schema.xsd"/>
+  <xs:import namespace="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" schemaLocation="../../společné-části-elektronických-dokumentů/2024-10-04/person-in-relationship-with-a-document/schema.xsd"/>
+  <xs:import namespace="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" schemaLocation="../../společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba/schema.xsd"/>
   <xs:complexType name="langString">
     <xs:simpleContent>
       <xs:extension base="xs:string">

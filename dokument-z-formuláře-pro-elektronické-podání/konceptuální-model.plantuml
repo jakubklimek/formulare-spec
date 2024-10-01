@@ -126,5 +126,5 @@ Dokument -- "1..1" "Jednoznačný identifikátor" :  "je opatřen identifikátor
 "Dokument veřejnoprávního původce" -- "0..1" "Evidenční číslo ze samostatné evidence dokumentů" :  "má evidenční číslo ze samostatné evidence dokumentů"
 "Fyzická osoba jako osoba ve vztahu k dokumentu" "1..1" -- "Oprávnění k zastupování" :  "zástupce"
 "Osoba ve vztahu k dokumentu" "1..1" -- "Oprávnění k zastupování" :  "zastoupený"
-"Oprávnění k zastupování" -- "1..1" "Šablona" :  "vytvořeno na základě šablony"
+"Oprávnění k zastupování" -- "0..1" "Šablona" :  "vytvořeno na základě šablony"
 @enduml

@@ -2023,7 +2023,7 @@
         "pimOwnerClass": "https://ofn.gov.cz/class/1727193657694-a41c-36e1-b248",
         "pimCardinalityMin": 1,
         "pimCardinalityMax": 1,
-        "pimRegex": "^U\\d{1,8}$",
+        "pimRegex": "U\\d{1,8}",
         "pimExample": null
     },
     "https://ofn.gov.cz/attribute/1727193657725-7d77-d71f-8dba": {
@@ -2067,7 +2067,7 @@
         "pimOwnerClass": "https://ofn.gov.cz/class/1727193644627-688d-4034-b035",
         "pimCardinalityMin": 1,
         "pimCardinalityMax": 1,
-        "pimRegex": "^S\\d{1,6}$",
+        "pimRegex": "S\\d{1,6}",
         "pimExample": null
     },
     "https://ofn.gov.cz/attribute/1727194263139-4f98-7b99-8350": {
@@ -2111,7 +2111,7 @@
         "pimOwnerClass": "https://ofn.gov.cz/class/1727193644678-55f3-93f0-8099",
         "pimCardinalityMin": 1,
         "pimCardinalityMax": 1,
-        "pimRegex": "^A\\d{1,6}$",
+        "pimRegex": "A\\d{1,6}",
         "pimExample": null
     },
     "https://ofn.gov.cz/attribute/1727194432532-234a-fa7c-a4b5": {
@@ -2486,7 +2486,7 @@
         "pimHumanLabel": null,
         "pimHumanDescription": null,
         "pimPart": "https://ofn.gov.cz/class/1727794661830-2f1a-ba24-a43c",
-        "pimCardinalityMin": 1,
+        "pimCardinalityMin": 0,
         "pimCardinalityMax": 1
     },
     "https://ofn.gov.cz/attribute/1727794673267-e7fd-32fa-83ee": {

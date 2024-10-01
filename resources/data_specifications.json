@@ -14,7 +14,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "dokument-z-formuláře-pro-elektronické-podání/2022-07.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/2022-07.xsd",
+                "publicUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
                     "json": {
@@ -74,7 +74,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/",
+                        "publicBaseUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -99,7 +99,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "dokument-z-formuláře-pro-elektronické-podání/schema.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/schema.xsd",
+                "publicUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
                     "json": {
@@ -159,7 +159,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/",
+                        "publicBaseUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -184,7 +184,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "dokument-z-formuláře-pro-elektronické-podání/lifting.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/lifting.xslt",
+                "publicUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
                     "json": {
@@ -244,7 +244,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/",
+                        "publicBaseUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -269,7 +269,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "dokument-z-formuláře-pro-elektronické-podání/lowering.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/lowering.xslt",
+                "publicUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
                     "json": {
@@ -329,7 +329,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/",
+                        "publicBaseUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -354,7 +354,7 @@
                 "name": null,
                 "type": "documentation",
                 "outputPath": "dokument-z-formuláře-pro-elektronické-podání/konceptuální-model.plantuml",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/konceptuální-model.plantuml",
+                "publicUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/konceptuální-model.plantuml",
                 "generator": "plant-uml",
                 "configuration": {
                     "json": {
@@ -414,7 +414,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/",
+                        "publicBaseUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -439,7 +439,7 @@
                 "name": null,
                 "type": "documentation",
                 "outputPath": "dokument-z-formuláře-pro-elektronické-podání/konceptuální-model.svg",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/konceptuální-model.svg",
+                "publicUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/konceptuální-model.svg",
                 "generator": "plant-uml/image",
                 "configuration": {
                     "json": {
@@ -499,7 +499,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/",
+                        "publicBaseUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -524,7 +524,7 @@
                 "name": null,
                 "type": "documentation",
                 "outputPath": "dokument-z-formuláře-pro-elektronické-podání/index.html",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/index.html",
+                "publicUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/index.html",
                 "generator": "https://schemas.dataspecer.com/generator/template-artifact",
                 "configuration": {
                     "json": {
@@ -584,7 +584,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/",
+                        "publicBaseUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -620,7 +620,7 @@
                     "json": false
                 },
                 "instancesHaveIdentity": "NEVER",
-                "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/"
+                "publicBaseUrl": "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/"
             },
             "template-artifact": {
                 "template": "<!DOCTYPE html>\n<html lang=\"cs\">\n    <head>\n        <title>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</title>\n        <meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\" />\n        <meta content=\"width=device-width,initial-scale=1\" name=\"viewport\" />\n        <meta name=\"theme-color\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileColor\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileImage\" content=\"https://ofn.gov.cz/static/favicons/ms-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-57x57.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-60x60.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-72x72.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-76x76.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-114x114.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-120x120.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-152x152.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-180x180.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://ofn.gov.cz/static/favicons/android-icon-192x192.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://ofn.gov.cz/static/favicons/favicon-32x32.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"https://ofn.gov.cz/static/favicons/favicon-96x96.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://ofn.gov.cz/static/favicons/favicon-16x16.png\">\n        <link rel=\"manifest\" href=\"https://ofn.gov.cz/static/favicons/manifest.json\">\n        <script class=\"remove\" src=\"https://ofn.gov.cz/static/js/respec-odcz.js\"></script>\n        <script class=\"remove\">\n            var respecConfig = {{>metadata}};\n        </script>\n    </head>\n    <body>\n    \n{{>abstract}}\n\n<!--{{>artifactList}}-->\n\n{{>conceptualModel}}\n\n{{#structureModels}}\n<section>\n<h2>Specifikace struktury pro {{#humanLabel}}{{translate}}{{/humanLabel}}</h2>\n<p>{{#humanDescription}}{{translate}}{{/humanDescription}}</p>\n\n{{#artifacts}}{{#getDocumentation}}{{#useTemplate}}{{/useTemplate}}{{/getDocumentation}}{{/artifacts}}\n</section>\n{{/structureModels}}\n\n    </body>\n</html>",
@@ -675,7 +675,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/místo/2022-07.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/místo/2022-07.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místo/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
                     "json": {
@@ -735,7 +735,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -760,7 +760,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/místo/schema.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/místo/schema.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místo/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
                     "json": {
@@ -820,7 +820,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -845,7 +845,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/místo/lifting.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/místo/lifting.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místo/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
                     "json": {
@@ -905,7 +905,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -930,7 +930,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/místo/lowering.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/místo/lowering.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místo/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
                     "json": {
@@ -990,7 +990,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1015,7 +1015,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/2022-07.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/person-in-relationship-with-a-document/2022-07.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/person-in-relationship-with-a-document/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
                     "json": {
@@ -1075,7 +1075,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1100,7 +1100,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/schema.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/person-in-relationship-with-a-document/schema.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/person-in-relationship-with-a-document/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
                     "json": {
@@ -1160,7 +1160,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1185,7 +1185,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/lifting.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/person-in-relationship-with-a-document/lifting.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/person-in-relationship-with-a-document/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
                     "json": {
@@ -1245,7 +1245,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1270,7 +1270,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/lowering.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/person-in-relationship-with-a-document/lowering.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/person-in-relationship-with-a-document/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
                     "json": {
@@ -1330,7 +1330,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1355,7 +1355,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba/2022-07.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba/2022-07.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
                     "json": {
@@ -1415,7 +1415,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1440,7 +1440,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba/schema.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba/schema.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
                     "json": {
@@ -1500,7 +1500,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1525,7 +1525,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba/lifting.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba/lifting.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
                     "json": {
@@ -1585,7 +1585,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1610,7 +1610,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba/lowering.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba/lowering.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
                     "json": {
@@ -1670,7 +1670,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1695,7 +1695,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
                     "json": {
@@ -1755,7 +1755,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1780,7 +1780,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/osoba-ve-vztahu-k-dokumentu/schema.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/osoba-ve-vztahu-k-dokumentu/schema.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoba-ve-vztahu-k-dokumentu/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
                     "json": {
@@ -1840,7 +1840,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1865,7 +1865,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/osoba-ve-vztahu-k-dokumentu/lifting.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/osoba-ve-vztahu-k-dokumentu/lifting.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoba-ve-vztahu-k-dokumentu/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
                     "json": {
@@ -1925,7 +1925,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -1950,7 +1950,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/osoba-ve-vztahu-k-dokumentu/lowering.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/osoba-ve-vztahu-k-dokumentu/lowering.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoba-ve-vztahu-k-dokumentu/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
                     "json": {
@@ -2010,7 +2010,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2035,7 +2035,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba/2022-07.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba/2022-07.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/právnická-osoba/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
                     "json": {
@@ -2095,7 +2095,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2120,7 +2120,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba/schema.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba/schema.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/právnická-osoba/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
                     "json": {
@@ -2180,7 +2180,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2205,7 +2205,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba/lifting.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba/lifting.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/právnická-osoba/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
                     "json": {
@@ -2265,7 +2265,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2290,7 +2290,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba/lowering.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba/lowering.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/právnická-osoba/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
                     "json": {
@@ -2350,7 +2350,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2375,7 +2375,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-zapsaná-v-or/2022-07.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/2022-07.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/podnikající-fyzická-osoba-zapsaná-v-or/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
                     "json": {
@@ -2435,7 +2435,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2460,7 +2460,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-zapsaná-v-or/schema.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/schema.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/podnikající-fyzická-osoba-zapsaná-v-or/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
                     "json": {
@@ -2520,7 +2520,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2545,7 +2545,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-zapsaná-v-or/lifting.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/lifting.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/podnikající-fyzická-osoba-zapsaná-v-or/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
                     "json": {
@@ -2605,7 +2605,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2630,7 +2630,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-zapsaná-v-or/lowering.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-zapsaná-v-or/lowering.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/podnikající-fyzická-osoba-zapsaná-v-or/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
                     "json": {
@@ -2690,7 +2690,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2715,7 +2715,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-nezapsaná-v-or/2022-07.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/2022-07.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/podnikající-fyzická-osoba-nezapsaná-v-or/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
                     "json": {
@@ -2775,7 +2775,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2800,7 +2800,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-nezapsaná-v-or/schema.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/schema.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/podnikající-fyzická-osoba-nezapsaná-v-or/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
                     "json": {
@@ -2860,7 +2860,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2885,7 +2885,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-nezapsaná-v-or/lifting.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/lifting.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/podnikající-fyzická-osoba-nezapsaná-v-or/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
                     "json": {
@@ -2945,7 +2945,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -2970,7 +2970,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/podnikající-fyzická-osoba-nezapsaná-v-or/lowering.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/podnikající-fyzická-osoba-nezapsaná-v-or/lowering.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/podnikající-fyzická-osoba-nezapsaná-v-or/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
                     "json": {
@@ -3030,7 +3030,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -3055,7 +3055,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
                     "json": {
@@ -3115,7 +3115,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -3140,7 +3140,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
                     "json": {
@@ -3200,7 +3200,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -3225,7 +3225,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
                     "json": {
@@ -3285,7 +3285,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -3310,7 +3310,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
                     "json": {
@@ -3370,7 +3370,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -3395,7 +3395,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
                 "generator": "http://example.com/generator/xml-common-schema",
                 "configuration": {
                     "json": {
@@ -3455,7 +3455,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -3480,7 +3480,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
                 "generator": "http://example.com/generator/xml-schema",
                 "configuration": {
                     "json": {
@@ -3540,7 +3540,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -3565,7 +3565,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
                 "generator": "http://example.com/generator/xslt-lifting",
                 "configuration": {
                     "json": {
@@ -3625,7 +3625,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -3650,7 +3650,7 @@
                 "name": null,
                 "type": "schema",
                 "outputPath": "společné-části-elektronických-dokumentů/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
                 "generator": "http://example.com/generator/xslt-lowering",
                 "configuration": {
                     "json": {
@@ -3710,7 +3710,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -3735,7 +3735,7 @@
                 "name": null,
                 "type": "documentation",
                 "outputPath": "společné-části-elektronických-dokumentů/konceptuální-model.plantuml",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/konceptuální-model.plantuml",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/konceptuální-model.plantuml",
                 "generator": "plant-uml",
                 "configuration": {
                     "json": {
@@ -3795,7 +3795,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -3820,7 +3820,7 @@
                 "name": null,
                 "type": "documentation",
                 "outputPath": "společné-části-elektronických-dokumentů/konceptuální-model.svg",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/konceptuální-model.svg",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/konceptuální-model.svg",
                 "generator": "plant-uml/image",
                 "configuration": {
                     "json": {
@@ -3880,7 +3880,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -3905,7 +3905,7 @@
                 "name": null,
                 "type": "documentation",
                 "outputPath": "společné-části-elektronických-dokumentů/index.html",
-                "publicUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace/index.html",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/index.html",
                 "generator": "https://schemas.dataspecer.com/generator/template-artifact",
                 "configuration": {
                     "json": {
@@ -3965,7 +3965,7 @@
                             "plant-uml/image": "konceptuální-model.svg",
                             "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
                         },
-                        "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace",
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
                         "instancesHaveIdentity": "NEVER",
                         "instancesSpecifyTypes": "ALWAYS",
                         "dataPsmIsClosed": "OPEN",
@@ -4033,7 +4033,7 @@
                     "json": false
                 },
                 "instancesHaveIdentity": "NEVER",
-                "publicBaseUrl": "https://pod-test.dia.gov.cz/otevřené-formální-normy/dokumenty-z-formulářů-ZoPDS/draft/společné-specifikace"
+                "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/"
             },
             "xml": {
                 "rootClass": {
