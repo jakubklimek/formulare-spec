@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://ofn.gov.cz/jmenný-prostor/podání/místa" xmlns:místa="https://ofn.gov.cz/jmenný-prostor/podání/místa" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+  <xs:complexType name="langString">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute ref="xml:lang" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="adresa_rúian" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo
+Název (cs): Místo</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="adresa_rúian" sawsdl:modelReference="https://slovník.gov.cz/generický/umístění/pojem/má-adresu">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/umístění/pojem/má-adresu
+Název (cs): má adresu</xs:documentation>
+        </xs:annotation>
+        <xs:complexType sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/adresa">
+          <xs:annotation>
+            <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/adresa
+Název (cs): adresa
+Popis (cs): Adresou se rozumí kombinace názvu okresu, názvu obce nebo vojenského újezdu, názvu části obce nebo v případě hlavního města Prahy názvu katastrálního území a názvu městského obvodu, čísla popisného nebo evidenčního, názvu ulice a čísla orientačního a dále zvláštních údajů pro doručování prostřednictvím poštovních služeb, která jednoznačně určuje adresní místo.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="název_ulice" type="místa:langString" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-ulice">
+              <xs:annotation>
+                <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-ulice
+Název (cs): má název ulice
+Popis (cs): Adresou se rozumí kombinace názvu okresu, názvu obce nebo vojenského újezdu, názvu části obce nebo v případě hlavního města Prahy názvu katastrálního území a názvu městského obvodu, čísla popisného nebo evidenčního, názvu ulice a čísla orientačního a dále zvláštních údajů pro doručování prostřednictvím poštovních služeb, která jednoznačně určuje adresní místo.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="číslo_domovní" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-číslo-domovní">
+              <xs:annotation>
+                <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-číslo-domovní
+Název (cs): má číslo domovní
+Popis (cs): Adresou se rozumí kombinace názvu okresu, názvu obce nebo vojenského újezdu, názvu části obce nebo v případě hlavního města Prahy názvu katastrálního území a názvu městského obvodu, čísla popisného nebo evidenčního, názvu ulice a čísla orientačního a dále zvláštních údajů pro doručování prostřednictvím poštovních služeb, která jednoznačně určuje adresní místo.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="typ_čísla_domovního" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/adresy/pojem/typ-čísla-domovního">
+              <xs:annotation>
+                <xs:documentation>Význam: https://slovník.gov.cz/generický/adresy/pojem/typ-čísla-domovního
+Název (cs): typ čísla domovního
+Popis (cs): Typ čísla domovního, může nabývat hodnot: č.p. - číslo popisné stavebního objektu č.ev. - číslo evidenční stavebního objektu. Hodnota této vlastnosti je částí hodnoty vlastnosti locatorDesignator z ISA2 Core Location Vocabulary.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="má_číslo_orientační" type="xs:integer" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-číslo-orientační">
+              <xs:annotation>
+                <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-číslo-orientační
+Název (cs): má číslo orientační</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="znak_čísla_orientačního" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/adresy/pojem/znak-čísla-orientačního">
+              <xs:annotation>
+                <xs:documentation>Význam: https://slovník.gov.cz/generický/adresy/pojem/znak-čísla-orientačního
+Název (cs): znak čísla orientačního
+Popis (cs): Znak čísla orientačního. Je uveden v případě, že je znak k orientačnímu číslu přidělen. Tato položka nedává smysl bez současného vyplnění čísla orientačního. Hodnota této vlastnosti je částí hodnoty vlastnosti locatorDesignator z ISA2 Core Location Vocabulary.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="část_obce" type="místa:langString" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-části-obce">
+              <xs:annotation>
+                <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-části-obce
+Název (cs): má název části obce
+Popis (cs): Adresou se rozumí kombinace názvu okresu, názvu obce nebo vojenského újezdu, názvu části obce nebo v případě hlavního města Prahy názvu katastrálního území a názvu městského obvodu, čísla popisného nebo evidenčního, názvu ulice a čísla orientačního a dále zvláštních údajů pro doručování prostřednictvím poštovních služeb, která jednoznačně určuje adresní místo.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="obec_nebo_vojenský_újezd" type="místa:langString" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-obce-nebo-vojenského-újezdu">
+              <xs:annotation>
+                <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-obce-nebo-vojenského-újezdu
+Název (cs): má název obce nebo vojenského újezdu
+Popis (cs): Adresou se rozumí kombinace názvu okresu, názvu obce nebo vojenského újezdu, názvu části obce nebo v případě hlavního města Prahy názvu katastrálního území a názvu městského obvodu, čísla popisného nebo evidenčního, názvu ulice a čísla orientačního a dále zvláštních údajů pro doručování prostřednictvím poštovních služeb, která jednoznačně určuje adresní místo.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="okres" type="místa:langString" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-okresu">
+              <xs:annotation>
+                <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-okresu
+Název (cs): má název okresu
+Popis (cs): Adresou se rozumí kombinace názvu okresu, názvu obce nebo vojenského újezdu, názvu části obce nebo v případě hlavního města Prahy názvu katastrálního území a názvu městského obvodu, čísla popisného nebo evidenčního, názvu ulice a čísla orientačního a dále zvláštních údajů pro doručování prostřednictvím poštovních služeb, která jednoznačně určuje adresní místo.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="katastrální_území" type="místa:langString" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-katastrálního-území">
+              <xs:annotation>
+                <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-katastrálního-území
+Název (cs): má název katastrálního území
+Popis (cs): Adresou se rozumí kombinace názvu okresu, názvu obce nebo vojenského újezdu, názvu části obce nebo v případě hlavního města Prahy názvu katastrálního území a názvu městského obvodu, čísla popisného nebo evidenčního, názvu ulice a čísla orientačního a dále zvláštních údajů pro doručování prostřednictvím poštovních služeb, která jednoznačně určuje adresní místo.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="městský_obvod_v_praze" type="místa:langString" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-městského-obvodu-v-hlavním-městě-praze">
+              <xs:annotation>
+                <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-městského-obvodu-v-hlavním-městě-praze
+Název (cs): má název městského obvodu v hlavním městě Praze
+Popis (cs): Adresou se rozumí kombinace názvu okresu, názvu obce nebo vojenského újezdu, názvu části obce nebo v případě hlavního města Prahy názvu katastrálního území a názvu městského obvodu, čísla popisného nebo evidenčního, názvu ulice a čísla orientačního a dále zvláštních údajů pro doručování prostřednictvím poštovních služeb, která jednoznačně určuje adresní místo.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="psč" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/adresy/pojem/poštovní-směrovací-číslo">
+              <xs:annotation>
+                <xs:documentation>Význam: https://slovník.gov.cz/generický/adresy/pojem/poštovní-směrovací-číslo
+Název (cs): poštovní směrovací číslo</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="adresní_místo" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo
+Název (cs): Místo</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:sequence>
+        <xs:sequence>
+          <xs:element name="kód_adresního_místa" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-adresního-místa">
+            <xs:annotation>
+              <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-adresního-místa
+Název (cs): Má kód adresního místa
+Popis (cs): Referenční vazba na referenční údaj o adrese v registru územní identifikace.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="zahraniční_adresa" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo
+Název (cs): Místo</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:sequence>
+        <xs:element name="zahraniční_adresa" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/umístění/pojem/lokalizační-popis">
+          <xs:annotation>
+            <xs:documentation>Význam: https://slovník.gov.cz/generický/umístění/pojem/lokalizační-popis
+Název (cs): lokalizační popis</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="adresa_textem" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo
+Název (cs): Místo</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:sequence>
+        <xs:element name="třířádková_adresa_textem" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/adresy/pojem/text-adresy">
+          <xs:annotation>
+            <xs:documentation>Význam: https://slovník.gov.cz/generický/adresy/pojem/text-adresy
+Název (cs): text adresy
+Popis (cs): Celá adresa jako jeden řetězec. Text se řídí Přílohou č. 1 k vyhlášce č. 359/2011 Sb., o základním registru územní identifikace, adres a nemovitostí. Tato vlastnost odpovídá vlastnosti fullAddress z ISA2 Core Location Vocabulary.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="místa:místo">
+    <xs:choice>
+      <xs:element name="adresa_rúian" type="místa:adresa_rúian"/>
+      <xs:element name="adresní_místo" type="místa:adresní_místo"/>
+      <xs:element name="zahraniční_adresa" type="místa:zahraniční_adresa"/>
+      <xs:element name="adresa_textem" type="místa:adresa_textem"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="místo" type="místa:místo"/>
+</xs:schema>
