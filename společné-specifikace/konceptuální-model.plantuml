@@ -5,18 +5,6 @@ class "Místo" {
 }
 
 class adresa {
-  "má číslo domovní": integer
-  "typ čísla domovního": string
-  "znak čísla orientačního": string
-  "má název ulice": text
-  "má název části obce": text
-  "má název okresu": text
-  "má název obce nebo vojenského újezdu": text
-  "má název městského obvodu v hlavním městě Praze": text
-  "má název katastrálního území": text
-  "poštovní směrovací číslo": string
-  "text adresy": string
-  "má číslo orientační": integer
 }
 
 class "Zahraniční adresa" {
@@ -28,7 +16,6 @@ class "Lokalizace popisem" {
 
 class "adresní místo" {
   "kód adresního místa": string
-  "Má kód adresního místa": string
 }
 
 class "Právnická osoba" {

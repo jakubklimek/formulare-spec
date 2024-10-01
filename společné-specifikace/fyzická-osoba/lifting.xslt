@@ -88,23 +88,11 @@
           <xsl:value-of select="."/>
         </ns1:datum-narození>
       </xsl:for-each>
-      <xsl:for-each select="osoby:eIDAS_ID">
-        <ns1:jedinečný-identifikátor-fyzické-osoby rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-          <xsl:apply-templates select="@*"/>
-          <xsl:value-of select="."/>
-        </ns1:jedinečný-identifikátor-fyzické-osoby>
-      </xsl:for-each>
       <ns0:má-bydliště-fyzické-osoby>
         <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727280328795-652b-4eaa-96cf">
           <xsl:with-param name="no_iri" select="true()"/>
         </xsl:call-template>
       </ns0:má-bydliště-fyzické-osoby>
-      <xsl:for-each select="osoby:současná_adresa">
-        <ns1:současná-adresa-fyzické-osoby rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-          <xsl:apply-templates select="@*"/>
-          <xsl:value-of select="."/>
-        </ns1:současná-adresa-fyzické-osoby>
-      </xsl:for-each>
       <xsl:for-each select="osoby:doručovací_místo">
         <ns2:doručovací-místo>
           <xsl:variable name="type" select="resolve-QName(@xsi:type,.)"/>

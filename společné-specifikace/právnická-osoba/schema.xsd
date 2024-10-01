@@ -90,14 +90,13 @@ Popis (cs): identifikační kód právnické osoby uvedený v prováděcím nař
         <xs:annotation>
           <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/číslo-pro-účely-spotřebních-daní-stanovené-v-čl.-2-bodu-12-nařízení-rady-es-č.-389-2012
 Název (cs): číslo pro účely spotřebních daní
-Popis (cs): číslo pro účely spotřebních daní stanovené v čl. 2 bodu 12 nařízení Rady (ES) č. 389/2012</xs:documentation>
+Popis (cs): číslo pro účely spotřebních daní stanovené v čl. 2 bodu 12 nařízení Rady (ES) č. 389/2012 (SEED - System for Exchange of Excise Data)</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element minOccurs="0" name="identifikační_číslo_pro_účely_dph" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/identifikační-číslo-pro-účely-dph">
         <xs:annotation>
           <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/identifikační-číslo-pro-účely-dph
-Název (cs): identifikační číslo pro účely DPH
-Popis (cs): </xs:documentation>
+Název (cs): identifikační číslo pro účely DPH</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element minOccurs="0" name="daňové_registrační_číslo" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/daňové-registrační-číslo">

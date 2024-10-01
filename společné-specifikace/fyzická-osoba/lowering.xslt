@@ -76,11 +76,6 @@
         <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
       </osoby:datum_narození>
     </xsl:for-each>
-    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby&#34;]">
-      <osoby:eIDAS_ID>
-        <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
-      </osoby:eIDAS_ID>
-    </xsl:for-each>
     <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-bydliště-fyzické-osoby&#34;]">
       <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727280328795-652b-4eaa-96cf">
         <xsl:with-param name="id">
@@ -88,11 +83,6 @@
         </xsl:with-param>
         <xsl:with-param name="no_iri" select="true()"/>
       </xsl:call-template>
-    </xsl:for-each>
-    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současná-adresa-fyzické-osoby&#34;]">
-      <osoby:současná_adresa>
-        <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
-      </osoby:současná_adresa>
     </xsl:for-each>
     <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo&#34;]">
       <osoby:doručovací_místo>

@@ -41,13 +41,6 @@ Název (cs): datum narození
 Popis (cs): </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" name="eIDAS_ID" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby">
-        <xs:annotation>
-          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby
-Název (cs): jedinečný identifikátor fyzické osoby vytvořený odesílajícím členským státem
-Popis (cs): jedinečný identifikátor vytvořený odesílajícím členským státem v souladu s technickými specifikacemi pro účely přeshraniční identifikace a pokud možno následně neměnný</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:sequence>
         <xs:element name="trvalé_bydliště" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-místo-bydliště">
           <xs:annotation>
@@ -56,13 +49,6 @@ Název (cs): má místo bydliště</xs:documentation>
           </xs:annotation>
         </xs:element>
       </xs:sequence>
-      <xs:element minOccurs="0" name="současná_adresa" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současná-adresa-fyzické-osoby">
-        <xs:annotation>
-          <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současná-adresa-fyzické-osoby
-Název (cs): současná adresa fyzické osoby
-Popis (cs): </xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element minOccurs="0" name="doručovací_místo" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo">
         <xs:annotation>
           <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo

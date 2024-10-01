@@ -149,7 +149,7 @@
           </xsl:choose>
         </ns2:uživatel-služby>
       </xsl:for-each>
-      <xsl:for-each select="podání:použité_zastoupení">
+      <xsl:for-each select="podání:použité_zastupování">
         <ns2:použité-oprávnění-k-zastupování>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727774623050-add6-f276-8e66"/>
         </ns2:použité-oprávnění-k-zastupování>

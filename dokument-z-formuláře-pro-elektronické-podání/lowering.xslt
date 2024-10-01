@@ -183,13 +183,13 @@
       </podání:uživatel_služby>
     </xsl:for-each>
     <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/použité-oprávnění-k-zastupování&#34;]">
-      <podání:použité_zastoupení>
+      <podání:použité_zastupování>
         <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727774623050-add6-f276-8e66">
           <xsl:with-param name="id">
             <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
           </xsl:with-param>
         </xsl:call-template>
-      </podání:použité_zastoupení>
+      </podání:použité_zastupování>
     </xsl:for-each>
     <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/k-rukám&#34;]">
       <podání:k_rukám>

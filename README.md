@@ -1,1 +1,1 @@
-# formulare-spec
+Tento dokument byl vygenerován 1. 10. 2024 15:23:15.

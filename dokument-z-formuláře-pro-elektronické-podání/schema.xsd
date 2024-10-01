@@ -92,7 +92,7 @@ Název (cs): příjemce</xs:documentation>
 Název (cs): uživatel služby</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element minOccurs="0" name="použité_zastoupení" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/použité-oprávnění-k-zastupování">
+        <xs:element minOccurs="0" name="použité_zastupování" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/použité-oprávnění-k-zastupování">
           <xs:annotation>
             <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/použité-oprávnění-k-zastupování
 Název (cs): použité oprávnění k zastupování</xs:documentation>
