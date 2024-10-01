@@ -99,7 +99,7 @@ Název (cs): doručovací místo</xs:documentation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType>
+  <xs:complexType name="osoba">
     <xs:choice>
       <xs:element name="osoba_ve_vztahu_k_dokumentu" type="osoby:osoba_ve_vztahu_k_dokumentu"/>
       <xs:element name="fyzická_osoba" type="osoby:fyzická_osoba"/>
@@ -110,5 +110,5 @@ Název (cs): doručovací místo</xs:documentation>
       <xs:element name="podnikající_fyzická_osoba_nezapsaná_v_or" type="osoby:podnikající_fyzická_osoba_nezapsaná_v_or"/>
     </xs:choice>
   </xs:complexType>
-  <xs:element type="osoby:null"/>
+  <xs:element name="osoba" type="osoby:osoba"/>
 </xs:schema>
