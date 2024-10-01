@@ -5,7 +5,7 @@
     <rdf:RDF>
       <xsl:variable name="result">
         <xsl:sequence>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727776534065-323f-c216-8b3b"/>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727789353629-4ad8-0252-b8ed"/>
         </xsl:sequence>
       </xsl:variable>
       <xsl:for-each select="$result">
@@ -33,7 +33,7 @@
       </xsl:copy>
     </xsl:for-each>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727776534065-323f-c216-8b3b">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727789353629-4ad8-0252-b8ed">
     <xsl:param name="arc" select="()"/>
     <xsl:param name="no_iri" select="false()"/>
     <rdf:Description>
@@ -55,7 +55,7 @@
         </id>
       </xsl:variable>
       <xsl:copy-of select="$id//@*"/>
-      <rdf:type rdf:resource="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/fyzická-osoba"/>
+      <rdf:type rdf:resource="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="eidas-np:FamilyName">
         <ns0:současné-příjmení rdf:datatype="http://www.w3.org/2001/XMLSchema#string">

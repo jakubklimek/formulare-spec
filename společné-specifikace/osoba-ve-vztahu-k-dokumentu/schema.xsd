@@ -15,7 +15,7 @@ Název (cs): doručovací místo</xs:documentation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="fyzická_osoba_jako_osoba_ve_vztahu_k_dokumentu" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu">
+  <xs:complexType name="fyzická_osoba" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu">
     <xs:annotation>
       <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu
 Název (cs): Fyzická osoba jako osoba ve vztahu k dokumentu</xs:documentation>
@@ -29,10 +29,85 @@ Název (cs): doručovací místo</xs:documentation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="fyzická_osoba_eidas" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu
+Název (cs): Fyzická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="doručovací_místo" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo
+Název (cs): doručovací místo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="právnická_osoba" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/právnická-osoba-jako-osoba-ve-vztahu-k-dokumentu">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/právnická-osoba-jako-osoba-ve-vztahu-k-dokumentu
+Název (cs): Právnická osoba jako osoba ve vztahu k dokumentu</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="doručovací_místo" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo
+Název (cs): doručovací místo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="právnická_osoba_eidas" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu
+Název (cs): Právnická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="doručovací_místo" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo
+Název (cs): doručovací místo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="podnikající_fyzická_osoba_zapsaná_v_or" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/podnikající-fyzická-osoba-zapsaná-v-obchodním-rejstříku-jako-osoba-ve-vztahu-k-dokumentu">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/podnikající-fyzická-osoba-zapsaná-v-obchodním-rejstříku-jako-osoba-ve-vztahu-k-dokumentu
+Název (cs): Podnikající fyzická osoba zapsaná v obchodním rejstříku jako osoba ve vztahu k dokumentu</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="doručovací_místo" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo
+Název (cs): doručovací místo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="podnikající_fyzická_osoba_nezapsaná_v_or" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/podnikající-fyzická-osoba-nezapsaná-v-obchodním-rejstříku-jako-osoba-ve-vztahu-k-dokumentu">
+    <xs:annotation>
+      <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/podnikající-fyzická-osoba-nezapsaná-v-obchodním-rejstříku-jako-osoba-ve-vztahu-k-dokumentu
+Název (cs): Podnikající fyzická osoba nezapsaná v obchodním rejstříku jako osoba ve vztahu k dokumentu</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="doručovací_místo" type="místa:místo" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo">
+        <xs:annotation>
+          <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo
+Název (cs): doručovací místo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="osoby:null">
     <xs:choice>
       <xs:element name="osoba_ve_vztahu_k_dokumentu" type="osoby:osoba_ve_vztahu_k_dokumentu"/>
-      <xs:element name="fyzická_osoba_jako_osoba_ve_vztahu_k_dokumentu" type="osoby:fyzická_osoba_jako_osoba_ve_vztahu_k_dokumentu"/>
+      <xs:element name="fyzická_osoba" type="osoby:fyzická_osoba"/>
+      <xs:element name="fyzická_osoba_eidas" type="osoby:fyzická_osoba_eidas"/>
+      <xs:element name="právnická_osoba" type="osoby:právnická_osoba"/>
+      <xs:element name="právnická_osoba_eidas" type="osoby:právnická_osoba_eidas"/>
+      <xs:element name="podnikající_fyzická_osoba_zapsaná_v_or" type="osoby:podnikající_fyzická_osoba_zapsaná_v_or"/>
+      <xs:element name="podnikající_fyzická_osoba_nezapsaná_v_or" type="osoby:podnikající_fyzická_osoba_nezapsaná_v_or"/>
     </xs:choice>
   </xs:complexType>
   <xs:element type="osoby:null"/>

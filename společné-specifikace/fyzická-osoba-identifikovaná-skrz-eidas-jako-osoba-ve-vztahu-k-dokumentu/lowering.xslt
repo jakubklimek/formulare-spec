@@ -12,9 +12,9 @@
   <xsl:template match="/sp:sparql">
     <xsl:apply-templates select="sp:results/sp:result"/>
   </xsl:template>
-  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/fyzická-osoba&#34;]">
+  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu&#34;]">
     <eidas-np:NaturalPersonType>
-      <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727776534065-323f-c216-8b3b">
+      <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727789353629-4ad8-0252-b8ed">
         <xsl:with-param name="id">
           <xsl:copy-of select="sp:binding[@name=$subj]/*"/>
         </xsl:with-param>
@@ -31,7 +31,7 @@
   <xsl:template match="sp:uri">
     <xsl:value-of select="."/>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727776534065-323f-c216-8b3b">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727789353629-4ad8-0252-b8ed">
     <xsl:param name="id"/>
     <xsl:param name="type_name" select="()"/>
     <xsl:param name="no_iri" select="false()"/>

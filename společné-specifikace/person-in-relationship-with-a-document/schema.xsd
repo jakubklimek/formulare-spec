@@ -156,7 +156,7 @@ Název (cs): datum narození
 Popis (cs): </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" name="eIDAS_ID" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby">
+      <xs:element name="eIDAS_ID" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby">
         <xs:annotation>
           <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby
 Název (cs): jedinečný identifikátor fyzické osoby vytvořený odesílajícím členským státem

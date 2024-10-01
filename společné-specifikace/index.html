@@ -83,14 +83,14 @@
                 <tr><td>XML schéma</td><td><a href="./podnikající-fyzická-osoba-nezapsaná-v-or/schema.xsd">./podnikající-fyzická-osoba-nezapsaná-v-or/schema.xsd</a></td></tr>
                 <tr><td>XSLT lifting</td><td><a href="./podnikající-fyzická-osoba-nezapsaná-v-or/lifting.xslt">./podnikající-fyzická-osoba-nezapsaná-v-or/lifting.xslt</a></td></tr>
                 <tr><td>XSLT lowering</td><td><a href="./podnikající-fyzická-osoba-nezapsaná-v-or/lowering.xslt">./podnikající-fyzická-osoba-nezapsaná-v-or/lowering.xslt</a></td></tr>
-                <tr><td>XML sdílené koncepty</td><td><a href="./eidas-natural-person/2022-07.xsd">./eidas-natural-person/2022-07.xsd</a></td></tr>
-                <tr><td>XML schéma</td><td><a href="./eidas-natural-person/schema.xsd">./eidas-natural-person/schema.xsd</a></td></tr>
-                <tr><td>XSLT lifting</td><td><a href="./eidas-natural-person/lifting.xslt">./eidas-natural-person/lifting.xslt</a></td></tr>
-                <tr><td>XSLT lowering</td><td><a href="./eidas-natural-person/lowering.xslt">./eidas-natural-person/lowering.xslt</a></td></tr>
-                <tr><td>XML sdílené koncepty</td><td><a href="./eidas-legal-person/2022-07.xsd">./eidas-legal-person/2022-07.xsd</a></td></tr>
-                <tr><td>XML schéma</td><td><a href="./eidas-legal-person/schema.xsd">./eidas-legal-person/schema.xsd</a></td></tr>
-                <tr><td>XSLT lifting</td><td><a href="./eidas-legal-person/lifting.xslt">./eidas-legal-person/lifting.xslt</a></td></tr>
-                <tr><td>XSLT lowering</td><td><a href="./eidas-legal-person/lowering.xslt">./eidas-legal-person/lowering.xslt</a></td></tr>
+                <tr><td>XML sdílené koncepty</td><td><a href="./fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd">./fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd</a></td></tr>
+                <tr><td>XML schéma</td><td><a href="./fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd">./fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd</a></td></tr>
+                <tr><td>XSLT lifting</td><td><a href="./fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt">./fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt</a></td></tr>
+                <tr><td>XSLT lowering</td><td><a href="./fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt">./fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt</a></td></tr>
+                <tr><td>XML sdílené koncepty</td><td><a href="./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd">./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd</a></td></tr>
+                <tr><td>XML schéma</td><td><a href="./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd">./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd</a></td></tr>
+                <tr><td>XSLT lifting</td><td><a href="./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt">./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt</a></td></tr>
+                <tr><td>XSLT lowering</td><td><a href="./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt">./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt</a></td></tr>
                 <tr><td>PlantUML diagram</td><td><a href="./konceptuální-model.plantuml">./konceptuální-model.plantuml</a></td></tr>
                 <tr><td>Konceptuální diagram</td><td><a href="./konceptuální-model.svg">./konceptuální-model.svg</a></td></tr>
                 <tr><td>Dokumentace</td><td><a href=".">.</a></td></tr>
@@ -773,9 +773,9 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Popis</dt>
 <dd>jedinečný identifikátor vytvořený odesílajícím členským státem v souladu s technickými specifikacemi pro účely přeshraniční identifikace a pokud možno následně neměnný</dd>
 <dt>Povinnost</dt>
-<dd>nepovinné</dd>
+<dd>povinné</dd>
 <dt>Kardinalita</dt>
-<dd>0 - 1</dd>
+<dd>1 - 1</dd>
 <dt>Význam</dt>
 <dd>Koncept jedinečný identifikátor fyzické osoby vytvořený odesílajícím členským státem je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby">jedinečný identifikátor fyzické osoby vytvořený odesílajícím členským státem</a>.</dd>
 </section>
@@ -1052,6 +1052,30 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 </dl>
 
 </section>
+<section id="konceptuální-třída-fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu">
+<h3>Fyzická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu</h3>
+<dl>
+<dt>Význam</dt>
+<dd>Koncept Fyzická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu">Fyzická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu</a>.</dd>
+<dt>Nadřazený typ</dt>
+<dd><a href="#konceptuální-třída-fyzická-osoba">Fyzická osoba</a></dd>
+<dt>Nadřazený typ</dt>
+<dd><a href="#konceptuální-třída-osoba-ve-vztahu-k-dokumentu">Osoba ve vztahu k dokumentu</a></dd>
+</dl>
+
+</section>
+<section id="konceptuální-třída-právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu">
+<h3>Právnická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu</h3>
+<dl>
+<dt>Význam</dt>
+<dd>Koncept Právnická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu">Právnická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu</a>.</dd>
+<dt>Nadřazený typ</dt>
+<dd><a href="#konceptuální-třída-právnická-osoba">Právnická osoba</a></dd>
+<dt>Nadřazený typ</dt>
+<dd><a href="#konceptuální-třída-osoba-ve-vztahu-k-dokumentu">Osoba ve vztahu k dokumentu</a></dd>
+</dl>
+
+</section>
 
 </section>
 <section>
@@ -1187,7 +1211,22 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
   <h4>Element <code></code> / <code>osoba_ve_vztahu_k_dokumentu</code></h4>
 </section>
 <section>
-  <h4>Element <code></code> / <code>fyzická_osoba_jako_osoba_ve_vztahu_k_dokumentu</code></h4>
+  <h4>Element <code></code> / <code>fyzická_osoba</code></h4>
+</section>
+<section>
+  <h4>Element <code></code> / <code>fyzická_osoba_eidas</code></h4>
+</section>
+<section>
+  <h4>Element <code></code> / <code>právnická_osoba</code></h4>
+</section>
+<section>
+  <h4>Element <code></code> / <code>právnická_osoba_eidas</code></h4>
+</section>
+<section>
+  <h4>Element <code></code> / <code>podnikající_fyzická_osoba_zapsaná_v_or</code></h4>
+</section>
+<section>
+  <h4>Element <code></code> / <code>podnikající_fyzická_osoba_nezapsaná_v_or</code></h4>
 </section>
 
 </section>
@@ -1286,13 +1325,13 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 </section>
 </section>
 <section>
-<h2>Specifikace struktury pro eIDAS - Fyzická osoba</h2>
-<p>Data structure for Fyzická osoba. </p>
+<h2>Specifikace struktury pro Fyzická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu</h2>
+<p>Datová struktura pro Fyzická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu. </p>
 
 <section>
 <h3>Přehled XML struktury</h3>
 <p>
-  Popis XSD zachycující strukturu pro <i>eIDAS - Fyzická osoba</i> je definováno
+  Popis XSD zachycující strukturu pro <i>Fyzická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu</i> je definováno
   v souboru <a href=""><code></code></a>.
 </p>
 
@@ -1313,13 +1352,13 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 </section>
 </section>
 <section>
-<h2>Specifikace struktury pro Právnická osoba</h2>
-<p>Datová struktura pro Právnická osoba. </p>
+<h2>Specifikace struktury pro Právnická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu</h2>
+<p>Datová struktura pro Právnická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu. </p>
 
 <section>
 <h3>Přehled XML struktury</h3>
 <p>
-  Popis XSD zachycující strukturu pro <i>Právnická osoba</i> je definováno
+  Popis XSD zachycující strukturu pro <i>Právnická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu</i> je definováno
   v souboru <a href=""><code></code></a>.
 </p>
 
@@ -1334,7 +1373,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
   <h4>Element <code>eidas_lp</code></h4>
 </section>
 <section>
-  <h4>Element <code>eidas_lp</code> / <code>LegalPerson</code></h4>
+  <h4>Element <code>eidas_lp</code> / <code>LegalPersonType</code></h4>
 </section>
 
 </section>

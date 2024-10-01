@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="http://eidas.europa.eu/attributes/naturalperson" xmlns:eidas-np="http://eidas.europa.eu/attributes/naturalperson" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
-  <xs:complexType name="NaturalPersonType" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/fyzická-osoba">
+  <xs:complexType name="NaturalPersonType" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu">
     <xs:annotation>
-      <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/fyzická-osoba
-Název (cs): Fyzická osoba</xs:documentation>
+      <xs:documentation>Význam: https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu
+Název (cs): Fyzická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu</xs:documentation>
     </xs:annotation>
     <xs:sequence>
       <xs:element name="FamilyName" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/současné-příjmení">
@@ -27,7 +27,7 @@ Název (cs): datum narození
 Popis (cs): </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" name="PersonIdentifier" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby">
+      <xs:element name="PersonIdentifier" type="xs:string" sawsdl:modelReference="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby">
         <xs:annotation>
           <xs:documentation>Význam: https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/jedinečný-identifikátor-fyzické-osoby
 Název (cs): jedinečný identifikátor fyzické osoby vytvořený odesílajícím členským státem

@@ -112,6 +112,12 @@ class "Podnikající fyzická osoba zapsaná v obchodním rejstříku jako osoba
 class "Podnikající fyzická osoba nezapsaná v obchodním rejstříku jako osoba ve vztahu k dokumentu" {
 }
 
+class "Fyzická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu" {
+}
+
+class "Právnická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu" {
+}
+
 "Lokalizace popisem" <|-- "Zahraniční adresa"
 Osoba <|-- "Právnická osoba"
 "Právnická osoba" <|-- "Právnická osoba"
@@ -134,6 +140,10 @@ Osoba <|-- "Zapsaná osoba"
 "Podnikající fyzická osoba" <|-- "Podnikající fyzická osoba jako osoba ve vztahu k dokumentu"
 "Podnikající fyzická osoba jako osoba ve vztahu k dokumentu" <|-- "Podnikající fyzická osoba zapsaná v obchodním rejstříku jako osoba ve vztahu k dokumentu"
 "Podnikající fyzická osoba jako osoba ve vztahu k dokumentu" <|-- "Podnikající fyzická osoba nezapsaná v obchodním rejstříku jako osoba ve vztahu k dokumentu"
+"Fyzická osoba" <|-- "Fyzická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu"
+"Osoba ve vztahu k dokumentu" <|-- "Fyzická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu"
+"Právnická osoba" <|-- "Právnická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu"
+"Osoba ve vztahu k dokumentu" <|-- "Právnická osoba identifikovaná skrz eIDAS jako osoba ve vztahu k dokumentu"
 "Místo" -- "1..1" adresa :  "má adresu"
 "Místo" -- "1..1" "Zahraniční adresa" :  "má zahraniční adresu"
 adresa -- "1..1" "adresní místo" :  "má adresu"
