@@ -64,10 +64,5 @@ Popis (cs): </xs:documentation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eidas_np">
-    <xs:choice>
-      <xs:element name="NaturalPersonType" type="eidas-np:NaturalPersonType"/>
-    </xs:choice>
-  </xs:complexType>
-  <xs:element name="eidas_np" type="eidas-np:eidas_np"/>
+  <xs:element name="NaturalPersonType" type="eidas-np:NaturalPersonType"/>
 </xs:schema>

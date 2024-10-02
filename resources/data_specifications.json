@@ -37,7 +37,7 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
+                            "extractType": true,
                             "extractGroup": false
                         },
                         "otherClasses": {
@@ -122,7 +122,7 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
+                            "extractType": true,
                             "extractGroup": false
                         },
                         "otherClasses": {
@@ -207,7 +207,7 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
+                            "extractType": true,
                             "extractGroup": false
                         },
                         "otherClasses": {
@@ -292,7 +292,7 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
+                            "extractType": true,
                             "extractGroup": false
                         },
                         "otherClasses": {
@@ -377,7 +377,7 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
+                            "extractType": true,
                             "extractGroup": false
                         },
                         "otherClasses": {
@@ -462,7 +462,7 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
+                            "extractType": true,
                             "extractGroup": false
                         },
                         "otherClasses": {
@@ -547,7 +547,7 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
+                            "extractType": true,
                             "extractGroup": false
                         },
                         "otherClasses": {
@@ -628,6 +628,11 @@
                     "metadata": "{\n            specStatus: \"WD\",\n            shortName: \"formulare-zopds\",  \n            thisVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            latestVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            shortName: \"{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}\",\n            showPreviousVersion: false,\n            editors: [{\n                  name: \"Jakub Klímek\",\n                  orcid: \"0000-0001-7234-3051\",\n                  company:    \"Digitální a informační agentura\",\n                  companyURL: \"https://dia.gov.cz\"\n                }],\ngithub: \"https://github.com/datagov-cz/otevrene-formalni-normy/\",\n                                           otherLinks: [{\n                                                    key: \"Odkazy\",\n                                                    data: [{\n                                                        value: \"Celá specifikace na GitHub\",\n                                                        href: \"https://github.com/datagov-cz/otevrene-formalni-normy/tree/develop/dokumenty-z-formulářů-ZoPDS/draft\"\n                                                    }]\n                                                }]\n          }",
                     "abstract": "<section id=\"abstract\" class=\"introductory\">\n    <h2>Abstrakt</h2>\n    <p>\n        Tento dokument byl obsahuje specifikaci pro dokumenty vytvořené formuláři pro elektronické podání dle ZoPDS.\n    </p>\n</section>"
                 }
+            },
+            "xml": {
+                "rootClass": {
+                    "extractType": true
+                }
             }
         },
         "pimStores": [
@@ -657,14 +662,14 @@
         "pim": "https://ofn.gov.cz/schema/1727090341724-c314-d3f1-ac8f",
         "psms": [
             "https://ofn.gov.cz/schema/1727090395762-22d7-cef3-878b",
-            "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535",
             "https://ofn.gov.cz/schema/1727280238901-bab4-be49-8eaa",
             "https://ofn.gov.cz/schema/1727420049542-1d3e-47d7-ac6f",
             "https://ofn.gov.cz/schema/1727423135170-02c0-d8e7-9d66",
             "https://ofn.gov.cz/schema/1727423545873-04c2-2468-bad8",
             "https://ofn.gov.cz/schema/1727423899926-2eb3-32cb-91d2",
             "https://ofn.gov.cz/schema/1727776513724-427a-75da-99a7",
-            "https://ofn.gov.cz/schema/1727776932619-4ffe-30a2-b379"
+            "https://ofn.gov.cz/schema/1727776932619-4ffe-30a2-b379",
+            "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27"
         ],
         "importsDataSpecifications": [
             "https://ofn.gov.cz/data-specification/003168eb-5d54-419f-9856-78853865371a"
@@ -698,8 +703,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -783,8 +788,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -868,8 +873,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -953,8 +958,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -1011,346 +1016,6 @@
                 "psm": "https://ofn.gov.cz/schema/1727090395762-22d7-cef3-878b"
             },
             {
-                "iri": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xsdCoreSchema",
-                "name": null,
-                "type": "schema",
-                "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/2022-07.xsd",
-                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/person-in-relationship-with-a-document/2022-07.xsd",
-                "generator": "http://example.com/generator/xml-common-schema",
-                "configuration": {
-                    "json": {
-                        "jsonIdKeyAlias": "id",
-                        "jsonIdRequired": true,
-                        "jsonTypeKeyAlias": "type",
-                        "jsonTypeRequired": true,
-                        "jsonLdBaseUrl": null,
-                        "jsonRootCardinality": "single",
-                        "jsonRootCardinalityObjectKey": "items",
-                        "jsonDefaultTypeKeyMapping": "human-label",
-                        "jsonDefaultTypeKeyMappingHumanLabelLang": "cs",
-                        "jsonLabelLanguage": "cs",
-                        "dereferenceSchema": false,
-                        "dereferenceContext": false,
-                        "includeContextInExample": true
-                    },
-                    "csv": {
-                        "enableMultipleTableSchema": false
-                    },
-                    "xml": {
-                        "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
-                        },
-                        "otherClasses": {
-                            "extractType": false,
-                            "extractGroup": false
-                        },
-                        "commonXmlSchemaExternalLocation": null
-                    },
-                    "bikeshed": {
-                        "abstract": "This document was generated automatically by [Dataspecer](https://dataspecer.com/).",
-                        "editor": "Dataspecer editor, https://slovník.gov.cz/generujeme",
-                        "otherMetadata": {
-                            "Logo": "https://ofn.gov.cz/static/images/logo.png"
-                        },
-                        "language": "cs",
-                        "useTechnicalLabelsInStructuralModels": true
-                    },
-                    "client": {
-                        "technicalLabelCasingConvention": "snake_case",
-                        "technicalLabelSpecialCharacters": "allow",
-                        "technicalLabelLanguages": "cs"
-                    },
-                    "data-specification": {
-                        "useGenerators": {
-                            "json": false,
-                            "plantUML": true,
-                            "respec": true,
-                            "xml": true
-                        },
-                        "renameArtifacts": {
-                            "http://example.com/generator/json-schema": "schéma.json",
-                            "http://dataspecer.com/generator/json-ld": "kontext.json",
-                            "plant-uml": "konceptuální-model.plantuml",
-                            "plant-uml/image": "konceptuální-model.svg",
-                            "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
-                        },
-                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
-                        "instancesHaveIdentity": "NEVER",
-                        "instancesSpecifyTypes": "ALWAYS",
-                        "dataPsmIsClosed": "OPEN",
-                        "generatorsEnabledByDefault": false,
-                        "skipStructureNameIfOnlyOne": true
-                    },
-                    "template-artifact": {
-                        "templates": {
-                            "metadata": "{\n            specStatus: \"WD\",\n            shortName: \"formulare-zopds-spolecne\",  \n            thisVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            latestVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            shortName: \"{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}\",\n            showPreviousVersion: false,\n            editors: [{\n                  name: \"Jakub Klímek\",\n                  orcid: \"0000-0001-7234-3051\",\n                  company:    \"Digitální a informační agentura\",\n                  companyURL: \"https://dia.gov.cz\"\n                }],\n          }",
-                            "abstract": "<section id=\"abstract\" class=\"introductory\">\n    <h2>Abstrakt</h2>\n    <p>\n        Tento dokument byl obsahuje specifikaci společných datových struktur používaných v elektronických dokumentech.\n    </p>\n</section>",
-                            "artifactList": "<section>\n    <h2>Seznam artefaktů</h2>\n    Tato sekce obsahuje odkaz na všechny soubory, které jsou součástí této dokumentace.\n    <table class=\"def\">\n        <thead>\n            <tr><th>Artefakt</th><th>Odkaz</th></tr>\n        </thead>\n        <tbody>\n            {{#artifacts}}\n            <tr><td>{{title}}</td><td><a href=\"{{{relativePath}}}\">{{{relativePath}}}</a></td></tr>\n            {{/artifacts}}\n        </tbody>\n    </table>\n</section>",
-                            "conceptualModel": "<section>\n<h2>Konceptuální model</h2>\nV této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebné pro <i>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</i>.\n\n<figure><img src=\"{{#artifact.image.publicUrl}}{{{relativePath}}}{{/artifact.image.publicUrl}}\"><figcaption>Diagram konceptuálního modelu.</figcaption></figure>\n\n{{#semanticModels}}\n{{#classes}}\n<section id=\"{{semanticModelLinkId}}\">\n<h3>{{#humanLabel}}{{translate}}{{/humanLabel}}</h3>\n<dl>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n{{#extends}}\n<dt>Nadřazený typ</dt>\n<dd><a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a></dd>\n{{/extends}}\n</dl>\n\n{{#properties}}\n<section id=\"{{semanticModelLinkId}}\">\n<h4>{{#dataTypes}}{{#isAssociation}}Vztah (asociace): {{/isAssociation}}{{/dataTypes}}{{#humanLabel}}{{translate}}{{/humanLabel}}</h4>\n<dl>\n<dt>Jméno</dt>\n<dd>{{#humanLabel}}{{translate}}{{/humanLabel}}</dd>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Povinnost</dt>\n<dd>{{#cardinalityIsRequired}}povinné{{/cardinalityIsRequired}}{{^cardinalityIsRequired}}nepovinné{{/cardinalityIsRequired}}</dd>\n<dt>Kardinalita</dt>\n<dd>{{cardinalityRange}}</dd>\n{{#dataTypes}}{{#isAssociation}}\n<dt>Typ</dt>\n<dd>{{#class}}<a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>{{/class}}</dd>\n{{/isAssociation}}{{/dataTypes}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n</section>\n{{/properties}}\n</section>\n{{/classes}}\n{{/semanticModels}}\n\n</section>"
-                        },
-                        "type": "respec",
-                        "template": "<!DOCTYPE html>\n<html lang=\"cs\">\n    <head>\n        <title>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</title>\n        <meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\" />\n        <meta content=\"width=device-width,initial-scale=1\" name=\"viewport\" />\n        <meta name=\"theme-color\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileColor\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileImage\" content=\"https://ofn.gov.cz/static/favicons/ms-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-57x57.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-60x60.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-72x72.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-76x76.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-114x114.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-120x120.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-152x152.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-180x180.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://ofn.gov.cz/static/favicons/android-icon-192x192.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://ofn.gov.cz/static/favicons/favicon-32x32.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"https://ofn.gov.cz/static/favicons/favicon-96x96.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://ofn.gov.cz/static/favicons/favicon-16x16.png\">\n        <link rel=\"manifest\" href=\"https://ofn.gov.cz/static/favicons/manifest.json\">\n        <script class=\"remove\" src=\"https://ofn.gov.cz/static/js/respec-odcz.js\"></script>\n        <script class=\"remove\">\n            var respecConfig = {{>metadata}};\n        </script>\n    </head>\n    <body>\n    \n{{>abstract}}\n\n<!--{{>artifactList}}-->\n\n{{>conceptualModel}}\n\n{{#structureModels}}\n<section>\n<h2>Specifikace struktury pro {{#humanLabel}}{{translate}}{{/humanLabel}}</h2>\n<p>{{#humanDescription}}{{translate}}{{/humanDescription}}</p>\n\n{{#artifacts}}{{#getDocumentation}}{{#useTemplate}}{{/useTemplate}}{{/getDocumentation}}{{/artifacts}}\n</section>\n{{/structureModels}}\n\n    </body>\n</html>"
-                    }
-                },
-                "psm": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535"
-            },
-            {
-                "iri": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xmlschema",
-                "name": null,
-                "type": "schema",
-                "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/schema.xsd",
-                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/person-in-relationship-with-a-document/schema.xsd",
-                "generator": "http://example.com/generator/xml-schema",
-                "configuration": {
-                    "json": {
-                        "jsonIdKeyAlias": "id",
-                        "jsonIdRequired": true,
-                        "jsonTypeKeyAlias": "type",
-                        "jsonTypeRequired": true,
-                        "jsonLdBaseUrl": null,
-                        "jsonRootCardinality": "single",
-                        "jsonRootCardinalityObjectKey": "items",
-                        "jsonDefaultTypeKeyMapping": "human-label",
-                        "jsonDefaultTypeKeyMappingHumanLabelLang": "cs",
-                        "jsonLabelLanguage": "cs",
-                        "dereferenceSchema": false,
-                        "dereferenceContext": false,
-                        "includeContextInExample": true
-                    },
-                    "csv": {
-                        "enableMultipleTableSchema": false
-                    },
-                    "xml": {
-                        "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
-                        },
-                        "otherClasses": {
-                            "extractType": false,
-                            "extractGroup": false
-                        },
-                        "commonXmlSchemaExternalLocation": null
-                    },
-                    "bikeshed": {
-                        "abstract": "This document was generated automatically by [Dataspecer](https://dataspecer.com/).",
-                        "editor": "Dataspecer editor, https://slovník.gov.cz/generujeme",
-                        "otherMetadata": {
-                            "Logo": "https://ofn.gov.cz/static/images/logo.png"
-                        },
-                        "language": "cs",
-                        "useTechnicalLabelsInStructuralModels": true
-                    },
-                    "client": {
-                        "technicalLabelCasingConvention": "snake_case",
-                        "technicalLabelSpecialCharacters": "allow",
-                        "technicalLabelLanguages": "cs"
-                    },
-                    "data-specification": {
-                        "useGenerators": {
-                            "json": false,
-                            "plantUML": true,
-                            "respec": true,
-                            "xml": true
-                        },
-                        "renameArtifacts": {
-                            "http://example.com/generator/json-schema": "schéma.json",
-                            "http://dataspecer.com/generator/json-ld": "kontext.json",
-                            "plant-uml": "konceptuální-model.plantuml",
-                            "plant-uml/image": "konceptuální-model.svg",
-                            "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
-                        },
-                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
-                        "instancesHaveIdentity": "NEVER",
-                        "instancesSpecifyTypes": "ALWAYS",
-                        "dataPsmIsClosed": "OPEN",
-                        "generatorsEnabledByDefault": false,
-                        "skipStructureNameIfOnlyOne": true
-                    },
-                    "template-artifact": {
-                        "templates": {
-                            "metadata": "{\n            specStatus: \"WD\",\n            shortName: \"formulare-zopds-spolecne\",  \n            thisVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            latestVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            shortName: \"{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}\",\n            showPreviousVersion: false,\n            editors: [{\n                  name: \"Jakub Klímek\",\n                  orcid: \"0000-0001-7234-3051\",\n                  company:    \"Digitální a informační agentura\",\n                  companyURL: \"https://dia.gov.cz\"\n                }],\n          }",
-                            "abstract": "<section id=\"abstract\" class=\"introductory\">\n    <h2>Abstrakt</h2>\n    <p>\n        Tento dokument byl obsahuje specifikaci společných datových struktur používaných v elektronických dokumentech.\n    </p>\n</section>",
-                            "artifactList": "<section>\n    <h2>Seznam artefaktů</h2>\n    Tato sekce obsahuje odkaz na všechny soubory, které jsou součástí této dokumentace.\n    <table class=\"def\">\n        <thead>\n            <tr><th>Artefakt</th><th>Odkaz</th></tr>\n        </thead>\n        <tbody>\n            {{#artifacts}}\n            <tr><td>{{title}}</td><td><a href=\"{{{relativePath}}}\">{{{relativePath}}}</a></td></tr>\n            {{/artifacts}}\n        </tbody>\n    </table>\n</section>",
-                            "conceptualModel": "<section>\n<h2>Konceptuální model</h2>\nV této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebné pro <i>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</i>.\n\n<figure><img src=\"{{#artifact.image.publicUrl}}{{{relativePath}}}{{/artifact.image.publicUrl}}\"><figcaption>Diagram konceptuálního modelu.</figcaption></figure>\n\n{{#semanticModels}}\n{{#classes}}\n<section id=\"{{semanticModelLinkId}}\">\n<h3>{{#humanLabel}}{{translate}}{{/humanLabel}}</h3>\n<dl>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n{{#extends}}\n<dt>Nadřazený typ</dt>\n<dd><a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a></dd>\n{{/extends}}\n</dl>\n\n{{#properties}}\n<section id=\"{{semanticModelLinkId}}\">\n<h4>{{#dataTypes}}{{#isAssociation}}Vztah (asociace): {{/isAssociation}}{{/dataTypes}}{{#humanLabel}}{{translate}}{{/humanLabel}}</h4>\n<dl>\n<dt>Jméno</dt>\n<dd>{{#humanLabel}}{{translate}}{{/humanLabel}}</dd>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Povinnost</dt>\n<dd>{{#cardinalityIsRequired}}povinné{{/cardinalityIsRequired}}{{^cardinalityIsRequired}}nepovinné{{/cardinalityIsRequired}}</dd>\n<dt>Kardinalita</dt>\n<dd>{{cardinalityRange}}</dd>\n{{#dataTypes}}{{#isAssociation}}\n<dt>Typ</dt>\n<dd>{{#class}}<a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>{{/class}}</dd>\n{{/isAssociation}}{{/dataTypes}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n</section>\n{{/properties}}\n</section>\n{{/classes}}\n{{/semanticModels}}\n\n</section>"
-                        },
-                        "type": "respec",
-                        "template": "<!DOCTYPE html>\n<html lang=\"cs\">\n    <head>\n        <title>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</title>\n        <meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\" />\n        <meta content=\"width=device-width,initial-scale=1\" name=\"viewport\" />\n        <meta name=\"theme-color\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileColor\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileImage\" content=\"https://ofn.gov.cz/static/favicons/ms-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-57x57.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-60x60.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-72x72.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-76x76.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-114x114.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-120x120.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-152x152.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-180x180.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://ofn.gov.cz/static/favicons/android-icon-192x192.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://ofn.gov.cz/static/favicons/favicon-32x32.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"https://ofn.gov.cz/static/favicons/favicon-96x96.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://ofn.gov.cz/static/favicons/favicon-16x16.png\">\n        <link rel=\"manifest\" href=\"https://ofn.gov.cz/static/favicons/manifest.json\">\n        <script class=\"remove\" src=\"https://ofn.gov.cz/static/js/respec-odcz.js\"></script>\n        <script class=\"remove\">\n            var respecConfig = {{>metadata}};\n        </script>\n    </head>\n    <body>\n    \n{{>abstract}}\n\n<!--{{>artifactList}}-->\n\n{{>conceptualModel}}\n\n{{#structureModels}}\n<section>\n<h2>Specifikace struktury pro {{#humanLabel}}{{translate}}{{/humanLabel}}</h2>\n<p>{{#humanDescription}}{{translate}}{{/humanDescription}}</p>\n\n{{#artifacts}}{{#getDocumentation}}{{#useTemplate}}{{/useTemplate}}{{/getDocumentation}}{{/artifacts}}\n</section>\n{{/structureModels}}\n\n    </body>\n</html>"
-                    }
-                },
-                "psm": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535"
-            },
-            {
-                "iri": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xsltlifting",
-                "name": null,
-                "type": "schema",
-                "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/lifting.xslt",
-                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/person-in-relationship-with-a-document/lifting.xslt",
-                "generator": "http://example.com/generator/xslt-lifting",
-                "configuration": {
-                    "json": {
-                        "jsonIdKeyAlias": "id",
-                        "jsonIdRequired": true,
-                        "jsonTypeKeyAlias": "type",
-                        "jsonTypeRequired": true,
-                        "jsonLdBaseUrl": null,
-                        "jsonRootCardinality": "single",
-                        "jsonRootCardinalityObjectKey": "items",
-                        "jsonDefaultTypeKeyMapping": "human-label",
-                        "jsonDefaultTypeKeyMappingHumanLabelLang": "cs",
-                        "jsonLabelLanguage": "cs",
-                        "dereferenceSchema": false,
-                        "dereferenceContext": false,
-                        "includeContextInExample": true
-                    },
-                    "csv": {
-                        "enableMultipleTableSchema": false
-                    },
-                    "xml": {
-                        "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
-                        },
-                        "otherClasses": {
-                            "extractType": false,
-                            "extractGroup": false
-                        },
-                        "commonXmlSchemaExternalLocation": null
-                    },
-                    "bikeshed": {
-                        "abstract": "This document was generated automatically by [Dataspecer](https://dataspecer.com/).",
-                        "editor": "Dataspecer editor, https://slovník.gov.cz/generujeme",
-                        "otherMetadata": {
-                            "Logo": "https://ofn.gov.cz/static/images/logo.png"
-                        },
-                        "language": "cs",
-                        "useTechnicalLabelsInStructuralModels": true
-                    },
-                    "client": {
-                        "technicalLabelCasingConvention": "snake_case",
-                        "technicalLabelSpecialCharacters": "allow",
-                        "technicalLabelLanguages": "cs"
-                    },
-                    "data-specification": {
-                        "useGenerators": {
-                            "json": false,
-                            "plantUML": true,
-                            "respec": true,
-                            "xml": true
-                        },
-                        "renameArtifacts": {
-                            "http://example.com/generator/json-schema": "schéma.json",
-                            "http://dataspecer.com/generator/json-ld": "kontext.json",
-                            "plant-uml": "konceptuální-model.plantuml",
-                            "plant-uml/image": "konceptuální-model.svg",
-                            "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
-                        },
-                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
-                        "instancesHaveIdentity": "NEVER",
-                        "instancesSpecifyTypes": "ALWAYS",
-                        "dataPsmIsClosed": "OPEN",
-                        "generatorsEnabledByDefault": false,
-                        "skipStructureNameIfOnlyOne": true
-                    },
-                    "template-artifact": {
-                        "templates": {
-                            "metadata": "{\n            specStatus: \"WD\",\n            shortName: \"formulare-zopds-spolecne\",  \n            thisVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            latestVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            shortName: \"{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}\",\n            showPreviousVersion: false,\n            editors: [{\n                  name: \"Jakub Klímek\",\n                  orcid: \"0000-0001-7234-3051\",\n                  company:    \"Digitální a informační agentura\",\n                  companyURL: \"https://dia.gov.cz\"\n                }],\n          }",
-                            "abstract": "<section id=\"abstract\" class=\"introductory\">\n    <h2>Abstrakt</h2>\n    <p>\n        Tento dokument byl obsahuje specifikaci společných datových struktur používaných v elektronických dokumentech.\n    </p>\n</section>",
-                            "artifactList": "<section>\n    <h2>Seznam artefaktů</h2>\n    Tato sekce obsahuje odkaz na všechny soubory, které jsou součástí této dokumentace.\n    <table class=\"def\">\n        <thead>\n            <tr><th>Artefakt</th><th>Odkaz</th></tr>\n        </thead>\n        <tbody>\n            {{#artifacts}}\n            <tr><td>{{title}}</td><td><a href=\"{{{relativePath}}}\">{{{relativePath}}}</a></td></tr>\n            {{/artifacts}}\n        </tbody>\n    </table>\n</section>",
-                            "conceptualModel": "<section>\n<h2>Konceptuální model</h2>\nV této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebné pro <i>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</i>.\n\n<figure><img src=\"{{#artifact.image.publicUrl}}{{{relativePath}}}{{/artifact.image.publicUrl}}\"><figcaption>Diagram konceptuálního modelu.</figcaption></figure>\n\n{{#semanticModels}}\n{{#classes}}\n<section id=\"{{semanticModelLinkId}}\">\n<h3>{{#humanLabel}}{{translate}}{{/humanLabel}}</h3>\n<dl>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n{{#extends}}\n<dt>Nadřazený typ</dt>\n<dd><a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a></dd>\n{{/extends}}\n</dl>\n\n{{#properties}}\n<section id=\"{{semanticModelLinkId}}\">\n<h4>{{#dataTypes}}{{#isAssociation}}Vztah (asociace): {{/isAssociation}}{{/dataTypes}}{{#humanLabel}}{{translate}}{{/humanLabel}}</h4>\n<dl>\n<dt>Jméno</dt>\n<dd>{{#humanLabel}}{{translate}}{{/humanLabel}}</dd>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Povinnost</dt>\n<dd>{{#cardinalityIsRequired}}povinné{{/cardinalityIsRequired}}{{^cardinalityIsRequired}}nepovinné{{/cardinalityIsRequired}}</dd>\n<dt>Kardinalita</dt>\n<dd>{{cardinalityRange}}</dd>\n{{#dataTypes}}{{#isAssociation}}\n<dt>Typ</dt>\n<dd>{{#class}}<a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>{{/class}}</dd>\n{{/isAssociation}}{{/dataTypes}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n</section>\n{{/properties}}\n</section>\n{{/classes}}\n{{/semanticModels}}\n\n</section>"
-                        },
-                        "type": "respec",
-                        "template": "<!DOCTYPE html>\n<html lang=\"cs\">\n    <head>\n        <title>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</title>\n        <meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\" />\n        <meta content=\"width=device-width,initial-scale=1\" name=\"viewport\" />\n        <meta name=\"theme-color\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileColor\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileImage\" content=\"https://ofn.gov.cz/static/favicons/ms-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-57x57.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-60x60.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-72x72.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-76x76.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-114x114.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-120x120.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-152x152.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-180x180.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://ofn.gov.cz/static/favicons/android-icon-192x192.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://ofn.gov.cz/static/favicons/favicon-32x32.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"https://ofn.gov.cz/static/favicons/favicon-96x96.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://ofn.gov.cz/static/favicons/favicon-16x16.png\">\n        <link rel=\"manifest\" href=\"https://ofn.gov.cz/static/favicons/manifest.json\">\n        <script class=\"remove\" src=\"https://ofn.gov.cz/static/js/respec-odcz.js\"></script>\n        <script class=\"remove\">\n            var respecConfig = {{>metadata}};\n        </script>\n    </head>\n    <body>\n    \n{{>abstract}}\n\n<!--{{>artifactList}}-->\n\n{{>conceptualModel}}\n\n{{#structureModels}}\n<section>\n<h2>Specifikace struktury pro {{#humanLabel}}{{translate}}{{/humanLabel}}</h2>\n<p>{{#humanDescription}}{{translate}}{{/humanDescription}}</p>\n\n{{#artifacts}}{{#getDocumentation}}{{#useTemplate}}{{/useTemplate}}{{/getDocumentation}}{{/artifacts}}\n</section>\n{{/structureModels}}\n\n    </body>\n</html>"
-                    }
-                },
-                "psm": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535"
-            },
-            {
-                "iri": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xsltlowering",
-                "name": null,
-                "type": "schema",
-                "outputPath": "společné-části-elektronických-dokumentů/person-in-relationship-with-a-document/lowering.xslt",
-                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/person-in-relationship-with-a-document/lowering.xslt",
-                "generator": "http://example.com/generator/xslt-lowering",
-                "configuration": {
-                    "json": {
-                        "jsonIdKeyAlias": "id",
-                        "jsonIdRequired": true,
-                        "jsonTypeKeyAlias": "type",
-                        "jsonTypeRequired": true,
-                        "jsonLdBaseUrl": null,
-                        "jsonRootCardinality": "single",
-                        "jsonRootCardinalityObjectKey": "items",
-                        "jsonDefaultTypeKeyMapping": "human-label",
-                        "jsonDefaultTypeKeyMappingHumanLabelLang": "cs",
-                        "jsonLabelLanguage": "cs",
-                        "dereferenceSchema": false,
-                        "dereferenceContext": false,
-                        "includeContextInExample": true
-                    },
-                    "csv": {
-                        "enableMultipleTableSchema": false
-                    },
-                    "xml": {
-                        "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
-                        },
-                        "otherClasses": {
-                            "extractType": false,
-                            "extractGroup": false
-                        },
-                        "commonXmlSchemaExternalLocation": null
-                    },
-                    "bikeshed": {
-                        "abstract": "This document was generated automatically by [Dataspecer](https://dataspecer.com/).",
-                        "editor": "Dataspecer editor, https://slovník.gov.cz/generujeme",
-                        "otherMetadata": {
-                            "Logo": "https://ofn.gov.cz/static/images/logo.png"
-                        },
-                        "language": "cs",
-                        "useTechnicalLabelsInStructuralModels": true
-                    },
-                    "client": {
-                        "technicalLabelCasingConvention": "snake_case",
-                        "technicalLabelSpecialCharacters": "allow",
-                        "technicalLabelLanguages": "cs"
-                    },
-                    "data-specification": {
-                        "useGenerators": {
-                            "json": false,
-                            "plantUML": true,
-                            "respec": true,
-                            "xml": true
-                        },
-                        "renameArtifacts": {
-                            "http://example.com/generator/json-schema": "schéma.json",
-                            "http://dataspecer.com/generator/json-ld": "kontext.json",
-                            "plant-uml": "konceptuální-model.plantuml",
-                            "plant-uml/image": "konceptuální-model.svg",
-                            "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
-                        },
-                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
-                        "instancesHaveIdentity": "NEVER",
-                        "instancesSpecifyTypes": "ALWAYS",
-                        "dataPsmIsClosed": "OPEN",
-                        "generatorsEnabledByDefault": false,
-                        "skipStructureNameIfOnlyOne": true
-                    },
-                    "template-artifact": {
-                        "templates": {
-                            "metadata": "{\n            specStatus: \"WD\",\n            shortName: \"formulare-zopds-spolecne\",  \n            thisVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            latestVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            shortName: \"{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}\",\n            showPreviousVersion: false,\n            editors: [{\n                  name: \"Jakub Klímek\",\n                  orcid: \"0000-0001-7234-3051\",\n                  company:    \"Digitální a informační agentura\",\n                  companyURL: \"https://dia.gov.cz\"\n                }],\n          }",
-                            "abstract": "<section id=\"abstract\" class=\"introductory\">\n    <h2>Abstrakt</h2>\n    <p>\n        Tento dokument byl obsahuje specifikaci společných datových struktur používaných v elektronických dokumentech.\n    </p>\n</section>",
-                            "artifactList": "<section>\n    <h2>Seznam artefaktů</h2>\n    Tato sekce obsahuje odkaz na všechny soubory, které jsou součástí této dokumentace.\n    <table class=\"def\">\n        <thead>\n            <tr><th>Artefakt</th><th>Odkaz</th></tr>\n        </thead>\n        <tbody>\n            {{#artifacts}}\n            <tr><td>{{title}}</td><td><a href=\"{{{relativePath}}}\">{{{relativePath}}}</a></td></tr>\n            {{/artifacts}}\n        </tbody>\n    </table>\n</section>",
-                            "conceptualModel": "<section>\n<h2>Konceptuální model</h2>\nV této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebné pro <i>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</i>.\n\n<figure><img src=\"{{#artifact.image.publicUrl}}{{{relativePath}}}{{/artifact.image.publicUrl}}\"><figcaption>Diagram konceptuálního modelu.</figcaption></figure>\n\n{{#semanticModels}}\n{{#classes}}\n<section id=\"{{semanticModelLinkId}}\">\n<h3>{{#humanLabel}}{{translate}}{{/humanLabel}}</h3>\n<dl>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n{{#extends}}\n<dt>Nadřazený typ</dt>\n<dd><a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a></dd>\n{{/extends}}\n</dl>\n\n{{#properties}}\n<section id=\"{{semanticModelLinkId}}\">\n<h4>{{#dataTypes}}{{#isAssociation}}Vztah (asociace): {{/isAssociation}}{{/dataTypes}}{{#humanLabel}}{{translate}}{{/humanLabel}}</h4>\n<dl>\n<dt>Jméno</dt>\n<dd>{{#humanLabel}}{{translate}}{{/humanLabel}}</dd>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Povinnost</dt>\n<dd>{{#cardinalityIsRequired}}povinné{{/cardinalityIsRequired}}{{^cardinalityIsRequired}}nepovinné{{/cardinalityIsRequired}}</dd>\n<dt>Kardinalita</dt>\n<dd>{{cardinalityRange}}</dd>\n{{#dataTypes}}{{#isAssociation}}\n<dt>Typ</dt>\n<dd>{{#class}}<a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>{{/class}}</dd>\n{{/isAssociation}}{{/dataTypes}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n</section>\n{{/properties}}\n</section>\n{{/classes}}\n{{/semanticModels}}\n\n</section>"
-                        },
-                        "type": "respec",
-                        "template": "<!DOCTYPE html>\n<html lang=\"cs\">\n    <head>\n        <title>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</title>\n        <meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\" />\n        <meta content=\"width=device-width,initial-scale=1\" name=\"viewport\" />\n        <meta name=\"theme-color\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileColor\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileImage\" content=\"https://ofn.gov.cz/static/favicons/ms-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-57x57.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-60x60.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-72x72.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-76x76.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-114x114.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-120x120.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-152x152.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-180x180.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://ofn.gov.cz/static/favicons/android-icon-192x192.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://ofn.gov.cz/static/favicons/favicon-32x32.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"https://ofn.gov.cz/static/favicons/favicon-96x96.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://ofn.gov.cz/static/favicons/favicon-16x16.png\">\n        <link rel=\"manifest\" href=\"https://ofn.gov.cz/static/favicons/manifest.json\">\n        <script class=\"remove\" src=\"https://ofn.gov.cz/static/js/respec-odcz.js\"></script>\n        <script class=\"remove\">\n            var respecConfig = {{>metadata}};\n        </script>\n    </head>\n    <body>\n    \n{{>abstract}}\n\n<!--{{>artifactList}}-->\n\n{{>conceptualModel}}\n\n{{#structureModels}}\n<section>\n<h2>Specifikace struktury pro {{#humanLabel}}{{translate}}{{/humanLabel}}</h2>\n<p>{{#humanDescription}}{{translate}}{{/humanDescription}}</p>\n\n{{#artifacts}}{{#getDocumentation}}{{#useTemplate}}{{/useTemplate}}{{/getDocumentation}}{{/artifacts}}\n</section>\n{{/structureModels}}\n\n    </body>\n</html>"
-                    }
-                },
-                "psm": "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535"
-            },
-            {
                 "iri": "https://ofn.gov.cz/schema/1727280238901-bab4-be49-8eaa#xsdCoreSchema",
                 "name": null,
                 "type": "schema",
@@ -1378,8 +1043,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -1463,8 +1128,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -1548,8 +1213,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -1633,8 +1298,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -1718,8 +1383,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -1803,8 +1468,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -1888,8 +1553,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -1973,8 +1638,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2058,8 +1723,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2143,8 +1808,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2228,8 +1893,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2313,8 +1978,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2398,8 +2063,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2483,8 +2148,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2568,8 +2233,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2653,8 +2318,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2738,8 +2403,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2823,8 +2488,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2908,8 +2573,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -2993,8 +2658,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3078,8 +2743,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3163,8 +2828,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3248,8 +2913,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3333,8 +2998,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3418,8 +3083,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3503,8 +3168,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3588,8 +3253,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3673,8 +3338,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3731,6 +3396,346 @@
                 "psm": "https://ofn.gov.cz/schema/1727776932619-4ffe-30a2-b379"
             },
             {
+                "iri": "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27#xsdCoreSchema",
+                "name": null,
+                "type": "schema",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd",
+                "generator": "http://example.com/generator/xml-common-schema",
+                "configuration": {
+                    "json": {
+                        "jsonIdKeyAlias": "id",
+                        "jsonIdRequired": true,
+                        "jsonTypeKeyAlias": "type",
+                        "jsonTypeRequired": true,
+                        "jsonLdBaseUrl": null,
+                        "jsonRootCardinality": "single",
+                        "jsonRootCardinalityObjectKey": "items",
+                        "jsonDefaultTypeKeyMapping": "human-label",
+                        "jsonDefaultTypeKeyMappingHumanLabelLang": "cs",
+                        "jsonLabelLanguage": "cs",
+                        "dereferenceSchema": false,
+                        "dereferenceContext": false,
+                        "includeContextInExample": true
+                    },
+                    "csv": {
+                        "enableMultipleTableSchema": false
+                    },
+                    "xml": {
+                        "rootClass": {
+                            "extractType": true,
+                            "extractGroup": false
+                        },
+                        "otherClasses": {
+                            "extractType": false,
+                            "extractGroup": false
+                        },
+                        "commonXmlSchemaExternalLocation": null
+                    },
+                    "bikeshed": {
+                        "abstract": "This document was generated automatically by [Dataspecer](https://dataspecer.com/).",
+                        "editor": "Dataspecer editor, https://slovník.gov.cz/generujeme",
+                        "otherMetadata": {
+                            "Logo": "https://ofn.gov.cz/static/images/logo.png"
+                        },
+                        "language": "cs",
+                        "useTechnicalLabelsInStructuralModels": true
+                    },
+                    "client": {
+                        "technicalLabelCasingConvention": "snake_case",
+                        "technicalLabelSpecialCharacters": "allow",
+                        "technicalLabelLanguages": "cs"
+                    },
+                    "data-specification": {
+                        "useGenerators": {
+                            "json": false,
+                            "plantUML": true,
+                            "respec": true,
+                            "xml": true
+                        },
+                        "renameArtifacts": {
+                            "http://example.com/generator/json-schema": "schéma.json",
+                            "http://dataspecer.com/generator/json-ld": "kontext.json",
+                            "plant-uml": "konceptuální-model.plantuml",
+                            "plant-uml/image": "konceptuální-model.svg",
+                            "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
+                        },
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
+                        "instancesHaveIdentity": "NEVER",
+                        "instancesSpecifyTypes": "ALWAYS",
+                        "dataPsmIsClosed": "OPEN",
+                        "generatorsEnabledByDefault": false,
+                        "skipStructureNameIfOnlyOne": true
+                    },
+                    "template-artifact": {
+                        "templates": {
+                            "metadata": "{\n            specStatus: \"WD\",\n            shortName: \"formulare-zopds-spolecne\",  \n            thisVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            latestVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            shortName: \"{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}\",\n            showPreviousVersion: false,\n            editors: [{\n                  name: \"Jakub Klímek\",\n                  orcid: \"0000-0001-7234-3051\",\n                  company:    \"Digitální a informační agentura\",\n                  companyURL: \"https://dia.gov.cz\"\n                }],\n          }",
+                            "abstract": "<section id=\"abstract\" class=\"introductory\">\n    <h2>Abstrakt</h2>\n    <p>\n        Tento dokument byl obsahuje specifikaci společných datových struktur používaných v elektronických dokumentech.\n    </p>\n</section>",
+                            "artifactList": "<section>\n    <h2>Seznam artefaktů</h2>\n    Tato sekce obsahuje odkaz na všechny soubory, které jsou součástí této dokumentace.\n    <table class=\"def\">\n        <thead>\n            <tr><th>Artefakt</th><th>Odkaz</th></tr>\n        </thead>\n        <tbody>\n            {{#artifacts}}\n            <tr><td>{{title}}</td><td><a href=\"{{{relativePath}}}\">{{{relativePath}}}</a></td></tr>\n            {{/artifacts}}\n        </tbody>\n    </table>\n</section>",
+                            "conceptualModel": "<section>\n<h2>Konceptuální model</h2>\nV této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebné pro <i>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</i>.\n\n<figure><img src=\"{{#artifact.image.publicUrl}}{{{relativePath}}}{{/artifact.image.publicUrl}}\"><figcaption>Diagram konceptuálního modelu.</figcaption></figure>\n\n{{#semanticModels}}\n{{#classes}}\n<section id=\"{{semanticModelLinkId}}\">\n<h3>{{#humanLabel}}{{translate}}{{/humanLabel}}</h3>\n<dl>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n{{#extends}}\n<dt>Nadřazený typ</dt>\n<dd><a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a></dd>\n{{/extends}}\n</dl>\n\n{{#properties}}\n<section id=\"{{semanticModelLinkId}}\">\n<h4>{{#dataTypes}}{{#isAssociation}}Vztah (asociace): {{/isAssociation}}{{/dataTypes}}{{#humanLabel}}{{translate}}{{/humanLabel}}</h4>\n<dl>\n<dt>Jméno</dt>\n<dd>{{#humanLabel}}{{translate}}{{/humanLabel}}</dd>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Povinnost</dt>\n<dd>{{#cardinalityIsRequired}}povinné{{/cardinalityIsRequired}}{{^cardinalityIsRequired}}nepovinné{{/cardinalityIsRequired}}</dd>\n<dt>Kardinalita</dt>\n<dd>{{cardinalityRange}}</dd>\n{{#dataTypes}}{{#isAssociation}}\n<dt>Typ</dt>\n<dd>{{#class}}<a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>{{/class}}</dd>\n{{/isAssociation}}{{/dataTypes}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n</section>\n{{/properties}}\n</section>\n{{/classes}}\n{{/semanticModels}}\n\n</section>"
+                        },
+                        "type": "respec",
+                        "template": "<!DOCTYPE html>\n<html lang=\"cs\">\n    <head>\n        <title>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</title>\n        <meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\" />\n        <meta content=\"width=device-width,initial-scale=1\" name=\"viewport\" />\n        <meta name=\"theme-color\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileColor\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileImage\" content=\"https://ofn.gov.cz/static/favicons/ms-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-57x57.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-60x60.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-72x72.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-76x76.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-114x114.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-120x120.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-152x152.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-180x180.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://ofn.gov.cz/static/favicons/android-icon-192x192.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://ofn.gov.cz/static/favicons/favicon-32x32.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"https://ofn.gov.cz/static/favicons/favicon-96x96.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://ofn.gov.cz/static/favicons/favicon-16x16.png\">\n        <link rel=\"manifest\" href=\"https://ofn.gov.cz/static/favicons/manifest.json\">\n        <script class=\"remove\" src=\"https://ofn.gov.cz/static/js/respec-odcz.js\"></script>\n        <script class=\"remove\">\n            var respecConfig = {{>metadata}};\n        </script>\n    </head>\n    <body>\n    \n{{>abstract}}\n\n<!--{{>artifactList}}-->\n\n{{>conceptualModel}}\n\n{{#structureModels}}\n<section>\n<h2>Specifikace struktury pro {{#humanLabel}}{{translate}}{{/humanLabel}}</h2>\n<p>{{#humanDescription}}{{translate}}{{/humanDescription}}</p>\n\n{{#artifacts}}{{#getDocumentation}}{{#useTemplate}}{{/useTemplate}}{{/getDocumentation}}{{/artifacts}}\n</section>\n{{/structureModels}}\n\n    </body>\n</html>"
+                    }
+                },
+                "psm": "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27"
+            },
+            {
+                "iri": "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27#xmlschema",
+                "name": null,
+                "type": "schema",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd",
+                "generator": "http://example.com/generator/xml-schema",
+                "configuration": {
+                    "json": {
+                        "jsonIdKeyAlias": "id",
+                        "jsonIdRequired": true,
+                        "jsonTypeKeyAlias": "type",
+                        "jsonTypeRequired": true,
+                        "jsonLdBaseUrl": null,
+                        "jsonRootCardinality": "single",
+                        "jsonRootCardinalityObjectKey": "items",
+                        "jsonDefaultTypeKeyMapping": "human-label",
+                        "jsonDefaultTypeKeyMappingHumanLabelLang": "cs",
+                        "jsonLabelLanguage": "cs",
+                        "dereferenceSchema": false,
+                        "dereferenceContext": false,
+                        "includeContextInExample": true
+                    },
+                    "csv": {
+                        "enableMultipleTableSchema": false
+                    },
+                    "xml": {
+                        "rootClass": {
+                            "extractType": true,
+                            "extractGroup": false
+                        },
+                        "otherClasses": {
+                            "extractType": false,
+                            "extractGroup": false
+                        },
+                        "commonXmlSchemaExternalLocation": null
+                    },
+                    "bikeshed": {
+                        "abstract": "This document was generated automatically by [Dataspecer](https://dataspecer.com/).",
+                        "editor": "Dataspecer editor, https://slovník.gov.cz/generujeme",
+                        "otherMetadata": {
+                            "Logo": "https://ofn.gov.cz/static/images/logo.png"
+                        },
+                        "language": "cs",
+                        "useTechnicalLabelsInStructuralModels": true
+                    },
+                    "client": {
+                        "technicalLabelCasingConvention": "snake_case",
+                        "technicalLabelSpecialCharacters": "allow",
+                        "technicalLabelLanguages": "cs"
+                    },
+                    "data-specification": {
+                        "useGenerators": {
+                            "json": false,
+                            "plantUML": true,
+                            "respec": true,
+                            "xml": true
+                        },
+                        "renameArtifacts": {
+                            "http://example.com/generator/json-schema": "schéma.json",
+                            "http://dataspecer.com/generator/json-ld": "kontext.json",
+                            "plant-uml": "konceptuální-model.plantuml",
+                            "plant-uml/image": "konceptuální-model.svg",
+                            "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
+                        },
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
+                        "instancesHaveIdentity": "NEVER",
+                        "instancesSpecifyTypes": "ALWAYS",
+                        "dataPsmIsClosed": "OPEN",
+                        "generatorsEnabledByDefault": false,
+                        "skipStructureNameIfOnlyOne": true
+                    },
+                    "template-artifact": {
+                        "templates": {
+                            "metadata": "{\n            specStatus: \"WD\",\n            shortName: \"formulare-zopds-spolecne\",  \n            thisVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            latestVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            shortName: \"{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}\",\n            showPreviousVersion: false,\n            editors: [{\n                  name: \"Jakub Klímek\",\n                  orcid: \"0000-0001-7234-3051\",\n                  company:    \"Digitální a informační agentura\",\n                  companyURL: \"https://dia.gov.cz\"\n                }],\n          }",
+                            "abstract": "<section id=\"abstract\" class=\"introductory\">\n    <h2>Abstrakt</h2>\n    <p>\n        Tento dokument byl obsahuje specifikaci společných datových struktur používaných v elektronických dokumentech.\n    </p>\n</section>",
+                            "artifactList": "<section>\n    <h2>Seznam artefaktů</h2>\n    Tato sekce obsahuje odkaz na všechny soubory, které jsou součástí této dokumentace.\n    <table class=\"def\">\n        <thead>\n            <tr><th>Artefakt</th><th>Odkaz</th></tr>\n        </thead>\n        <tbody>\n            {{#artifacts}}\n            <tr><td>{{title}}</td><td><a href=\"{{{relativePath}}}\">{{{relativePath}}}</a></td></tr>\n            {{/artifacts}}\n        </tbody>\n    </table>\n</section>",
+                            "conceptualModel": "<section>\n<h2>Konceptuální model</h2>\nV této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebné pro <i>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</i>.\n\n<figure><img src=\"{{#artifact.image.publicUrl}}{{{relativePath}}}{{/artifact.image.publicUrl}}\"><figcaption>Diagram konceptuálního modelu.</figcaption></figure>\n\n{{#semanticModels}}\n{{#classes}}\n<section id=\"{{semanticModelLinkId}}\">\n<h3>{{#humanLabel}}{{translate}}{{/humanLabel}}</h3>\n<dl>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n{{#extends}}\n<dt>Nadřazený typ</dt>\n<dd><a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a></dd>\n{{/extends}}\n</dl>\n\n{{#properties}}\n<section id=\"{{semanticModelLinkId}}\">\n<h4>{{#dataTypes}}{{#isAssociation}}Vztah (asociace): {{/isAssociation}}{{/dataTypes}}{{#humanLabel}}{{translate}}{{/humanLabel}}</h4>\n<dl>\n<dt>Jméno</dt>\n<dd>{{#humanLabel}}{{translate}}{{/humanLabel}}</dd>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Povinnost</dt>\n<dd>{{#cardinalityIsRequired}}povinné{{/cardinalityIsRequired}}{{^cardinalityIsRequired}}nepovinné{{/cardinalityIsRequired}}</dd>\n<dt>Kardinalita</dt>\n<dd>{{cardinalityRange}}</dd>\n{{#dataTypes}}{{#isAssociation}}\n<dt>Typ</dt>\n<dd>{{#class}}<a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>{{/class}}</dd>\n{{/isAssociation}}{{/dataTypes}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n</section>\n{{/properties}}\n</section>\n{{/classes}}\n{{/semanticModels}}\n\n</section>"
+                        },
+                        "type": "respec",
+                        "template": "<!DOCTYPE html>\n<html lang=\"cs\">\n    <head>\n        <title>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</title>\n        <meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\" />\n        <meta content=\"width=device-width,initial-scale=1\" name=\"viewport\" />\n        <meta name=\"theme-color\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileColor\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileImage\" content=\"https://ofn.gov.cz/static/favicons/ms-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-57x57.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-60x60.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-72x72.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-76x76.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-114x114.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-120x120.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-152x152.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-180x180.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://ofn.gov.cz/static/favicons/android-icon-192x192.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://ofn.gov.cz/static/favicons/favicon-32x32.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"https://ofn.gov.cz/static/favicons/favicon-96x96.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://ofn.gov.cz/static/favicons/favicon-16x16.png\">\n        <link rel=\"manifest\" href=\"https://ofn.gov.cz/static/favicons/manifest.json\">\n        <script class=\"remove\" src=\"https://ofn.gov.cz/static/js/respec-odcz.js\"></script>\n        <script class=\"remove\">\n            var respecConfig = {{>metadata}};\n        </script>\n    </head>\n    <body>\n    \n{{>abstract}}\n\n<!--{{>artifactList}}-->\n\n{{>conceptualModel}}\n\n{{#structureModels}}\n<section>\n<h2>Specifikace struktury pro {{#humanLabel}}{{translate}}{{/humanLabel}}</h2>\n<p>{{#humanDescription}}{{translate}}{{/humanDescription}}</p>\n\n{{#artifacts}}{{#getDocumentation}}{{#useTemplate}}{{/useTemplate}}{{/getDocumentation}}{{/artifacts}}\n</section>\n{{/structureModels}}\n\n    </body>\n</html>"
+                    }
+                },
+                "psm": "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27"
+            },
+            {
+                "iri": "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27#xsltlifting",
+                "name": null,
+                "type": "schema",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt",
+                "generator": "http://example.com/generator/xslt-lifting",
+                "configuration": {
+                    "json": {
+                        "jsonIdKeyAlias": "id",
+                        "jsonIdRequired": true,
+                        "jsonTypeKeyAlias": "type",
+                        "jsonTypeRequired": true,
+                        "jsonLdBaseUrl": null,
+                        "jsonRootCardinality": "single",
+                        "jsonRootCardinalityObjectKey": "items",
+                        "jsonDefaultTypeKeyMapping": "human-label",
+                        "jsonDefaultTypeKeyMappingHumanLabelLang": "cs",
+                        "jsonLabelLanguage": "cs",
+                        "dereferenceSchema": false,
+                        "dereferenceContext": false,
+                        "includeContextInExample": true
+                    },
+                    "csv": {
+                        "enableMultipleTableSchema": false
+                    },
+                    "xml": {
+                        "rootClass": {
+                            "extractType": true,
+                            "extractGroup": false
+                        },
+                        "otherClasses": {
+                            "extractType": false,
+                            "extractGroup": false
+                        },
+                        "commonXmlSchemaExternalLocation": null
+                    },
+                    "bikeshed": {
+                        "abstract": "This document was generated automatically by [Dataspecer](https://dataspecer.com/).",
+                        "editor": "Dataspecer editor, https://slovník.gov.cz/generujeme",
+                        "otherMetadata": {
+                            "Logo": "https://ofn.gov.cz/static/images/logo.png"
+                        },
+                        "language": "cs",
+                        "useTechnicalLabelsInStructuralModels": true
+                    },
+                    "client": {
+                        "technicalLabelCasingConvention": "snake_case",
+                        "technicalLabelSpecialCharacters": "allow",
+                        "technicalLabelLanguages": "cs"
+                    },
+                    "data-specification": {
+                        "useGenerators": {
+                            "json": false,
+                            "plantUML": true,
+                            "respec": true,
+                            "xml": true
+                        },
+                        "renameArtifacts": {
+                            "http://example.com/generator/json-schema": "schéma.json",
+                            "http://dataspecer.com/generator/json-ld": "kontext.json",
+                            "plant-uml": "konceptuální-model.plantuml",
+                            "plant-uml/image": "konceptuální-model.svg",
+                            "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
+                        },
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
+                        "instancesHaveIdentity": "NEVER",
+                        "instancesSpecifyTypes": "ALWAYS",
+                        "dataPsmIsClosed": "OPEN",
+                        "generatorsEnabledByDefault": false,
+                        "skipStructureNameIfOnlyOne": true
+                    },
+                    "template-artifact": {
+                        "templates": {
+                            "metadata": "{\n            specStatus: \"WD\",\n            shortName: \"formulare-zopds-spolecne\",  \n            thisVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            latestVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            shortName: \"{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}\",\n            showPreviousVersion: false,\n            editors: [{\n                  name: \"Jakub Klímek\",\n                  orcid: \"0000-0001-7234-3051\",\n                  company:    \"Digitální a informační agentura\",\n                  companyURL: \"https://dia.gov.cz\"\n                }],\n          }",
+                            "abstract": "<section id=\"abstract\" class=\"introductory\">\n    <h2>Abstrakt</h2>\n    <p>\n        Tento dokument byl obsahuje specifikaci společných datových struktur používaných v elektronických dokumentech.\n    </p>\n</section>",
+                            "artifactList": "<section>\n    <h2>Seznam artefaktů</h2>\n    Tato sekce obsahuje odkaz na všechny soubory, které jsou součástí této dokumentace.\n    <table class=\"def\">\n        <thead>\n            <tr><th>Artefakt</th><th>Odkaz</th></tr>\n        </thead>\n        <tbody>\n            {{#artifacts}}\n            <tr><td>{{title}}</td><td><a href=\"{{{relativePath}}}\">{{{relativePath}}}</a></td></tr>\n            {{/artifacts}}\n        </tbody>\n    </table>\n</section>",
+                            "conceptualModel": "<section>\n<h2>Konceptuální model</h2>\nV této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebné pro <i>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</i>.\n\n<figure><img src=\"{{#artifact.image.publicUrl}}{{{relativePath}}}{{/artifact.image.publicUrl}}\"><figcaption>Diagram konceptuálního modelu.</figcaption></figure>\n\n{{#semanticModels}}\n{{#classes}}\n<section id=\"{{semanticModelLinkId}}\">\n<h3>{{#humanLabel}}{{translate}}{{/humanLabel}}</h3>\n<dl>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n{{#extends}}\n<dt>Nadřazený typ</dt>\n<dd><a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a></dd>\n{{/extends}}\n</dl>\n\n{{#properties}}\n<section id=\"{{semanticModelLinkId}}\">\n<h4>{{#dataTypes}}{{#isAssociation}}Vztah (asociace): {{/isAssociation}}{{/dataTypes}}{{#humanLabel}}{{translate}}{{/humanLabel}}</h4>\n<dl>\n<dt>Jméno</dt>\n<dd>{{#humanLabel}}{{translate}}{{/humanLabel}}</dd>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Povinnost</dt>\n<dd>{{#cardinalityIsRequired}}povinné{{/cardinalityIsRequired}}{{^cardinalityIsRequired}}nepovinné{{/cardinalityIsRequired}}</dd>\n<dt>Kardinalita</dt>\n<dd>{{cardinalityRange}}</dd>\n{{#dataTypes}}{{#isAssociation}}\n<dt>Typ</dt>\n<dd>{{#class}}<a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>{{/class}}</dd>\n{{/isAssociation}}{{/dataTypes}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n</section>\n{{/properties}}\n</section>\n{{/classes}}\n{{/semanticModels}}\n\n</section>"
+                        },
+                        "type": "respec",
+                        "template": "<!DOCTYPE html>\n<html lang=\"cs\">\n    <head>\n        <title>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</title>\n        <meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\" />\n        <meta content=\"width=device-width,initial-scale=1\" name=\"viewport\" />\n        <meta name=\"theme-color\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileColor\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileImage\" content=\"https://ofn.gov.cz/static/favicons/ms-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-57x57.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-60x60.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-72x72.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-76x76.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-114x114.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-120x120.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-152x152.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-180x180.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://ofn.gov.cz/static/favicons/android-icon-192x192.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://ofn.gov.cz/static/favicons/favicon-32x32.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"https://ofn.gov.cz/static/favicons/favicon-96x96.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://ofn.gov.cz/static/favicons/favicon-16x16.png\">\n        <link rel=\"manifest\" href=\"https://ofn.gov.cz/static/favicons/manifest.json\">\n        <script class=\"remove\" src=\"https://ofn.gov.cz/static/js/respec-odcz.js\"></script>\n        <script class=\"remove\">\n            var respecConfig = {{>metadata}};\n        </script>\n    </head>\n    <body>\n    \n{{>abstract}}\n\n<!--{{>artifactList}}-->\n\n{{>conceptualModel}}\n\n{{#structureModels}}\n<section>\n<h2>Specifikace struktury pro {{#humanLabel}}{{translate}}{{/humanLabel}}</h2>\n<p>{{#humanDescription}}{{translate}}{{/humanDescription}}</p>\n\n{{#artifacts}}{{#getDocumentation}}{{#useTemplate}}{{/useTemplate}}{{/getDocumentation}}{{/artifacts}}\n</section>\n{{/structureModels}}\n\n    </body>\n</html>"
+                    }
+                },
+                "psm": "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27"
+            },
+            {
+                "iri": "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27#xsltlowering",
+                "name": null,
+                "type": "schema",
+                "outputPath": "společné-části-elektronických-dokumentů/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
+                "publicUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt",
+                "generator": "http://example.com/generator/xslt-lowering",
+                "configuration": {
+                    "json": {
+                        "jsonIdKeyAlias": "id",
+                        "jsonIdRequired": true,
+                        "jsonTypeKeyAlias": "type",
+                        "jsonTypeRequired": true,
+                        "jsonLdBaseUrl": null,
+                        "jsonRootCardinality": "single",
+                        "jsonRootCardinalityObjectKey": "items",
+                        "jsonDefaultTypeKeyMapping": "human-label",
+                        "jsonDefaultTypeKeyMappingHumanLabelLang": "cs",
+                        "jsonLabelLanguage": "cs",
+                        "dereferenceSchema": false,
+                        "dereferenceContext": false,
+                        "includeContextInExample": true
+                    },
+                    "csv": {
+                        "enableMultipleTableSchema": false
+                    },
+                    "xml": {
+                        "rootClass": {
+                            "extractType": true,
+                            "extractGroup": false
+                        },
+                        "otherClasses": {
+                            "extractType": false,
+                            "extractGroup": false
+                        },
+                        "commonXmlSchemaExternalLocation": null
+                    },
+                    "bikeshed": {
+                        "abstract": "This document was generated automatically by [Dataspecer](https://dataspecer.com/).",
+                        "editor": "Dataspecer editor, https://slovník.gov.cz/generujeme",
+                        "otherMetadata": {
+                            "Logo": "https://ofn.gov.cz/static/images/logo.png"
+                        },
+                        "language": "cs",
+                        "useTechnicalLabelsInStructuralModels": true
+                    },
+                    "client": {
+                        "technicalLabelCasingConvention": "snake_case",
+                        "technicalLabelSpecialCharacters": "allow",
+                        "technicalLabelLanguages": "cs"
+                    },
+                    "data-specification": {
+                        "useGenerators": {
+                            "json": false,
+                            "plantUML": true,
+                            "respec": true,
+                            "xml": true
+                        },
+                        "renameArtifacts": {
+                            "http://example.com/generator/json-schema": "schéma.json",
+                            "http://dataspecer.com/generator/json-ld": "kontext.json",
+                            "plant-uml": "konceptuální-model.plantuml",
+                            "plant-uml/image": "konceptuální-model.svg",
+                            "https://schemas.dataspecer.com/generator/template-artifact": "index.html"
+                        },
+                        "publicBaseUrl": "https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/",
+                        "instancesHaveIdentity": "NEVER",
+                        "instancesSpecifyTypes": "ALWAYS",
+                        "dataPsmIsClosed": "OPEN",
+                        "generatorsEnabledByDefault": false,
+                        "skipStructureNameIfOnlyOne": true
+                    },
+                    "template-artifact": {
+                        "templates": {
+                            "metadata": "{\n            specStatus: \"WD\",\n            shortName: \"formulare-zopds-spolecne\",  \n            thisVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            latestVersion: \"{{{artifact.template-artifact.publicUrl}}}\",\n            shortName: \"{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}\",\n            showPreviousVersion: false,\n            editors: [{\n                  name: \"Jakub Klímek\",\n                  orcid: \"0000-0001-7234-3051\",\n                  company:    \"Digitální a informační agentura\",\n                  companyURL: \"https://dia.gov.cz\"\n                }],\n          }",
+                            "abstract": "<section id=\"abstract\" class=\"introductory\">\n    <h2>Abstrakt</h2>\n    <p>\n        Tento dokument byl obsahuje specifikaci společných datových struktur používaných v elektronických dokumentech.\n    </p>\n</section>",
+                            "artifactList": "<section>\n    <h2>Seznam artefaktů</h2>\n    Tato sekce obsahuje odkaz na všechny soubory, které jsou součástí této dokumentace.\n    <table class=\"def\">\n        <thead>\n            <tr><th>Artefakt</th><th>Odkaz</th></tr>\n        </thead>\n        <tbody>\n            {{#artifacts}}\n            <tr><td>{{title}}</td><td><a href=\"{{{relativePath}}}\">{{{relativePath}}}</a></td></tr>\n            {{/artifacts}}\n        </tbody>\n    </table>\n</section>",
+                            "conceptualModel": "<section>\n<h2>Konceptuální model</h2>\nV této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebné pro <i>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</i>.\n\n<figure><img src=\"{{#artifact.image.publicUrl}}{{{relativePath}}}{{/artifact.image.publicUrl}}\"><figcaption>Diagram konceptuálního modelu.</figcaption></figure>\n\n{{#semanticModels}}\n{{#classes}}\n<section id=\"{{semanticModelLinkId}}\">\n<h3>{{#humanLabel}}{{translate}}{{/humanLabel}}</h3>\n<dl>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n{{#extends}}\n<dt>Nadřazený typ</dt>\n<dd><a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a></dd>\n{{/extends}}\n</dl>\n\n{{#properties}}\n<section id=\"{{semanticModelLinkId}}\">\n<h4>{{#dataTypes}}{{#isAssociation}}Vztah (asociace): {{/isAssociation}}{{/dataTypes}}{{#humanLabel}}{{translate}}{{/humanLabel}}</h4>\n<dl>\n<dt>Jméno</dt>\n<dd>{{#humanLabel}}{{translate}}{{/humanLabel}}</dd>\n{{#humanDescription}}{{#translate}}\n<dt>Popis</dt>\n<dd>{{.}}</dd>\n{{/translate}}{{/humanDescription}}\n<dt>Povinnost</dt>\n<dd>{{#cardinalityIsRequired}}povinné{{/cardinalityIsRequired}}{{^cardinalityIsRequired}}nepovinné{{/cardinalityIsRequired}}</dd>\n<dt>Kardinalita</dt>\n<dd>{{cardinalityRange}}</dd>\n{{#dataTypes}}{{#isAssociation}}\n<dt>Typ</dt>\n<dd>{{#class}}<a href=\"#{{semanticModelLinkId}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>{{/class}}</dd>\n{{/isAssociation}}{{/dataTypes}}\n<dt>Význam</dt>\n<dd>Koncept {{#humanLabel}}{{translate}}{{/humanLabel}} je definován v <a href=\"https://slovník.gov.cz/\">sémantickém slovníku pojmů</a> jako <a href=\"{{{cimIri}}}\">{{#humanLabel}}{{translate}}{{/humanLabel}}</a>.</dd>\n</section>\n{{/properties}}\n</section>\n{{/classes}}\n{{/semanticModels}}\n\n</section>"
+                        },
+                        "type": "respec",
+                        "template": "<!DOCTYPE html>\n<html lang=\"cs\">\n    <head>\n        <title>{{#semanticModels}}{{#humanLabel}}{{translate}}{{/humanLabel}}{{/semanticModels}}</title>\n        <meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\" />\n        <meta content=\"width=device-width,initial-scale=1\" name=\"viewport\" />\n        <meta name=\"theme-color\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileColor\" content=\"#057fa5\">\n        <meta name=\"msapplication-TileImage\" content=\"https://ofn.gov.cz/static/favicons/ms-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-57x57.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-60x60.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-72x72.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-76x76.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-114x114.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-120x120.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-144x144.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-152x152.png\">\n        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://ofn.gov.cz/static/favicons/apple-icon-180x180.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://ofn.gov.cz/static/favicons/android-icon-192x192.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://ofn.gov.cz/static/favicons/favicon-32x32.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"https://ofn.gov.cz/static/favicons/favicon-96x96.png\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://ofn.gov.cz/static/favicons/favicon-16x16.png\">\n        <link rel=\"manifest\" href=\"https://ofn.gov.cz/static/favicons/manifest.json\">\n        <script class=\"remove\" src=\"https://ofn.gov.cz/static/js/respec-odcz.js\"></script>\n        <script class=\"remove\">\n            var respecConfig = {{>metadata}};\n        </script>\n    </head>\n    <body>\n    \n{{>abstract}}\n\n<!--{{>artifactList}}-->\n\n{{>conceptualModel}}\n\n{{#structureModels}}\n<section>\n<h2>Specifikace struktury pro {{#humanLabel}}{{translate}}{{/humanLabel}}</h2>\n<p>{{#humanDescription}}{{translate}}{{/humanDescription}}</p>\n\n{{#artifacts}}{{#getDocumentation}}{{#useTemplate}}{{/useTemplate}}{{/getDocumentation}}{{/artifacts}}\n</section>\n{{/structureModels}}\n\n    </body>\n</html>"
+                    }
+                },
+                "psm": "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27"
+            },
+            {
                 "iri": "https://ofn.gov.cz/data-specification/003168eb-5d54-419f-9856-78853865371a#plantUml",
                 "name": null,
                 "type": "documentation",
@@ -3758,8 +3763,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3843,8 +3848,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3928,8 +3933,8 @@
                     },
                     "xml": {
                         "rootClass": {
-                            "extractType": false,
-                            "extractGroup": true
+                            "extractType": true,
+                            "extractGroup": false
                         },
                         "otherClasses": {
                             "extractType": false,
@@ -3988,10 +3993,6 @@
                     "https://ofn.gov.cz/schema/1727090395762-22d7-cef3-878b#xmlschema",
                     "https://ofn.gov.cz/schema/1727090395762-22d7-cef3-878b#xsltlifting",
                     "https://ofn.gov.cz/schema/1727090395762-22d7-cef3-878b#xsltlowering",
-                    "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xsdCoreSchema",
-                    "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xmlschema",
-                    "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xsltlifting",
-                    "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535#xsltlowering",
                     "https://ofn.gov.cz/schema/1727280238901-bab4-be49-8eaa#xsdCoreSchema",
                     "https://ofn.gov.cz/schema/1727280238901-bab4-be49-8eaa#xmlschema",
                     "https://ofn.gov.cz/schema/1727280238901-bab4-be49-8eaa#xsltlifting",
@@ -4020,6 +4021,10 @@
                     "https://ofn.gov.cz/schema/1727776932619-4ffe-30a2-b379#xmlschema",
                     "https://ofn.gov.cz/schema/1727776932619-4ffe-30a2-b379#xsltlifting",
                     "https://ofn.gov.cz/schema/1727776932619-4ffe-30a2-b379#xsltlowering",
+                    "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27#xsdCoreSchema",
+                    "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27#xmlschema",
+                    "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27#xsltlifting",
+                    "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27#xsltlowering",
                     "https://ofn.gov.cz/data-specification/003168eb-5d54-419f-9856-78853865371a#plantUml",
                     "https://ofn.gov.cz/data-specification/003168eb-5d54-419f-9856-78853865371a#plantUmlImage"
                 ],
@@ -4037,7 +4042,7 @@
             },
             "xml": {
                 "rootClass": {
-                    "extractGroup": true
+                    "extractType": true
                 }
             },
             "template-artifact": {
@@ -4060,13 +4065,6 @@
                 {
                     "type": "https://ofn.gov.cz/store-descriptor/http",
                     "url": "https://slovník.gov.cz/generujeme/api/resources/blob?iri=https%3A%2F%2Fofn.gov.cz%2Fschema%2F1727090395762-22d7-cef3-878b",
-                    "isReadOnly": false
-                }
-            ],
-            "https://ofn.gov.cz/schema/1727191805433-6b16-c7e4-9535": [
-                {
-                    "type": "https://ofn.gov.cz/store-descriptor/http",
-                    "url": "https://slovník.gov.cz/generujeme/api/resources/blob?iri=https%3A%2F%2Fofn.gov.cz%2Fschema%2F1727191805433-6b16-c7e4-9535",
                     "isReadOnly": false
                 }
             ],
@@ -4116,6 +4114,13 @@
                 {
                     "type": "https://ofn.gov.cz/store-descriptor/http",
                     "url": "https://slovník.gov.cz/generujeme/api/resources/blob?iri=https%3A%2F%2Fofn.gov.cz%2Fschema%2F1727776932619-4ffe-30a2-b379",
+                    "isReadOnly": false
+                }
+            ],
+            "https://ofn.gov.cz/schema/1727862929325-2e77-803f-ac27": [
+                {
+                    "type": "https://ofn.gov.cz/store-descriptor/http",
+                    "url": "https://slovník.gov.cz/generujeme/api/resources/blob?iri=https%3A%2F%2Fofn.gov.cz%2Fschema%2F1727862929325-2e77-803f-ac27",
                     "isReadOnly": false
                 }
             ]

@@ -48,12 +48,7 @@ Název (cs): adresa neevidovaná v RÚIAN</xs:documentation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="místo">
-    <xs:choice>
-      <xs:element name="zahraniční_adresa" type="místa:zahraniční_adresa"/>
-      <xs:element name="adresní_místo" type="místa:adresní_místo"/>
-      <xs:element name="adresa_neevidovaná_v_rúian" type="místa:adresa_neevidovaná_v_rúian"/>
-    </xs:choice>
-  </xs:complexType>
+  <!--The following object was not recognized:
+{"name":[null,"místo"],"annotation":null}-->
   <xs:element name="místo" type="místa:místo"/>
 </xs:schema>

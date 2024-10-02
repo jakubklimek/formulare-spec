@@ -99,16 +99,7 @@ Název (cs): doručovací místo</xs:documentation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="osoba">
-    <xs:choice>
-      <xs:element name="osoba_ve_vztahu_k_dokumentu" type="osoby:osoba_ve_vztahu_k_dokumentu"/>
-      <xs:element name="fyzická_osoba" type="osoby:fyzická_osoba"/>
-      <xs:element name="fyzická_osoba_eidas" type="osoby:fyzická_osoba_eidas"/>
-      <xs:element name="právnická_osoba" type="osoby:právnická_osoba"/>
-      <xs:element name="právnická_osoba_eidas" type="osoby:právnická_osoba_eidas"/>
-      <xs:element name="podnikající_fyzická_osoba_zapsaná_v_or" type="osoby:podnikající_fyzická_osoba_zapsaná_v_or"/>
-      <xs:element name="podnikající_fyzická_osoba_nezapsaná_v_or" type="osoby:podnikající_fyzická_osoba_nezapsaná_v_or"/>
-    </xs:choice>
-  </xs:complexType>
+  <!--The following object was not recognized:
+{"name":[null,"osoba"],"annotation":null}-->
   <xs:element name="osoba" type="osoby:osoba"/>
 </xs:schema>

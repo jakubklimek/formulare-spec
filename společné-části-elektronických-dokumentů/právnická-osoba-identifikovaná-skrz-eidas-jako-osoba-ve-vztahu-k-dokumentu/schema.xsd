@@ -70,10 +70,5 @@ Popis (cs): číslo pro účely spotřebních daní stanovené v čl. 2 bodu 12 
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eidas_lp">
-    <xs:choice>
-      <xs:element name="LegalPersonType" type="eidas-lp:LegalPersonType"/>
-    </xs:choice>
-  </xs:complexType>
-  <xs:element name="eidas_lp" type="eidas-lp:eidas_lp"/>
+  <xs:element name="LegalPersonType" type="eidas-lp:LegalPersonType"/>
 </xs:schema>

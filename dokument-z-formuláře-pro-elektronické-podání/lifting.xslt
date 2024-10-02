@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:formuláře="https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" xmlns:ns0="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/" xmlns:ns1="https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/" xmlns:ns2="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/" xmlns:ns3="https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/" xmlns:ns4="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/" xmlns:ns5="https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/" xmlns:ns6="https://slovník.gov.cz/agendový/104/pojem/" xmlns:ns7="https://slovník.gov.cz/legislativní/sbírka/329/2020/pojem/" xmlns:ns8="https://slovník.gov.cz/datový/číselníky/pojem/" xmlns:ns9="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/" xmlns:ns10="https://slovník.gov.cz/generický/digitální-objekty/pojem/">
-  <xsl:import href="../../společné-části-elektronických-dokumentů/2024-10-04/person-in-relationship-with-a-document/lifting.xslt"/>
+  <xsl:import href="../../společné-části-elektronických-dokumentů/2024-10-04/osoba-ve-vztahu-k-dokumentu/lifting.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
   <xsl:template match="/formuláře:dokument">
     <rdf:RDF>
@@ -73,24 +73,36 @@
           <xsl:variable name="type" select="resolve-QName(@xsi:type,.)"/>
           <xsl:variable name="types">
             <xsl:sequence>
-              <osoby:právnická_osoba/>
+              <osoby:osoba_ve_vztahu_k_dokumentu/>
               <osoby:fyzická_osoba/>
+              <osoby:fyzická_osoba_eidas/>
+              <osoby:právnická_osoba/>
+              <osoby:právnická_osoba_eidas/>
               <osoby:podnikající_fyzická_osoba_zapsaná_v_or/>
               <osoby:podnikající_fyzická_osoba_nezapsaná_v_or/>
             </xsl:sequence>
           </xsl:variable>
           <xsl:choose>
             <xsl:when test="$type=node-name($types/*[1])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191874076-2b69-749e-9e91"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781423973-f8b2-ef43-983c"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[2])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191881510-e100-9761-b2a3"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781455324-19b0-ea50-a017"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[3])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191896626-e404-554e-8ed2"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790068060-800f-1f0d-bfb0"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[4])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191904594-0067-a227-add3"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790074947-2223-3c55-b14a"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[5])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790081708-36a4-c28c-9339"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[6])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790088059-e223-fb14-8d07"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[7])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790092370-dfb7-d244-a202"/>
             </xsl:when>
           </xsl:choose>
         </ns0:odesílatel>
@@ -100,24 +112,36 @@
           <xsl:variable name="type" select="resolve-QName(@xsi:type,.)"/>
           <xsl:variable name="types">
             <xsl:sequence>
-              <osoby:právnická_osoba/>
+              <osoby:osoba_ve_vztahu_k_dokumentu/>
               <osoby:fyzická_osoba/>
+              <osoby:fyzická_osoba_eidas/>
+              <osoby:právnická_osoba/>
+              <osoby:právnická_osoba_eidas/>
               <osoby:podnikající_fyzická_osoba_zapsaná_v_or/>
               <osoby:podnikající_fyzická_osoba_nezapsaná_v_or/>
             </xsl:sequence>
           </xsl:variable>
           <xsl:choose>
             <xsl:when test="$type=node-name($types/*[1])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191874076-2b69-749e-9e91"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781423973-f8b2-ef43-983c"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[2])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191881510-e100-9761-b2a3"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781455324-19b0-ea50-a017"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[3])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191896626-e404-554e-8ed2"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790068060-800f-1f0d-bfb0"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[4])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191904594-0067-a227-add3"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790074947-2223-3c55-b14a"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[5])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790081708-36a4-c28c-9339"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[6])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790088059-e223-fb14-8d07"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[7])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790092370-dfb7-d244-a202"/>
             </xsl:when>
           </xsl:choose>
         </ns0:příjemce>
@@ -127,24 +151,36 @@
           <xsl:variable name="type" select="resolve-QName(@xsi:type,.)"/>
           <xsl:variable name="types">
             <xsl:sequence>
-              <osoby:právnická_osoba/>
+              <osoby:osoba_ve_vztahu_k_dokumentu/>
               <osoby:fyzická_osoba/>
+              <osoby:fyzická_osoba_eidas/>
+              <osoby:právnická_osoba/>
+              <osoby:právnická_osoba_eidas/>
               <osoby:podnikající_fyzická_osoba_zapsaná_v_or/>
               <osoby:podnikající_fyzická_osoba_nezapsaná_v_or/>
             </xsl:sequence>
           </xsl:variable>
           <xsl:choose>
             <xsl:when test="$type=node-name($types/*[1])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191874076-2b69-749e-9e91"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781423973-f8b2-ef43-983c"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[2])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191881510-e100-9761-b2a3"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781455324-19b0-ea50-a017"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[3])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191896626-e404-554e-8ed2"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790068060-800f-1f0d-bfb0"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[4])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191904594-0067-a227-add3"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790074947-2223-3c55-b14a"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[5])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790081708-36a4-c28c-9339"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[6])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790088059-e223-fb14-8d07"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[7])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790092370-dfb7-d244-a202"/>
             </xsl:when>
           </xsl:choose>
         </ns2:uživatel-služby>
@@ -325,31 +361,43 @@
           <xsl:variable name="type" select="resolve-QName(@xsi:type,.)"/>
           <xsl:variable name="types">
             <xsl:sequence>
-              <osoby:právnická_osoba/>
+              <osoby:osoba_ve_vztahu_k_dokumentu/>
               <osoby:fyzická_osoba/>
+              <osoby:fyzická_osoba_eidas/>
+              <osoby:právnická_osoba/>
+              <osoby:právnická_osoba_eidas/>
               <osoby:podnikající_fyzická_osoba_zapsaná_v_or/>
               <osoby:podnikající_fyzická_osoba_nezapsaná_v_or/>
             </xsl:sequence>
           </xsl:variable>
           <xsl:choose>
             <xsl:when test="$type=node-name($types/*[1])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191874076-2b69-749e-9e91"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781423973-f8b2-ef43-983c"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[2])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191881510-e100-9761-b2a3"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781455324-19b0-ea50-a017"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[3])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191896626-e404-554e-8ed2"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790068060-800f-1f0d-bfb0"/>
             </xsl:when>
             <xsl:when test="$type=node-name($types/*[4])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191904594-0067-a227-add3"/>
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790074947-2223-3c55-b14a"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[5])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790081708-36a4-c28c-9339"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[6])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790088059-e223-fb14-8d07"/>
+            </xsl:when>
+            <xsl:when test="$type=node-name($types/*[7])">
+              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790092370-dfb7-d244-a202"/>
             </xsl:when>
           </xsl:choose>
         </ns2:zastoupený>
       </xsl:for-each>
       <xsl:for-each select="formuláře:zástupce">
         <ns2:zástupce>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727280250648-5253-44c4-a1e6"/>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727862945440-8737-4796-be41"/>
         </ns2:zástupce>
       </xsl:for-each>
     </rdf:Description>

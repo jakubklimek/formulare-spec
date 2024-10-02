@@ -59,10 +59,6 @@
                 <tr><td>XML schéma</td><td><a href="./místo/schema.xsd">./místo/schema.xsd</a></td></tr>
                 <tr><td>XSLT lifting</td><td><a href="./místo/lifting.xslt">./místo/lifting.xslt</a></td></tr>
                 <tr><td>XSLT lowering</td><td><a href="./místo/lowering.xslt">./místo/lowering.xslt</a></td></tr>
-                <tr><td>XML sdílené koncepty</td><td><a href="./person-in-relationship-with-a-document/2022-07.xsd">./person-in-relationship-with-a-document/2022-07.xsd</a></td></tr>
-                <tr><td>XML schéma</td><td><a href="./person-in-relationship-with-a-document/schema.xsd">./person-in-relationship-with-a-document/schema.xsd</a></td></tr>
-                <tr><td>XSLT lifting</td><td><a href="./person-in-relationship-with-a-document/lifting.xslt">./person-in-relationship-with-a-document/lifting.xslt</a></td></tr>
-                <tr><td>XSLT lowering</td><td><a href="./person-in-relationship-with-a-document/lowering.xslt">./person-in-relationship-with-a-document/lowering.xslt</a></td></tr>
                 <tr><td>XML sdílené koncepty</td><td><a href="./fyzická-osoba/2022-07.xsd">./fyzická-osoba/2022-07.xsd</a></td></tr>
                 <tr><td>XML schéma</td><td><a href="./fyzická-osoba/schema.xsd">./fyzická-osoba/schema.xsd</a></td></tr>
                 <tr><td>XSLT lifting</td><td><a href="./fyzická-osoba/lifting.xslt">./fyzická-osoba/lifting.xslt</a></td></tr>
@@ -91,6 +87,10 @@
                 <tr><td>XML schéma</td><td><a href="./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd">./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd</a></td></tr>
                 <tr><td>XSLT lifting</td><td><a href="./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt">./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt</a></td></tr>
                 <tr><td>XSLT lowering</td><td><a href="./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt">./právnická-osoba-identifikovaná-skrz-eidas-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt</a></td></tr>
+                <tr><td>XML sdílené koncepty</td><td><a href="./fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd">./fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/2022-07.xsd</a></td></tr>
+                <tr><td>XML schéma</td><td><a href="./fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd">./fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/schema.xsd</a></td></tr>
+                <tr><td>XSLT lifting</td><td><a href="./fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt">./fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/lifting.xslt</a></td></tr>
+                <tr><td>XSLT lowering</td><td><a href="./fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt">./fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu/lowering.xslt</a></td></tr>
                 <tr><td>PlantUML diagram</td><td><a href="./konceptuální-model.plantuml">./konceptuální-model.plantuml</a></td></tr>
                 <tr><td>Konceptuální diagram</td><td><a href="./konceptuální-model.svg">./konceptuální-model.svg</a></td></tr>
                 <tr><td>Dokumentace</td><td><a href=".">.</a></td></tr>
@@ -317,9 +317,9 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Popis</dt>
 <dd>Pojmenovává osobu obchodní firmou, který je jejím oficiálním pojmenováním. Jedná se o referenční údaj.</dd>
 <dt>Povinnost</dt>
-<dd>nepovinné</dd>
+<dd>povinné</dd>
 <dt>Kardinalita</dt>
-<dd>0 - 1</dd>
+<dd>1 - 1</dd>
 <dt>Význam</dt>
 <dd>Koncept obchodní firma je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/obchodní-firma">obchodní firma</a>.</dd>
 </section>
@@ -335,6 +335,20 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd><a href="#konceptuální-třída-fyzická-osoba">Fyzická osoba</a></dd>
 </dl>
 
+<section id="konceptuální-vlastnost-fyzická-osoba-má-datovou-schránku-fyzické-osoby">
+<h4>Vztah (asociace): má datovou schránku fyzické osoby</h4>
+<dl>
+<dt>Jméno</dt>
+<dd>má datovou schránku fyzické osoby</dd>
+<dt>Povinnost</dt>
+<dd>nepovinné</dd>
+<dt>Kardinalita</dt>
+<dd>0 - 1</dd>
+<dt>Typ</dt>
+<dd><a href="#konceptuální-třída-datová-schránka">Datová schránka</a></dd>
+<dt>Význam</dt>
+<dd>Koncept má datovou schránku fyzické osoby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-datovou-schránku-fyzické-osoby">má datovou schránku fyzické osoby</a>.</dd>
+</section>
 </section>
 <section id="konceptuální-třída-podnikající-fyzická-osoba">
 <h3>Podnikající fyzická osoba</h3>
@@ -379,9 +393,9 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Popis</dt>
 <dd>Datová schránka osoby evidovaná v Registru osob.</dd>
 <dt>Povinnost</dt>
-<dd>nepovinné</dd>
+<dd>povinné</dd>
 <dt>Kardinalita</dt>
-<dd>0 - 1</dd>
+<dd>1 - 1</dd>
 <dt>Typ</dt>
 <dd><a href="#konceptuální-třída-datová-schránka">Datová schránka</a></dd>
 <dt>Význam</dt>
@@ -545,9 +559,9 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Jméno</dt>
 <dd>Má sídlo právnické osoby</dd>
 <dt>Povinnost</dt>
-<dd>nepovinné</dd>
+<dd>povinné</dd>
 <dt>Kardinalita</dt>
-<dd>0 - 1</dd>
+<dd>1 - 1</dd>
 <dt>Typ</dt>
 <dd><a href="#konceptuální-třída-sídlo">Sídlo</a></dd>
 <dt>Význam</dt>
@@ -592,6 +606,20 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd><a href="#konceptuální-třída-osoba">Osoba</a></dd>
 <dt>Význam</dt>
 <dd>Koncept Má datovou schránku osoby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-datovou-schránku-osoby">Má datovou schránku osoby</a>.</dd>
+</section>
+<section id="konceptuální-vlastnost-datová-schránka-má-datovou-schránku-fyzické-osoby">
+<h4>Vztah (asociace): má datovou schránku fyzické osoby</h4>
+<dl>
+<dt>Jméno</dt>
+<dd>má datovou schránku fyzické osoby</dd>
+<dt>Povinnost</dt>
+<dd>nepovinné</dd>
+<dt>Kardinalita</dt>
+<dd>0 - ∞</dd>
+<dt>Typ</dt>
+<dd><a href="#konceptuální-třída-fyzická-osoba">Fyzická osoba</a></dd>
+<dt>Význam</dt>
+<dd>Koncept má datovou schránku fyzické osoby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-datovou-schránku-fyzické-osoby">má datovou schránku fyzické osoby</a>.</dd>
 </section>
 </section>
 <section id="konceptuální-třída-sídlo">
@@ -711,9 +739,9 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Popis</dt>
 <dd>Jméno člověka je jeho osobní jméno a příjmení, popřípadě jeho další jména a rodné příjmení, která mu podle zákona náležejí. Každý člověk má právo užívat své jméno v právním styku, stejně jako právo na ochranu svého jména a na úctu k němu.</dd>
 <dt>Povinnost</dt>
-<dd>nepovinné</dd>
+<dd>povinné</dd>
 <dt>Kardinalita</dt>
-<dd>0 - 1</dd>
+<dd>1 - 1</dd>
 <dt>Význam</dt>
 <dd>Koncept jméno fyzické osoby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/jméno-fyzické-osoby">jméno fyzické osoby</a>.</dd>
 </section>
@@ -1103,6 +1131,34 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 </section>
 </section>
 <section>
+<h2>Specifikace struktury pro Fyzická osoba ve vztahu k dokumentu</h2>
+<p>Datová struktura pro Fyzická osoba ve vztahu k dokumentu. </p>
+
+<section>
+<h3>Přehled XML struktury</h3>
+<p>
+  Popis XSD zachycující strukturu pro <i>Fyzická osoba ve vztahu k dokumentu</i> je definováno
+  v souboru <a href=""><code></code></a>.
+</p>
+
+  <dt>Namespace</dt>
+  <dd><a href="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby">https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby</a> (prefix: osoby)</dd>
+
+<dt>Importy</dt>
+  <dd>
+    <strong>Prefix:</strong> [object Promise]<br>
+    <strong>Namespace:</strong> [object Promise]<br>
+    <strong>Schema Location:</strong> ..&#x2F;místo&#x2F;schema.xsd
+  </dd>
+
+
+<section>
+  <h4>Element <code>fyzická_osoba</code></h4>
+</section>
+
+</section>
+</section>
+<section>
 <h2>Specifikace struktury pro Osoba ve vztahu k dokumentu</h2>
 <p>Datová struktura pro Osoba ve vztahu k dokumentu. </p>
 
@@ -1131,62 +1187,6 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 </section>
 </section>
 <section>
-<h2>Specifikace struktury pro Fyzická osoba ve vztahu k dokumentu</h2>
-<p>Datová struktura pro Fyzická osoba ve vztahu k dokumentu. </p>
-
-<section>
-<h3>Přehled XML struktury</h3>
-<p>
-  Popis XSD zachycující strukturu pro <i>Fyzická osoba ve vztahu k dokumentu</i> je definováno
-  v souboru <a href=""><code></code></a>.
-</p>
-
-  <dt>Namespace</dt>
-  <dd><a href="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby">https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby</a> (prefix: osoby)</dd>
-
-<dt>Importy</dt>
-  <dd>
-    <strong>Prefix:</strong> [object Promise]<br>
-    <strong>Namespace:</strong> [object Promise]<br>
-    <strong>Schema Location:</strong> ..&#x2F;místo&#x2F;schema.xsd
-  </dd>
-
-
-<section>
-  <h4>Element <code>fo</code></h4>
-</section>
-
-</section>
-</section>
-<section>
-<h2>Specifikace struktury pro Osoba ve vztahu k dokumentu</h2>
-<p>Datová struktura pro Osoba ve vztahu k dokumentu. </p>
-
-<section>
-<h3>Přehled XML struktury</h3>
-<p>
-  Popis XSD zachycující strukturu pro <i>Osoba ve vztahu k dokumentu</i> je definováno
-  v souboru <a href=""><code></code></a>.
-</p>
-
-  <dt>Namespace</dt>
-  <dd><a href="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby">https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby</a> (prefix: osoby)</dd>
-
-<dt>Importy</dt>
-  <dd>
-    <strong>Prefix:</strong> [object Promise]<br>
-    <strong>Namespace:</strong> [object Promise]<br>
-    <strong>Schema Location:</strong> ..&#x2F;místo&#x2F;schema.xsd
-  </dd>
-
-
-<section>
-  <h4>Element <code></code></h4>
-</section>
-
-</section>
-</section>
-<section>
 <h2>Specifikace struktury pro Právnická osoba jako osoba ve vztahu k dokumentu</h2>
 <p>Datová struktura pro Právnická osoba jako osoba ve vztahu k dokumentu. </p>
 
@@ -1209,7 +1209,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 
 
 <section>
-  <h4>Element <code>po</code></h4>
+  <h4>Element <code>právnická_osoba</code></h4>
 </section>
 
 </section>
@@ -1237,7 +1237,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 
 
 <section>
-  <h4>Element <code>pfo_z_or</code></h4>
+  <h4>Element <code>podnikající_fyzická_osoba_zapsaná_v_or</code></h4>
 </section>
 
 </section>
@@ -1265,7 +1265,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 
 
 <section>
-  <h4>Element <code>pfo_nz_or</code></h4>
+  <h4>Element <code>podnikající_fyzická_osoba_nezapsaná_v_or</code></h4>
 </section>
 
 </section>
@@ -1289,7 +1289,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 
 
 <section>
-  <h4>Element <code>eidas_np</code></h4>
+  <h4>Element <code>NaturalPersonType</code></h4>
 </section>
 
 </section>
@@ -1313,7 +1313,35 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 
 
 <section>
-  <h4>Element <code>eidas_lp</code></h4>
+  <h4>Element <code>LegalPersonType</code></h4>
+</section>
+
+</section>
+</section>
+<section>
+<h2>Specifikace struktury pro Fyzická osoba jako osoba ve vztahu k dokumentu</h2>
+<p>Datová struktura pro Fyzická osoba jako osoba ve vztahu k dokumentu. </p>
+
+<section>
+<h3>Přehled XML struktury</h3>
+<p>
+  Popis XSD zachycující strukturu pro <i>Fyzická osoba jako osoba ve vztahu k dokumentu</i> je definováno
+  v souboru <a href=""><code></code></a>.
+</p>
+
+  <dt>Namespace</dt>
+  <dd><a href="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby">https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby</a> (prefix: osoby)</dd>
+
+<dt>Importy</dt>
+  <dd>
+    <strong>Prefix:</strong> [object Promise]<br>
+    <strong>Namespace:</strong> [object Promise]<br>
+    <strong>Schema Location:</strong> ..&#x2F;místo&#x2F;schema.xsd
+  </dd>
+
+
+<section>
+  <h4>Element <code>fyzická_osoba_ve_vztahu_k_dokumentu</code></h4>
 </section>
 
 </section>

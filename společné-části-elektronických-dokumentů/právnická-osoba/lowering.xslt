@@ -13,14 +13,14 @@
   <xsl:template match="/sp:sparql">
     <xsl:apply-templates select="sp:results/sp:result"/>
   </xsl:template>
-  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu&#34;]">
-    <osoby:fyzická_osoba>
-      <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727280250648-5253-44c4-a1e6">
+  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/právnická-osoba-jako-osoba-ve-vztahu-k-dokumentu&#34;]">
+    <osoby:právnická_osoba>
+      <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423142831-acec-f6a9-8b34">
         <xsl:with-param name="id">
           <xsl:copy-of select="sp:binding[@name=$subj]/*"/>
         </xsl:with-param>
       </xsl:call-template>
-    </osoby:fyzická_osoba>
+    </osoby:právnická_osoba>
   </xsl:template>
   <xsl:template match="@xml:lang">
     <xsl:copy-of select="."/>
@@ -32,7 +32,7 @@
   <xsl:template match="sp:uri">
     <xsl:value-of select="."/>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727280250648-5253-44c4-a1e6">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423142831-acec-f6a9-8b34">
     <xsl:param name="id"/>
     <xsl:param name="type_name" select="()"/>
     <xsl:param name="no_iri" select="false()"/>
@@ -51,36 +51,26 @@
     <xsl:variable name="id_test">
       <xsl:value-of select="c:id-key($id/*)"/>
     </xsl:variable>
-    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/jméno-fyzické-osoby&#34;]">
-      <osoby:jméno>
+    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/obchodní-firma&#34;]">
+      <osoby:obchodní_firma>
         <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
-      </osoby:jméno>
+      </osoby:obchodní_firma>
     </xsl:for-each>
-    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/další-jméno-fyzické-osoby&#34;]">
-      <osoby:další_jména>
+    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/identifikační-číslo-osoby&#34;]">
+      <osoby:ičo>
         <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
-      </osoby:další_jména>
+      </osoby:ičo>
     </xsl:for-each>
-    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/příjmení-fyzické-osoby&#34;]">
-      <osoby:příjmení_fyzické_osoby>
-        <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
-      </osoby:příjmení_fyzické_osoby>
-    </xsl:for-each>
-    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/datum-narození&#34;]">
-      <osoby:datum_narození>
-        <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
-      </osoby:datum_narození>
-    </xsl:for-each>
-    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-bydliště-fyzické-osoby&#34;]">
-      <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727280328795-652b-4eaa-96cf">
+    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-datovou-schránku-osoby&#34;]">
+      <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423226878-fe7c-4365-80b4">
         <xsl:with-param name="id">
           <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
         </xsl:with-param>
         <xsl:with-param name="no_iri" select="true()"/>
       </xsl:call-template>
     </xsl:for-each>
-    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-datovou-schránku-fyzické-osoby&#34;]">
-      <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727875337204-076b-abe1-af36">
+    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-sídlo-právnické-osoby&#34;]">
+      <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423323103-617c-40d6-b997">
         <xsl:with-param name="id">
           <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
         </xsl:with-param>
@@ -88,7 +78,7 @@
       </xsl:call-template>
     </xsl:for-each>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727280328795-652b-4eaa-96cf">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423226878-fe7c-4365-80b4">
     <xsl:param name="id"/>
     <xsl:param name="type_name" select="()"/>
     <xsl:param name="no_iri" select="false()"/>
@@ -107,8 +97,33 @@
     <xsl:variable name="id_test">
       <xsl:value-of select="c:id-key($id/*)"/>
     </xsl:variable>
-    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-místo-bydliště&#34;]">
-      <osoby:trvalé_bydliště>
+    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-datové-schránky&#34;]">
+      <osoby:datová_schránka>
+        <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
+      </osoby:datová_schránka>
+    </xsl:for-each>
+  </xsl:template>
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423323103-617c-40d6-b997">
+    <xsl:param name="id"/>
+    <xsl:param name="type_name" select="()"/>
+    <xsl:param name="no_iri" select="false()"/>
+    <xsl:if test="not(empty($type_name))">
+      <xsl:attribute name="xsi:type">
+        <xsl:value-of select="$type_name"/>
+      </xsl:attribute>
+    </xsl:if>
+    <xsl:if test="not($no_iri)">
+      <xsl:for-each select="$id/sp:uri">
+        <c:iri>
+          <xsl:value-of select="."/>
+        </c:iri>
+      </xsl:for-each>
+    </xsl:if>
+    <xsl:variable name="id_test">
+      <xsl:value-of select="c:id-key($id/*)"/>
+    </xsl:variable>
+    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/má-místo-sídla&#34;]">
+      <osoby:sídlo>
         <xsl:choose>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo&#34;]">
             <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727183573744-3fff-319d-9afd">
@@ -135,32 +150,7 @@
             </xsl:call-template>
           </xsl:when>
         </xsl:choose>
-      </osoby:trvalé_bydliště>
-    </xsl:for-each>
-  </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727875337204-076b-abe1-af36">
-    <xsl:param name="id"/>
-    <xsl:param name="type_name" select="()"/>
-    <xsl:param name="no_iri" select="false()"/>
-    <xsl:if test="not(empty($type_name))">
-      <xsl:attribute name="xsi:type">
-        <xsl:value-of select="$type_name"/>
-      </xsl:attribute>
-    </xsl:if>
-    <xsl:if test="not($no_iri)">
-      <xsl:for-each select="$id/sp:uri">
-        <c:iri>
-          <xsl:value-of select="."/>
-        </c:iri>
-      </xsl:for-each>
-    </xsl:if>
-    <xsl:variable name="id_test">
-      <xsl:value-of select="c:id-key($id/*)"/>
-    </xsl:variable>
-    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-datové-schránky&#34;]">
-      <osoby:datová_schránka>
-        <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
-      </osoby:datová_schránka>
+      </osoby:sídlo>
     </xsl:for-each>
   </xsl:template>
   <xsl:template match="@*|*"/>

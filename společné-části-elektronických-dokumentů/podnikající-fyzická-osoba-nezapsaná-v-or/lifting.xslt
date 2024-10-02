@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:místa="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místa" xmlns:ns0="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/" xmlns:ns1="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/" xmlns:ns2="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/" xmlns:ns3="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:místa="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místa" xmlns:ns0="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/" xmlns:ns1="https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/" xmlns:ns2="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/">
   <xsl:import href="../místo/lifting.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
   <xsl:template match="/osoby:podnikající_fyzická_osoba_nezapsaná_v_or">
@@ -98,29 +98,6 @@
           <xsl:with-param name="no_iri" select="true()"/>
         </xsl:call-template>
       </ns0:má-bydliště-fyzické-osoby>
-      <xsl:for-each select="osoby:doručovací_místo">
-        <ns3:doručovací-místo>
-          <xsl:variable name="type" select="resolve-QName(@xsi:type,.)"/>
-          <xsl:variable name="types">
-            <xsl:sequence>
-              <místa:zahraniční_adresa/>
-              <místa:adresní_místo/>
-              <místa:adresa_neevidovaná_v_rúian/>
-            </xsl:sequence>
-          </xsl:variable>
-          <xsl:choose>
-            <xsl:when test="$type=node-name($types/*[1])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727183573744-3fff-319d-9afd"/>
-            </xsl:when>
-            <xsl:when test="$type=node-name($types/*[2])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727183578102-e610-0607-ac82"/>
-            </xsl:when>
-            <xsl:when test="$type=node-name($types/*[3])">
-              <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727446931152-3102-efce-91e3"/>
-            </xsl:when>
-          </xsl:choose>
-        </ns3:doručovací-místo>
-      </xsl:for-each>
     </rdf:Description>
   </xsl:template>
   <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727426892771-3a58-f1b0-9cff">

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:místa="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místa" xmlns:ns0="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/" xmlns:ns1="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:místa="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místa" xmlns:ns0="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/" xmlns:ns1="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/">
   <xsl:import href="../místo/lifting.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
-  <xsl:template match="/osoby:podnikající_fyzická_osoba_zapsaná_v_or">
+  <xsl:template match="/osoby:právnická_osoba">
     <rdf:RDF>
       <xsl:variable name="result">
         <xsl:sequence>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423572045-6a91-c43b-9265"/>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423142831-acec-f6a9-8b34"/>
         </xsl:sequence>
       </xsl:variable>
       <xsl:for-each select="$result">
@@ -34,7 +34,7 @@
       </xsl:copy>
     </xsl:for-each>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423572045-6a91-c43b-9265">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423142831-acec-f6a9-8b34">
     <xsl:param name="arc" select="()"/>
     <xsl:param name="no_iri" select="false()"/>
     <rdf:Description>
@@ -56,7 +56,7 @@
         </id>
       </xsl:variable>
       <xsl:copy-of select="$id//@*"/>
-      <rdf:type rdf:resource="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/podnikající-fyzická-osoba-zapsaná-v-obchodním-rejstříku-jako-osoba-ve-vztahu-k-dokumentu"/>
+      <rdf:type rdf:resource="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/právnická-osoba-jako-osoba-ve-vztahu-k-dokumentu"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="osoby:obchodní_firma">
         <ns0:obchodní-firma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
@@ -65,24 +65,24 @@
         </ns0:obchodní-firma>
       </xsl:for-each>
       <xsl:for-each select="osoby:ičo">
-        <ns1:identifikační-číslo-osoby rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        <ns0:identifikační-číslo-osoby rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
-        </ns1:identifikační-číslo-osoby>
+        </ns0:identifikační-číslo-osoby>
       </xsl:for-each>
-      <ns1:má-datovou-schránku-osoby>
-        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423770262-2b4a-c5d6-ae23">
+      <ns0:má-datovou-schránku-osoby>
+        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423226878-fe7c-4365-80b4">
           <xsl:with-param name="no_iri" select="true()"/>
         </xsl:call-template>
-      </ns1:má-datovou-schránku-osoby>
-      <ns0:má-bydliště-fyzické-osoby>
-        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423770314-3c84-1df8-a9bf">
+      </ns0:má-datovou-schránku-osoby>
+      <ns1:má-sídlo-právnické-osoby>
+        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423323103-617c-40d6-b997">
           <xsl:with-param name="no_iri" select="true()"/>
         </xsl:call-template>
-      </ns0:má-bydliště-fyzické-osoby>
+      </ns1:má-sídlo-právnické-osoby>
     </rdf:Description>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423770262-2b4a-c5d6-ae23">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423226878-fe7c-4365-80b4">
     <xsl:param name="arc" select="()"/>
     <xsl:param name="no_iri" select="false()"/>
     <rdf:Description>
@@ -107,14 +107,14 @@
       <rdf:type rdf:resource="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/datová-schránka"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="osoby:datová_schránka">
-        <ns1:má-identifikátor-datové-schránky rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        <ns0:má-identifikátor-datové-schránky rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
-        </ns1:má-identifikátor-datové-schránky>
+        </ns0:má-identifikátor-datové-schránky>
       </xsl:for-each>
     </rdf:Description>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423770314-3c84-1df8-a9bf">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423323103-617c-40d6-b997">
     <xsl:param name="arc" select="()"/>
     <xsl:param name="no_iri" select="false()"/>
     <rdf:Description>
@@ -136,10 +136,10 @@
         </id>
       </xsl:variable>
       <xsl:copy-of select="$id//@*"/>
-      <rdf:type rdf:resource="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/bydliště-fyzické-osoby"/>
+      <rdf:type rdf:resource="https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/sídlo"/>
       <xsl:copy-of select="$arc"/>
-      <xsl:for-each select="osoby:trvalé_bydliště">
-        <ns0:má-místo-bydliště>
+      <xsl:for-each select="osoby:sídlo">
+        <ns1:má-místo-sídla>
           <xsl:variable name="type" select="resolve-QName(@xsi:type,.)"/>
           <xsl:variable name="types">
             <xsl:sequence>
@@ -159,7 +159,7 @@
               <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727446931152-3102-efce-91e3"/>
             </xsl:when>
           </xsl:choose>
-        </ns0:má-místo-bydliště>
+        </ns1:má-místo-sídla>
       </xsl:for-each>
     </rdf:Description>
   </xsl:template>

@@ -77,36 +77,6 @@
         <xsl:with-param name="no_iri" select="true()"/>
       </xsl:call-template>
     </xsl:for-each>
-    <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/doručovací-místo&#34;]">
-      <osoby:doručovací_místo>
-        <xsl:choose>
-          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727183573744-3fff-319d-9afd">
-              <xsl:with-param name="id">
-                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
-              </xsl:with-param>
-              <xsl:with-param name="type_name" select="&#34;místa:zahraniční_adresa&#34;"/>
-            </xsl:call-template>
-          </xsl:when>
-          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727183578102-e610-0607-ac82">
-              <xsl:with-param name="id">
-                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
-              </xsl:with-param>
-              <xsl:with-param name="type_name" select="&#34;místa:adresní_místo&#34;"/>
-            </xsl:call-template>
-          </xsl:when>
-          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/místo&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727446931152-3102-efce-91e3">
-              <xsl:with-param name="id">
-                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
-              </xsl:with-param>
-              <xsl:with-param name="type_name" select="&#34;místa:adresa_neevidovaná_v_rúian&#34;"/>
-            </xsl:call-template>
-          </xsl:when>
-        </xsl:choose>
-      </osoby:doručovací_místo>
-    </xsl:for-each>
   </xsl:template>
   <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727423770262-2b4a-c5d6-ae23">
     <xsl:param name="id"/>

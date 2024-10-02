@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:formuláře="https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby">
-  <xsl:import href="../../společné-části-elektronických-dokumentů/2024-10-04/person-in-relationship-with-a-document/lowering.xslt"/>
+  <xsl:import href="../../společné-části-elektronických-dokumentů/2024-10-04/osoba-ve-vztahu-k-dokumentu/lowering.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" indent="yes"/>
   <xsl:param name="subj" select="'s'"/>
   <xsl:param name="pred" select="'p'"/>
@@ -72,15 +72,15 @@
       <formuláře:odesílatel>
         <xsl:choose>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191874076-2b69-749e-9e91">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781423973-f8b2-ef43-983c">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
-              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba&#34;"/>
+              <xsl:with-param name="type_name" select="&#34;osoby:osoba_ve_vztahu_k_dokumentu&#34;"/>
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191881510-e100-9761-b2a3">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781455324-19b0-ea50-a017">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -88,7 +88,31 @@
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191896626-e404-554e-8ed2">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790068060-800f-1f0d-bfb0">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:fyzická_osoba_eidas&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790074947-2223-3c55-b14a">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790081708-36a4-c28c-9339">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba_eidas&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790088059-e223-fb14-8d07">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -96,7 +120,7 @@
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191904594-0067-a227-add3">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790092370-dfb7-d244-a202">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -110,15 +134,15 @@
       <formuláře:příjemce>
         <xsl:choose>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191874076-2b69-749e-9e91">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781423973-f8b2-ef43-983c">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
-              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba&#34;"/>
+              <xsl:with-param name="type_name" select="&#34;osoby:osoba_ve_vztahu_k_dokumentu&#34;"/>
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191881510-e100-9761-b2a3">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781455324-19b0-ea50-a017">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -126,7 +150,31 @@
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191896626-e404-554e-8ed2">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790068060-800f-1f0d-bfb0">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:fyzická_osoba_eidas&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790074947-2223-3c55-b14a">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790081708-36a4-c28c-9339">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba_eidas&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790088059-e223-fb14-8d07">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -134,7 +182,7 @@
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191904594-0067-a227-add3">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790092370-dfb7-d244-a202">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -148,15 +196,15 @@
       <formuláře:uživatel_služby>
         <xsl:choose>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191874076-2b69-749e-9e91">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781423973-f8b2-ef43-983c">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
-              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba&#34;"/>
+              <xsl:with-param name="type_name" select="&#34;osoby:osoba_ve_vztahu_k_dokumentu&#34;"/>
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191881510-e100-9761-b2a3">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781455324-19b0-ea50-a017">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -164,7 +212,31 @@
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191896626-e404-554e-8ed2">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790068060-800f-1f0d-bfb0">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:fyzická_osoba_eidas&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790074947-2223-3c55-b14a">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790081708-36a4-c28c-9339">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba_eidas&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790088059-e223-fb14-8d07">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -172,7 +244,7 @@
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191904594-0067-a227-add3">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790092370-dfb7-d244-a202">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -363,15 +435,15 @@
       <formuláře:zastoupený>
         <xsl:choose>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191874076-2b69-749e-9e91">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781423973-f8b2-ef43-983c">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
-              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba&#34;"/>
+              <xsl:with-param name="type_name" select="&#34;osoby:osoba_ve_vztahu_k_dokumentu&#34;"/>
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191881510-e100-9761-b2a3">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727781455324-19b0-ea50-a017">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -379,7 +451,31 @@
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191896626-e404-554e-8ed2">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790068060-800f-1f0d-bfb0">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:fyzická_osoba_eidas&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790074947-2223-3c55-b14a">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790081708-36a4-c28c-9339">
+              <xsl:with-param name="id">
+                <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+              </xsl:with-param>
+              <xsl:with-param name="type_name" select="&#34;osoby:právnická_osoba_eidas&#34;"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790088059-e223-fb14-8d07">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -387,7 +483,7 @@
             </xsl:call-template>
           </xsl:when>
           <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;null&#34;]">
-            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727191904594-0067-a227-add3">
+            <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727790092370-dfb7-d244-a202">
               <xsl:with-param name="id">
                 <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
               </xsl:with-param>
@@ -399,7 +495,7 @@
     </xsl:for-each>
     <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/zástupce&#34;]">
       <formuláře:zástupce>
-        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727280250648-5253-44c4-a1e6">
+        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727862945440-8737-4796-be41">
           <xsl:with-param name="id">
             <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
           </xsl:with-param>
