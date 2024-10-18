@@ -7627,7 +7627,7 @@
         ],
         "extensions": {
             "https://ofn.gov.cz/slovník/psm/extensions/xml": {
-                "namespace": "http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/mista",
+                "namespace": "http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby",
                 "namespacePrefix": "osoby"
             }
         }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/mista" xmlns:osoby="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/mista" xmlns:místa="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/mista" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
-  <xs:include schemaLocation="../místa/schema.xsd"/>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby" xmlns:osoby="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby" xmlns:místa="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/mista" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:import namespace="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/mista" schemaLocation="../místa/schema.xsd"/>
   <xs:complexType name="fyzická_osoba" sawsdl:modelReference="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu">
     <xs:annotation>
       <xs:documentation xml:lang="cs">
