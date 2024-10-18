@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:formuláře="https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" xmlns:ns0="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/" xmlns:ns1="https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/" xmlns:ns2="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/" xmlns:ns3="https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/" xmlns:ns4="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/" xmlns:ns5="https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/" xmlns:ns6="https://slovník.gov.cz/agendový/104/pojem/" xmlns:ns7="https://slovník.gov.cz/legislativní/sbírka/329/2020/pojem/" xmlns:ns8="https://slovník.gov.cz/datový/číselníky/pojem/" xmlns:ns9="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/" xmlns:ns10="https://slovník.gov.cz/generický/digitální-objekty/pojem/">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:formuláře="http://dia.gov.cz/ns/dokumenty-z-formularu-ZoPDS" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:osoby="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby" xmlns:ns0="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/" xmlns:ns1="https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/" xmlns:ns2="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/" xmlns:ns3="https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/" xmlns:ns4="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/" xmlns:ns5="https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/" xmlns:ns6="https://slovník.gov.cz/agendový/104/pojem/" xmlns:ns7="https://slovník.gov.cz/legislativní/sbírka/329/2020/pojem/" xmlns:ns8="https://slovník.gov.cz/datový/číselníky/pojem/" xmlns:ns9="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/" xmlns:ns10="https://slovník.gov.cz/generický/digitální-objekty/pojem/">
   <xsl:import href="../../společné-části-elektronických-dokumentů/2024-10-04/osoba-ve-vztahu-k-dokumentu/lifting.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
   <xsl:template match="/formuláře:dokument">
@@ -203,7 +203,7 @@
       </xsl:for-each>
       <xsl:for-each select="formuláře:způsob_provedení_úkonu">
         <ns2:má-způsob-provedení-digitálního-úkonu>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727173309348-2251-fc6a-8fd9"/>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1729255142959-6209-d6a1-942c"/>
         </ns2:má-způsob-provedení-digitálního-úkonu>
       </xsl:for-each>
       <xsl:for-each select="formuláře:byl_vytvořen_formulářem">
@@ -440,7 +440,7 @@
       </xsl:for-each>
     </rdf:Description>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727173309348-2251-fc6a-8fd9">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1729255142959-6209-d6a1-942c">
     <xsl:param name="arc" select="()"/>
     <xsl:param name="no_iri" select="false()"/>
     <rdf:Description>
@@ -462,7 +462,7 @@
         </id>
       </xsl:variable>
       <xsl:copy-of select="$id//@*"/>
-      <rdf:type rdf:resource="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/způsob-povedení-digitálního-úkonu"/>
+      <rdf:type rdf:resource="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/způsob-provedení-digitálního-úkonu"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="formuláře:kód">
         <ns8:kód-položky-číselníku rdf:datatype="http://www.w3.org/2001/XMLSchema#string">

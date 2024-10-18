@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:místa="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místa" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="https://slovník.gov.cz/generický/umístění/pojem/" xmlns:ns1="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/" xmlns:ns2="https://slovník.gov.cz/generický/adresy/pojem/">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:místa="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/mista" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="https://slovník.gov.cz/generický/umístění/pojem/" xmlns:ns1="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/" xmlns:ns2="https://slovník.gov.cz/generický/adresy/pojem/">
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
   <xsl:template match="/místa:zahraniční_adresa">
     <rdf:RDF>

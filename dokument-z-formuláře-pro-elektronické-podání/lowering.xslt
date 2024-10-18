@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:formuláře="https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:formuláře="http://dia.gov.cz/ns/dokumenty-z-formularu-ZoPDS" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:osoby="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby">
   <xsl:import href="../../společné-části-elektronických-dokumentů/2024-10-04/osoba-ve-vztahu-k-dokumentu/lowering.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" indent="yes"/>
   <xsl:param name="subj" select="'s'"/>
@@ -279,7 +279,7 @@
     </xsl:for-each>
     <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/má-způsob-provedení-digitálního-úkonu&#34;]">
       <formuláře:způsob_provedení_úkonu>
-        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727173309348-2251-fc6a-8fd9">
+        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1729255142959-6209-d6a1-942c">
           <xsl:with-param name="id">
             <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
           </xsl:with-param>
@@ -533,7 +533,7 @@
       </formuláře:název>
     </xsl:for-each>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1727173309348-2251-fc6a-8fd9">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1729255142959-6209-d6a1-942c">
     <xsl:param name="id"/>
     <xsl:param name="type_name" select="()"/>
     <xsl:param name="no_iri" select="false()"/>

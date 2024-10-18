@@ -24,27 +24,27 @@
         <script class="remove" src="https://ofn.gov.cz/static/js/respec-odcz.js"></script>
         <script class="remove">
             var respecConfig = {
-                                           specStatus: "WD",
-                                           shortName: "formulare-zopds",  
-                                           thisVersion: "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/index.html",
-                                           latestVersion: "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/index.html",
-                                           shortName: "Dokument z formuláře pro elektronické podání",
-                                           showPreviousVersion: false,
-                                           editors: [{
-                                                 name: "Jakub Klímek",
-                                                 orcid: "0000-0001-7234-3051",
-                                                 company:    "Digitální a informační agentura",
-                                                 companyURL: "https://dia.gov.cz"
-                                               }],
-                               github: "https://github.com/datagov-cz/otevrene-formalni-normy/",
-                                                                          otherLinks: [{
-                                                                                   key: "Odkazy",
-                                                                                   data: [{
-                                                                                       value: "Celá specifikace na GitHub",
-                                                                                       href: "https://github.com/datagov-cz/otevrene-formalni-normy/tree/develop/dokumenty-z-formulářů-ZoPDS/draft"
-                                                                                   }]
-                                                                               }]
-                                         };
+                                 specStatus: "REC",
+                                 publishDate: "2024-10-04",
+                                 shortName: "formuláře-zopds",  
+                                 thisVersion: "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/",
+                                 latestVersion: "https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/",
+                                 showPreviousVersion: false,
+                                 editors: [{
+                                   name: "Jakub Klímek",
+                                   orcid: "0000-0001-7234-3051",
+                                   company:    "Digitální a informační agentura",
+                                   companyURL: "https://dia.gov.cz"
+                                 }],
+                                 github: "https://github.com/datagov-cz/otevrene-formalni-normy/",
+                                 otherLinks: [{
+                                   key: "Odkazy",
+                                   data: [{
+                                     value: "Celá specifikace na GitHub",
+                                     href: "https://github.com/datagov-cz/otevrene-formalni-normy/tree/master/dokumenty-z-formulářů-ZoPDS/2024-10-04"
+                                   }]
+                                 }]
+                               };
         </script>
     </head>
     <body>
@@ -52,7 +52,8 @@
 <section id="abstract" class="introductory">
     <h2>Abstrakt</h2>
     <p>
-        Tento dokument byl obsahuje specifikaci pro dokumenty vytvořené formuláři pro elektronické podání dle ZoPDS.
+        Tento dokument obsahuje specifikaci pro dokumenty vytvořené <a href="https://www.e-sbirka.cz/eli/cz/sb/2020/12/2024-02-01/dokument/norma/cast_1/par_4/odst_3">formuláři pro elektronické podání dle ZoPDS</a> (<a href="https://www.e-sbirka.cz/eli/cz/sb/2020/12/2024-02-01">12/2020 Sb., o právu na digitální služby a o změně některých zákonů</a>).
+        Využívá <a href="../../společné-části-elektronických-dokumentů/2024-10-04/">Společné části elektronických dokumentů</a>.
     </p>
 </section>
 <!--<section>
@@ -69,7 +70,7 @@
                 <tr><td>XSLT lowering</td><td><a href="./lowering.xslt">./lowering.xslt</a></td></tr>
                 <tr><td>PlantUML diagram</td><td><a href="./konceptuální-model.plantuml">./konceptuální-model.plantuml</a></td></tr>
                 <tr><td>Konceptuální diagram</td><td><a href="./konceptuální-model.svg">./konceptuální-model.svg</a></td></tr>
-                <tr><td>Dokumentace</td><td><a href=".">.</a></td></tr>
+                <tr><td>Dokumentace</td><td><a href="./">./</a></td></tr>
             </tbody>
         </table>
     </section>-->
@@ -78,18 +79,27 @@
 <h2>Konceptuální model</h2>
 V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebné pro <i>Dokument z formuláře pro elektronické podání</i>.
 
-<figure><img src="./konceptuální-model.svg"><figcaption>Diagram konceptuálního modelu.</figcaption></figure>
+<figure>
+    <a href="./konceptuální-model.svg">
+        <img src="./konceptuální-model.svg">
+    </a>
+    <figcaption>
+        <a href="./konceptuální-model.svg">
+            Diagram konceptuálního modelu.
+        </a>
+    </figcaption>
+</figure>
 
-<section id="konceptuální-třída-dokument-vytvořený-elektronickým-formulářem">
+<section id="konceptuální-třída-dokument-vytvořený-elektronickým-formulářem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;dokument-vytvořený-elektronickým-formulářem">
 <h3>Dokument vytvořený elektronickým formulářem</h3>
 <dl>
 <dt>Význam</dt>
 <dd>Koncept Dokument vytvořený elektronickým formulářem je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a>.</dd>
 <dt>Nadřazený typ</dt>
-<dd><a href="#konceptuální-třída-elektronický-dokument">Elektronický dokument</a></dd>
+<dd><a href="#konceptuální-třída-elektronický-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;elektronický-dokument">Elektronický dokument</a></dd>
 </dl>
 
-<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-doručit-osvědčení-do-datové-schránky">
+<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-doručit-osvědčení-do-datové-schránky-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;doručit-osvědčení-do-datové-schránky">
 <h4>doručit osvědčení do datové schránky</h4>
 <dl>
 <dt>Jméno</dt>
@@ -101,7 +111,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept doručit osvědčení do datové schránky je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/doručit-osvědčení-do-datové-schránky">doručit osvědčení do datové schránky</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-služba-v-přenesené-působnosti">
+<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-služba-v-přenesené-působnosti-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;služba-v-přenesené-působnosti">
 <h4>služba v přenesené působnosti</h4>
 <dl>
 <dt>Jméno</dt>
@@ -113,7 +123,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept služba v přenesené působnosti je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/služba-v-přenesené-působnosti">služba v přenesené působnosti</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-byl-vyplněn-v-isvs">
+<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-byl-vyplněn-v-isvs-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;byl-vyplněn-v-isvs">
 <h4>Vztah (asociace): byl vyplněn v isvs</h4>
 <dl>
 <dt>Jméno</dt>
@@ -123,11 +133,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-informační-systém-veřejné-správy">Informační systém veřejné správy</a></dd>
+<dd><a href="#konceptuální-třída-informační-systém-veřejné-správy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;365&#x2F;2000&#x2F;pojem&#x2F;informační-systém-veřejné-správy">Informační systém veřejné správy</a></dd>
 <dt>Význam</dt>
 <dd>Koncept byl vyplněn v isvs je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/byl-vyplněn-v-isvs">byl vyplněn v isvs</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-má-způsob-provedení-digitálního-úkonu">
+<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-má-způsob-provedení-digitálního-úkonu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;má-způsob-provedení-digitálního-úkonu">
 <h4>Vztah (asociace): má způsob provedení digitálního úkonu</h4>
 <dl>
 <dt>Jméno</dt>
@@ -137,11 +147,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-způsob-povedení-digitálního-úkonu">Způsob povedení digitálního úkonu</a></dd>
+<dd><a href="#konceptuální-třída-způsob-povedení-digitálního-úkonu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;způsob-povedení-digitálního-úkonu">Způsob povedení digitálního úkonu</a></dd>
 <dt>Význam</dt>
 <dd>Koncept má způsob provedení digitálního úkonu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/má-způsob-provedení-digitálního-úkonu">má způsob provedení digitálního úkonu</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-byl-vytvořen-formulářem">
+<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-byl-vytvořen-formulářem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;byl-vytvořen-formulářem">
 <h4>Vztah (asociace): byl vytvořen formulářem</h4>
 <dl>
 <dt>Jméno</dt>
@@ -151,11 +161,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-elektronický-formulář">Elektronický formulář</a></dd>
+<dd><a href="#konceptuální-třída-elektronický-formulář-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;elektronický-formulář">Elektronický formulář</a></dd>
 <dt>Význam</dt>
 <dd>Koncept byl vytvořen formulářem je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/byl-vytvořen-formulářem">byl vytvořen formulářem</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-uživatel-služby">
+<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-uživatel-služby-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;uživatel-služby">
 <h4>Vztah (asociace): uživatel služby</h4>
 <dl>
 <dt>Jméno</dt>
@@ -165,11 +175,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-osoba-ve-vztahu-k-dokumentu">Osoba ve vztahu k dokumentu</a></dd>
+<dd><a href="#konceptuální-třída-osoba-ve-vztahu-k-dokumentu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;osoba-ve-vztahu-k-dokumentu">Osoba ve vztahu k dokumentu</a></dd>
 <dt>Význam</dt>
 <dd>Koncept uživatel služby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/uživatel-služby">uživatel služby</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-použité-oprávnění-k-zastupování">
+<section id="konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-použité-oprávnění-k-zastupování-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;použité-oprávnění-k-zastupování">
 <h4>Vztah (asociace): použité oprávnění k zastupování</h4>
 <dl>
 <dt>Jméno</dt>
@@ -179,12 +189,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-oprávnění-k-zastupování">Oprávnění k zastupování</a></dd>
+<dd><a href="#konceptuální-třída-oprávnění-k-zastupování-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;oprávnění-k-zastupování">Oprávnění k zastupování</a></dd>
 <dt>Význam</dt>
 <dd>Koncept použité oprávnění k zastupování je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/použité-oprávnění-k-zastupování">použité oprávnění k zastupování</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-elektronický-dokument">
+<section id="konceptuální-třída-elektronický-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;elektronický-dokument">
 <h3>Elektronický dokument</h3>
 <dl>
 <dt>Popis</dt>
@@ -192,10 +202,10 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept Elektronický dokument je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/elektronický-dokument">Elektronický dokument</a>.</dd>
 <dt>Nadřazený typ</dt>
-<dd><a href="#konceptuální-třída-dokument">Dokument</a></dd>
+<dd><a href="#konceptuální-třída-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;dokument">Dokument</a></dd>
 </dl>
 
-<section id="konceptuální-vlastnost-elektronický-dokument-počet-příloh">
+<section id="konceptuální-vlastnost-elektronický-dokument-počet-příloh-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;počet-příloh">
 <h4>počet příloh</h4>
 <dl>
 <dt>Jméno</dt>
@@ -207,7 +217,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept počet příloh je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/počet-příloh">počet příloh</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-elektronický-dokument-obsahuje-přílohu">
+<section id="konceptuální-vlastnost-elektronický-dokument-obsahuje-přílohu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;obsahuje-přílohu">
 <h4>Vztah (asociace): obsahuje přílohu</h4>
 <dl>
 <dt>Jméno</dt>
@@ -217,11 +227,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-příloha">Příloha</a></dd>
+<dd><a href="#konceptuální-třída-příloha-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;příloha">Příloha</a></dd>
 <dt>Význam</dt>
 <dd>Koncept obsahuje přílohu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/obsahuje-přílohu">obsahuje přílohu</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-elektronický-dokument-odesílatel">
+<section id="konceptuální-vlastnost-elektronický-dokument-odesílatel-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;odesílatel">
 <h4>Vztah (asociace): odesílatel</h4>
 <dl>
 <dt>Jméno</dt>
@@ -231,11 +241,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-osoba-ve-vztahu-k-dokumentu">Osoba ve vztahu k dokumentu</a></dd>
+<dd><a href="#konceptuální-třída-osoba-ve-vztahu-k-dokumentu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;osoba-ve-vztahu-k-dokumentu">Osoba ve vztahu k dokumentu</a></dd>
 <dt>Význam</dt>
 <dd>Koncept odesílatel je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/odesílatel">odesílatel</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-elektronický-dokument-příjemce">
+<section id="konceptuální-vlastnost-elektronický-dokument-příjemce-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;příjemce">
 <h4>Vztah (asociace): příjemce</h4>
 <dl>
 <dt>Jméno</dt>
@@ -245,12 +255,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-osoba-ve-vztahu-k-dokumentu">Osoba ve vztahu k dokumentu</a></dd>
+<dd><a href="#konceptuální-třída-osoba-ve-vztahu-k-dokumentu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;osoba-ve-vztahu-k-dokumentu">Osoba ve vztahu k dokumentu</a></dd>
 <dt>Význam</dt>
 <dd>Koncept příjemce je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/příjemce">příjemce</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-informační-systém-veřejné-správy">
+<section id="konceptuální-třída-informační-systém-veřejné-správy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;365&#x2F;2000&#x2F;pojem&#x2F;informační-systém-veřejné-správy">
 <h3>Informační systém veřejné správy</h3>
 <dl>
 <dt>Popis</dt>
@@ -259,7 +269,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Informační systém veřejné správy je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/365/2000/pojem/informační-systém-veřejné-správy">Informační systém veřejné správy</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-informační-systém-veřejné-správy-má-identifikátor-isvs">
+<section id="konceptuální-vlastnost-informační-systém-veřejné-správy-má-identifikátor-isvs-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;agendový&#x2F;104&#x2F;pojem&#x2F;má-identifikátor-isvs">
 <h4>Má identifikátor ISVS</h4>
 <dl>
 <dt>Jméno</dt>
@@ -273,7 +283,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept Má identifikátor ISVS je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-isvs">Má identifikátor ISVS</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-informační-systém-veřejné-správy-název-isvs">
+<section id="konceptuální-vlastnost-informační-systém-veřejné-správy-název-isvs-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;329&#x2F;2020&#x2F;pojem&#x2F;název-isvs">
 <h4>název ISVS</h4>
 <dl>
 <dt>Jméno</dt>
@@ -287,7 +297,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept název ISVS je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/329/2020/pojem/název-isvs">název ISVS</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-informační-systém-veřejné-správy-byl-vyplněn-v-isvs">
+<section id="konceptuální-vlastnost-informační-systém-veřejné-správy-byl-vyplněn-v-isvs-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;byl-vyplněn-v-isvs">
 <h4>Vztah (asociace): byl vyplněn v isvs</h4>
 <dl>
 <dt>Jméno</dt>
@@ -297,21 +307,21 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a></dd>
+<dd><a href="#konceptuální-třída-dokument-vytvořený-elektronickým-formulářem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a></dd>
 <dt>Význam</dt>
 <dd>Koncept byl vyplněn v isvs je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/byl-vyplněn-v-isvs">byl vyplněn v isvs</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-způsob-povedení-digitálního-úkonu">
+<section id="konceptuální-třída-způsob-povedení-digitálního-úkonu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;způsob-povedení-digitálního-úkonu">
 <h3>Způsob povedení digitálního úkonu</h3>
 <dl>
 <dt>Význam</dt>
 <dd>Koncept Způsob povedení digitálního úkonu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/způsob-povedení-digitálního-úkonu">Způsob povedení digitálního úkonu</a>.</dd>
 <dt>Nadřazený typ</dt>
-<dd><a href="#konceptuální-třída-položka-číselníku">Položka číselníku</a></dd>
+<dd><a href="#konceptuální-třída-položka-číselníku-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;datový&#x2F;číselníky&#x2F;pojem&#x2F;položka-číselníku">Položka číselníku</a></dd>
 </dl>
 
-<section id="konceptuální-vlastnost-způsob-povedení-digitálního-úkonu-má-způsob-provedení-digitálního-úkonu">
+<section id="konceptuální-vlastnost-způsob-povedení-digitálního-úkonu-má-způsob-provedení-digitálního-úkonu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;má-způsob-provedení-digitálního-úkonu">
 <h4>Vztah (asociace): má způsob provedení digitálního úkonu</h4>
 <dl>
 <dt>Jméno</dt>
@@ -321,12 +331,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a></dd>
+<dd><a href="#konceptuální-třída-dokument-vytvořený-elektronickým-formulářem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a></dd>
 <dt>Význam</dt>
 <dd>Koncept má způsob provedení digitálního úkonu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/má-způsob-provedení-digitálního-úkonu">má způsob provedení digitálního úkonu</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-položka-číselníku">
+<section id="konceptuální-třída-položka-číselníku-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;datový&#x2F;číselníky&#x2F;pojem&#x2F;položka-číselníku">
 <h3>Položka číselníku</h3>
 <dl>
 <dt>Popis</dt>
@@ -335,7 +345,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Položka číselníku je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/datový/číselníky/pojem/položka-číselníku">Položka číselníku</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-položka-číselníku-kód-položky-číselníku">
+<section id="konceptuální-vlastnost-položka-číselníku-kód-položky-číselníku-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;datový&#x2F;číselníky&#x2F;pojem&#x2F;kód-položky-číselníku">
 <h4>kód položky číselníku</h4>
 <dl>
 <dt>Jméno</dt>
@@ -349,7 +359,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept kód položky číselníku je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/datový/číselníky/pojem/kód-položky-číselníku">kód položky číselníku</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-položka-číselníku-plný-název-položky-číselníku">
+<section id="konceptuální-vlastnost-položka-číselníku-plný-název-položky-číselníku-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;datový&#x2F;číselníky&#x2F;pojem&#x2F;plný-název-položky-číselníku">
 <h4>plný název položky číselníku</h4>
 <dl>
 <dt>Jméno</dt>
@@ -364,7 +374,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept plný název položky číselníku je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/datový/číselníky/pojem/plný-název-položky-číselníku">plný název položky číselníku</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-elektronický-formulář">
+<section id="konceptuální-třída-elektronický-formulář-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;elektronický-formulář">
 <h3>Elektronický formulář</h3>
 <dl>
 <dt>Popis</dt>
@@ -373,7 +383,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Elektronický formulář je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/elektronický-formulář">Elektronický formulář</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-elektronický-formulář-verze">
+<section id="konceptuální-vlastnost-elektronický-formulář-verze-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;verze">
 <h4>verze</h4>
 <dl>
 <dt>Jméno</dt>
@@ -385,7 +395,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept verze je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/verze">verze</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-elektronický-formulář-má-identifikátor-formuláře">
+<section id="konceptuální-vlastnost-elektronický-formulář-má-identifikátor-formuláře-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;má-identifikátor-formuláře">
 <h4>má identifikátor formuláře</h4>
 <dl>
 <dt>Jméno</dt>
@@ -397,7 +407,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept má identifikátor formuláře je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/má-identifikátor-formuláře">má identifikátor formuláře</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-elektronický-formulář-název-formuláře">
+<section id="konceptuální-vlastnost-elektronický-formulář-název-formuláře-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;název-formuláře">
 <h4>název formuláře</h4>
 <dl>
 <dt>Jméno</dt>
@@ -409,7 +419,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept název formuláře je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/název-formuláře">název formuláře</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-elektronický-formulář-byl-vytvořen-formulářem">
+<section id="konceptuální-vlastnost-elektronický-formulář-byl-vytvořen-formulářem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;byl-vytvořen-formulářem">
 <h4>Vztah (asociace): byl vytvořen formulářem</h4>
 <dl>
 <dt>Jméno</dt>
@@ -419,11 +429,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a></dd>
+<dd><a href="#konceptuální-třída-dokument-vytvořený-elektronickým-formulářem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a></dd>
 <dt>Význam</dt>
 <dd>Koncept byl vytvořen formulářem je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/byl-vytvořen-formulářem">byl vytvořen formulářem</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-elektronický-formulář-umožňuje-činit-úkon">
+<section id="konceptuální-vlastnost-elektronický-formulář-umožňuje-činit-úkon-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;umožňuje-činit-úkon">
 <h4>Vztah (asociace): umožňuje činit úkon</h4>
 <dl>
 <dt>Jméno</dt>
@@ -433,11 +443,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-digitální-úkon">Digitální úkon</a></dd>
+<dd><a href="#konceptuální-třída-digitální-úkon-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;digitální-úkon">Digitální úkon</a></dd>
 <dt>Význam</dt>
 <dd>Koncept umožňuje činit úkon je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/umožňuje-činit-úkon">umožňuje činit úkon</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-elektronický-formulář-umožňuje-činit-úkon-služby">
+<section id="konceptuální-vlastnost-elektronický-formulář-umožňuje-činit-úkon-služby-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;umožňuje-činit-úkon-služby">
 <h4>Vztah (asociace): umožňuje činit úkon služby</h4>
 <dl>
 <dt>Jméno</dt>
@@ -447,11 +457,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-služba-veřejné-správy">Služba veřejné správy</a></dd>
+<dd><a href="#konceptuální-třída-služba-veřejné-správy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;služba-veřejné-správy">Služba veřejné správy</a></dd>
 <dt>Význam</dt>
 <dd>Koncept umožňuje činit úkon služby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/umožňuje-činit-úkon-služby">umožňuje činit úkon služby</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-elektronický-formulář-umožňuje-činit-úkon-služby-agendy">
+<section id="konceptuální-vlastnost-elektronický-formulář-umožňuje-činit-úkon-služby-agendy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;umožňuje-činit-úkon-služby-agendy">
 <h4>Vztah (asociace): umožňuje činit úkon služby agendy</h4>
 <dl>
 <dt>Jméno</dt>
@@ -461,19 +471,19 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-agenda">Agenda</a></dd>
+<dd><a href="#konceptuální-třída-agenda-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;agenda">Agenda</a></dd>
 <dt>Význam</dt>
 <dd>Koncept umožňuje činit úkon služby agendy je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/umožňuje-činit-úkon-služby-agendy">umožňuje činit úkon služby agendy</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-dokument">
+<section id="konceptuální-třída-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;dokument">
 <h3>Dokument</h3>
 <dl>
 <dt>Význam</dt>
 <dd>Koncept Dokument je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/dokument">Dokument</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-dokument-k-rukám">
+<section id="konceptuální-vlastnost-dokument-k-rukám-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;k-rukám">
 <h4>k rukám</h4>
 <dl>
 <dt>Jméno</dt>
@@ -485,7 +495,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept k rukám je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/k-rukám">k rukám</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-stručný-obsah-dokumentu">
+<section id="konceptuální-vlastnost-dokument-stručný-obsah-dokumentu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;259&#x2F;2012&#x2F;pojem&#x2F;má-stručný-obsah-dokumentu">
 <h4>stručný obsah dokumentu</h4>
 <dl>
 <dt>Jméno</dt>
@@ -497,7 +507,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept stručný obsah dokumentu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/má-stručný-obsah-dokumentu">stručný obsah dokumentu</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-je-odpovědí-na-dokument">
+<section id="konceptuální-vlastnost-dokument-je-odpovědí-na-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;259&#x2F;2012&#x2F;pojem&#x2F;je-odpovědí-na-dokument">
 <h4>Vztah (asociace): je odpovědí na dokument</h4>
 <dl>
 <dt>Jméno</dt>
@@ -507,11 +517,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-dokument">Dokument</a></dd>
+<dd><a href="#konceptuální-třída-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;dokument">Dokument</a></dd>
 <dt>Význam</dt>
 <dd>Koncept je odpovědí na dokument je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/je-odpovědí-na-dokument">je odpovědí na dokument</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-je-opatřen-identifikátorem">
+<section id="konceptuální-vlastnost-dokument-je-opatřen-identifikátorem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;je-opatřen-identifikátorem">
 <h4>Vztah (asociace): je opatřen identifikátorem</h4>
 <dl>
 <dt>Jméno</dt>
@@ -521,21 +531,21 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-jednoznačný-identifikátor">Jednoznačný identifikátor</a></dd>
+<dd><a href="#konceptuální-třída-jednoznačný-identifikátor-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;jednoznačný-identifikátor">Jednoznačný identifikátor</a></dd>
 <dt>Význam</dt>
 <dd>Koncept je opatřen identifikátorem je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/je-opatřen-identifikátorem">je opatřen identifikátorem</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-příloha">
+<section id="konceptuální-třída-příloha-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;příloha">
 <h3>Příloha</h3>
 <dl>
 <dt>Význam</dt>
 <dd>Koncept Příloha je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/příloha">Příloha</a>.</dd>
 <dt>Nadřazený typ</dt>
-<dd><a href="#konceptuální-třída-digitální-objekt">Digitální objekt</a></dd>
+<dd><a href="#konceptuální-třída-digitální-objekt-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;digitální-objekty&#x2F;pojem&#x2F;digitální-objekt">Digitální objekt</a></dd>
 </dl>
 
-<section id="konceptuální-vlastnost-příloha-název-přílohy">
+<section id="konceptuální-vlastnost-příloha-název-přílohy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;název-přílohy">
 <h4>název přílohy</h4>
 <dl>
 <dt>Jméno</dt>
@@ -547,7 +557,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept název přílohy je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/název-přílohy">název přílohy</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-příloha-obsah-přílohy">
+<section id="konceptuální-vlastnost-příloha-obsah-přílohy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;obsah-přílohy">
 <h4>obsah přílohy</h4>
 <dl>
 <dt>Jméno</dt>
@@ -559,7 +569,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept obsah přílohy je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/obsah-přílohy">obsah přílohy</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-příloha-název-souboru-přílohy">
+<section id="konceptuální-vlastnost-příloha-název-souboru-přílohy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;název-souboru-přílohy">
 <h4>název souboru přílohy</h4>
 <dl>
 <dt>Jméno</dt>
@@ -571,7 +581,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept název souboru přílohy je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/název-souboru-přílohy">název souboru přílohy</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-příloha-obsahuje-přílohu">
+<section id="konceptuální-vlastnost-příloha-obsahuje-přílohu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;obsahuje-přílohu">
 <h4>Vztah (asociace): obsahuje přílohu</h4>
 <dl>
 <dt>Jméno</dt>
@@ -581,12 +591,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-elektronický-dokument">Elektronický dokument</a></dd>
+<dd><a href="#konceptuální-třída-elektronický-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;elektronický-dokument">Elektronický dokument</a></dd>
 <dt>Význam</dt>
 <dd>Koncept obsahuje přílohu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/obsahuje-přílohu">obsahuje přílohu</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-digitální-objekt">
+<section id="konceptuální-třída-digitální-objekt-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;digitální-objekty&#x2F;pojem&#x2F;digitální-objekt">
 <h3>Digitální objekt</h3>
 <dl>
 <dt>Popis</dt>
@@ -595,7 +605,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Digitální objekt je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/digitální-objekty/pojem/digitální-objekt">Digitální objekt</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-digitální-objekt-má-typ-média">
+<section id="konceptuální-vlastnost-digitální-objekt-má-typ-média-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;digitální-objekty&#x2F;pojem&#x2F;má-typ-média">
 <h4>Vztah (asociace): má typ média</h4>
 <dl>
 <dt>Jméno</dt>
@@ -607,12 +617,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-typ-média">Typ média</a></dd>
+<dd><a href="#konceptuální-třída-typ-média-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;digitální-objekty&#x2F;pojem&#x2F;typ-média">Typ média</a></dd>
 <dt>Význam</dt>
 <dd>Koncept má typ média je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/digitální-objekty/pojem/má-typ-média">má typ média</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-jednoznačný-identifikátor">
+<section id="konceptuální-třída-jednoznačný-identifikátor-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;jednoznačný-identifikátor">
 <h3>Jednoznačný identifikátor</h3>
 <dl>
 <dt>Popis</dt>
@@ -621,7 +631,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Jednoznačný identifikátor je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/jednoznačný-identifikátor">Jednoznačný identifikátor</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-jednoznačný-identifikátor-řetězcová-podoba-jednoznačného-identifikátoru">
+<section id="konceptuální-vlastnost-jednoznačný-identifikátor-řetězcová-podoba-jednoznačného-identifikátoru-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;řetězcová-podoba-jednoznačného-identifikátoru">
 <h4>řetězcová podoba jednoznačného identifikátoru</h4>
 <dl>
 <dt>Jméno</dt>
@@ -633,7 +643,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept řetězcová podoba jednoznačného identifikátoru je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/řetězcová-podoba-jednoznačného-identifikátoru">řetězcová podoba jednoznačného identifikátoru</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-jednoznačný-identifikátor-je-opatřen-identifikátorem">
+<section id="konceptuální-vlastnost-jednoznačný-identifikátor-je-opatřen-identifikátorem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;je-opatřen-identifikátorem">
 <h4>Vztah (asociace): je opatřen identifikátorem</h4>
 <dl>
 <dt>Jméno</dt>
@@ -643,12 +653,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-dokument">Dokument</a></dd>
+<dd><a href="#konceptuální-třída-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;dokument">Dokument</a></dd>
 <dt>Význam</dt>
 <dd>Koncept je opatřen identifikátorem je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/je-opatřen-identifikátorem">je opatřen identifikátorem</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-dokument">
+<section id="konceptuální-třída-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;dokument">
 <h3>Dokument</h3>
 <dl>
 <dt>Popis</dt>
@@ -656,20 +666,20 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept Dokument je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/dokument">Dokument</a>.</dd>
 <dt>Nadřazený typ</dt>
-<dd><a href="#konceptuální-třída-dokument">Dokument</a></dd>
+<dd><a href="#konceptuální-třída-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;dokument">Dokument</a></dd>
 </dl>
 
 </section>
-<section id="konceptuální-třída-dokument-veřejnoprávního-původce">
+<section id="konceptuální-třída-dokument-veřejnoprávního-původce-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;dokument-veřejnoprávního-původce">
 <h3>Dokument veřejnoprávního původce</h3>
 <dl>
 <dt>Význam</dt>
 <dd>Koncept Dokument veřejnoprávního původce je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/dokument-veřejnoprávního-původce">Dokument veřejnoprávního původce</a>.</dd>
 <dt>Nadřazený typ</dt>
-<dd><a href="#konceptuální-třída-dokument">Dokument</a></dd>
+<dd><a href="#konceptuální-třída-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;dokument">Dokument</a></dd>
 </dl>
 
-<section id="konceptuální-vlastnost-dokument-veřejnoprávního-původce-číslo-jednací">
+<section id="konceptuální-vlastnost-dokument-veřejnoprávního-původce-číslo-jednací-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;259&#x2F;2012&#x2F;pojem&#x2F;má-číslo-jednací">
 <h4>číslo jednací</h4>
 <dl>
 <dt>Jméno</dt>
@@ -683,7 +693,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept číslo jednací je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/má-číslo-jednací">číslo jednací</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-veřejnoprávního-původce-je-opatřen-identifikátorem">
+<section id="konceptuální-vlastnost-dokument-veřejnoprávního-původce-je-opatřen-identifikátorem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;je-opatřen-identifikátorem">
 <h4>Vztah (asociace): je opatřen identifikátorem</h4>
 <dl>
 <dt>Jméno</dt>
@@ -695,11 +705,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-jednoznačný-identifikátor">Jednoznačný identifikátor</a></dd>
+<dd><a href="#konceptuální-třída-jednoznačný-identifikátor-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;jednoznačný-identifikátor">Jednoznačný identifikátor</a></dd>
 <dt>Význam</dt>
 <dd>Koncept je opatřen identifikátorem je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/je-opatřen-identifikátorem">je opatřen identifikátorem</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-veřejnoprávního-původce-je-zařazen-do-spisu">
+<section id="konceptuální-vlastnost-dokument-veřejnoprávního-původce-je-zařazen-do-spisu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;je-zařazen-do-spisu">
 <h4>Vztah (asociace): je zařazen do spisu</h4>
 <dl>
 <dt>Jméno</dt>
@@ -711,11 +721,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-spis">Spis</a></dd>
+<dd><a href="#konceptuální-třída-spis-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;spis">Spis</a></dd>
 <dt>Význam</dt>
 <dd>Koncept je zařazen do spisu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/je-zařazen-do-spisu">je zařazen do spisu</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-dokument-veřejnoprávního-původce-má-evidenční-číslo-ze-samostatné-evidence-dokumentů">
+<section id="konceptuální-vlastnost-dokument-veřejnoprávního-původce-má-evidenční-číslo-ze-samostatné-evidence-dokumentů-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;259&#x2F;2012&#x2F;pojem&#x2F;má-evidenční-číslo-ze-samostatné-evidence-dokumentů">
 <h4>Vztah (asociace): má evidenční číslo ze samostatné evidence dokumentů</h4>
 <dl>
 <dt>Jméno</dt>
@@ -727,12 +737,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-evidenční-číslo-ze-samostatné-evidence-dokumentů">Evidenční číslo ze samostatné evidence dokumentů</a></dd>
+<dd><a href="#konceptuální-třída-evidenční-číslo-ze-samostatné-evidence-dokumentů-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;259&#x2F;2012&#x2F;pojem&#x2F;evidenční-číslo-ze-samostatné-evidence-dokumentů">Evidenční číslo ze samostatné evidence dokumentů</a></dd>
 <dt>Význam</dt>
 <dd>Koncept má evidenční číslo ze samostatné evidence dokumentů je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/má-evidenční-číslo-ze-samostatné-evidence-dokumentů">má evidenční číslo ze samostatné evidence dokumentů</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-jednoznačný-identifikátor">
+<section id="konceptuální-třída-jednoznačný-identifikátor-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;jednoznačný-identifikátor">
 <h3>Jednoznačný identifikátor</h3>
 <dl>
 <dt>Popis</dt>
@@ -740,10 +750,10 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept Jednoznačný identifikátor je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/jednoznačný-identifikátor">Jednoznačný identifikátor</a>.</dd>
 <dt>Nadřazený typ</dt>
-<dd><a href="#konceptuální-třída-jednoznačný-identifikátor">Jednoznačný identifikátor</a></dd>
+<dd><a href="#konceptuální-třída-jednoznačný-identifikátor-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;jednoznačný-identifikátor">Jednoznačný identifikátor</a></dd>
 </dl>
 
-<section id="konceptuální-vlastnost-jednoznačný-identifikátor-je-opatřen-identifikátorem">
+<section id="konceptuální-vlastnost-jednoznačný-identifikátor-je-opatřen-identifikátorem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;je-opatřen-identifikátorem">
 <h4>Vztah (asociace): je opatřen identifikátorem</h4>
 <dl>
 <dt>Jméno</dt>
@@ -755,12 +765,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-dokument-veřejnoprávního-původce">Dokument veřejnoprávního původce</a></dd>
+<dd><a href="#konceptuální-třída-dokument-veřejnoprávního-původce-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;dokument-veřejnoprávního-původce">Dokument veřejnoprávního původce</a></dd>
 <dt>Význam</dt>
 <dd>Koncept je opatřen identifikátorem je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/je-opatřen-identifikátorem">je opatřen identifikátorem</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-spis">
+<section id="konceptuální-třída-spis-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;spis">
 <h3>Spis</h3>
 <dl>
 <dt>Popis</dt>
@@ -769,7 +779,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Spis je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/spis">Spis</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-spis-spisová-značka">
+<section id="konceptuální-vlastnost-spis-spisová-značka-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;259&#x2F;2012&#x2F;pojem&#x2F;má-spisovou-značku">
 <h4>spisová značka</h4>
 <dl>
 <dt>Jméno</dt>
@@ -781,7 +791,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept spisová značka je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/má-spisovou-značku">spisová značka</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-spis-je-zařazen-do-spisu">
+<section id="konceptuální-vlastnost-spis-je-zařazen-do-spisu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;je-zařazen-do-spisu">
 <h4>Vztah (asociace): je zařazen do spisu</h4>
 <dl>
 <dt>Jméno</dt>
@@ -793,12 +803,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-dokument-veřejnoprávního-původce">Dokument veřejnoprávního původce</a></dd>
+<dd><a href="#konceptuální-třída-dokument-veřejnoprávního-původce-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;dokument-veřejnoprávního-původce">Dokument veřejnoprávního původce</a></dd>
 <dt>Význam</dt>
 <dd>Koncept je zařazen do spisu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/je-zařazen-do-spisu">je zařazen do spisu</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-evidenční-číslo-ze-samostatné-evidence-dokumentů">
+<section id="konceptuální-třída-evidenční-číslo-ze-samostatné-evidence-dokumentů-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;259&#x2F;2012&#x2F;pojem&#x2F;evidenční-číslo-ze-samostatné-evidence-dokumentů">
 <h3>Evidenční číslo ze samostatné evidence dokumentů</h3>
 <dl>
 <dt>Popis</dt>
@@ -807,7 +817,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Evidenční číslo ze samostatné evidence dokumentů je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/evidenční-číslo-ze-samostatné-evidence-dokumentů">Evidenční číslo ze samostatné evidence dokumentů</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-evidenční-číslo-ze-samostatné-evidence-dokumentů-řetězcová-podoba-evidenčního-čísla">
+<section id="konceptuální-vlastnost-evidenční-číslo-ze-samostatné-evidence-dokumentů-řetězcová-podoba-evidenčního-čísla-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;řetězcová-podoba-evidenčního-čísla">
 <h4>řetězcová podoba evidenčního čísla</h4>
 <dl>
 <dt>Jméno</dt>
@@ -819,7 +829,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept řetězcová podoba evidenčního čísla je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/řetězcová-podoba-evidenčního-čísla">řetězcová podoba evidenčního čísla</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-evidenční-číslo-ze-samostatné-evidence-dokumentů-má-evidenční-číslo-ze-samostatné-evidence-dokumentů">
+<section id="konceptuální-vlastnost-evidenční-číslo-ze-samostatné-evidence-dokumentů-má-evidenční-číslo-ze-samostatné-evidence-dokumentů-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;259&#x2F;2012&#x2F;pojem&#x2F;má-evidenční-číslo-ze-samostatné-evidence-dokumentů">
 <h4>Vztah (asociace): má evidenční číslo ze samostatné evidence dokumentů</h4>
 <dl>
 <dt>Jméno</dt>
@@ -831,41 +841,19 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-dokument-veřejnoprávního-původce">Dokument veřejnoprávního původce</a></dd>
+<dd><a href="#konceptuální-třída-dokument-veřejnoprávního-původce-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;499&#x2F;2004&#x2F;pojem&#x2F;dokument-veřejnoprávního-původce">Dokument veřejnoprávního původce</a></dd>
 <dt>Význam</dt>
 <dd>Koncept má evidenční číslo ze samostatné evidence dokumentů je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/má-evidenční-číslo-ze-samostatné-evidence-dokumentů">má evidenční číslo ze samostatné evidence dokumentů</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu">
-<h3>Fyzická osoba jako osoba ve vztahu k dokumentu</h3>
-<dl>
-<dt>Význam</dt>
-<dd>Koncept Fyzická osoba jako osoba ve vztahu k dokumentu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu">Fyzická osoba jako osoba ve vztahu k dokumentu</a>.</dd>
-</dl>
-
-<section id="konceptuální-vlastnost-fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu-zástupce">
-<h4>Vztah (asociace): zástupce</h4>
-<dl>
-<dt>Jméno</dt>
-<dd>zástupce</dd>
-<dt>Povinnost</dt>
-<dd>nepovinné</dd>
-<dt>Kardinalita</dt>
-<dd>0 - ∞</dd>
-<dt>Typ</dt>
-<dd><a href="#konceptuální-třída-oprávnění-k-zastupování">Oprávnění k zastupování</a></dd>
-<dt>Význam</dt>
-<dd>Koncept zástupce je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/zástupce">zástupce</a>.</dd>
-</section>
-</section>
-<section id="konceptuální-třída-osoba-ve-vztahu-k-dokumentu">
+<section id="konceptuální-třída-osoba-ve-vztahu-k-dokumentu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;osoba-ve-vztahu-k-dokumentu">
 <h3>Osoba ve vztahu k dokumentu</h3>
 <dl>
 <dt>Význam</dt>
 <dd>Koncept Osoba ve vztahu k dokumentu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/osoba-ve-vztahu-k-dokumentu">Osoba ve vztahu k dokumentu</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-osoba-ve-vztahu-k-dokumentu-uživatel-služby">
+<section id="konceptuální-vlastnost-osoba-ve-vztahu-k-dokumentu-uživatel-služby-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;uživatel-služby">
 <h4>Vztah (asociace): uživatel služby</h4>
 <dl>
 <dt>Jméno</dt>
@@ -875,11 +863,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a></dd>
+<dd><a href="#konceptuální-třída-dokument-vytvořený-elektronickým-formulářem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a></dd>
 <dt>Význam</dt>
 <dd>Koncept uživatel služby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/uživatel-služby">uživatel služby</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-osoba-ve-vztahu-k-dokumentu-odesílatel">
+<section id="konceptuální-vlastnost-osoba-ve-vztahu-k-dokumentu-odesílatel-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;odesílatel">
 <h4>Vztah (asociace): odesílatel</h4>
 <dl>
 <dt>Jméno</dt>
@@ -889,11 +877,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-elektronický-dokument">Elektronický dokument</a></dd>
+<dd><a href="#konceptuální-třída-elektronický-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;elektronický-dokument">Elektronický dokument</a></dd>
 <dt>Význam</dt>
 <dd>Koncept odesílatel je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/odesílatel">odesílatel</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-osoba-ve-vztahu-k-dokumentu-příjemce">
+<section id="konceptuální-vlastnost-osoba-ve-vztahu-k-dokumentu-příjemce-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;příjemce">
 <h4>Vztah (asociace): příjemce</h4>
 <dl>
 <dt>Jméno</dt>
@@ -903,11 +891,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-elektronický-dokument">Elektronický dokument</a></dd>
+<dd><a href="#konceptuální-třída-elektronický-dokument-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;elektronický-dokument">Elektronický dokument</a></dd>
 <dt>Význam</dt>
 <dd>Koncept příjemce je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/příjemce">příjemce</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-osoba-ve-vztahu-k-dokumentu-zastoupený">
+<section id="konceptuální-vlastnost-osoba-ve-vztahu-k-dokumentu-zastoupený-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;zastoupený">
 <h4>Vztah (asociace): zastoupený</h4>
 <dl>
 <dt>Jméno</dt>
@@ -917,12 +905,34 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-oprávnění-k-zastupování">Oprávnění k zastupování</a></dd>
+<dd><a href="#konceptuální-třída-oprávnění-k-zastupování-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;oprávnění-k-zastupování">Oprávnění k zastupování</a></dd>
 <dt>Význam</dt>
 <dd>Koncept zastoupený je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/zastoupený">zastoupený</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-digitální-úkon">
+<section id="konceptuální-třída-fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu">
+<h3>Fyzická osoba jako osoba ve vztahu k dokumentu</h3>
+<dl>
+<dt>Význam</dt>
+<dd>Koncept Fyzická osoba jako osoba ve vztahu k dokumentu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu">Fyzická osoba jako osoba ve vztahu k dokumentu</a>.</dd>
+</dl>
+
+<section id="konceptuální-vlastnost-fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu-zástupce-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;zástupce">
+<h4>Vztah (asociace): zástupce</h4>
+<dl>
+<dt>Jméno</dt>
+<dd>zástupce</dd>
+<dt>Povinnost</dt>
+<dd>nepovinné</dd>
+<dt>Kardinalita</dt>
+<dd>0 - ∞</dd>
+<dt>Typ</dt>
+<dd><a href="#konceptuální-třída-oprávnění-k-zastupování-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;oprávnění-k-zastupování">Oprávnění k zastupování</a></dd>
+<dt>Význam</dt>
+<dd>Koncept zástupce je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/zástupce">zástupce</a>.</dd>
+</section>
+</section>
+<section id="konceptuální-třída-digitální-úkon-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;digitální-úkon">
 <h3>Digitální úkon</h3>
 <dl>
 <dt>Popis</dt>
@@ -930,10 +940,10 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept Digitální úkon je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/digitální-úkon">Digitální úkon</a>.</dd>
 <dt>Nadřazený typ</dt>
-<dd><a href="#konceptuální-třída-úkon-služby-veřejné-správy">Úkon služby veřejné správy</a></dd>
+<dd><a href="#konceptuální-třída-úkon-služby-veřejné-správy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;agendový&#x2F;104&#x2F;pojem&#x2F;úkon-služby-veřejné-správy">Úkon služby veřejné správy</a></dd>
 </dl>
 
-<section id="konceptuální-vlastnost-digitální-úkon-umožňuje-činit-úkon">
+<section id="konceptuální-vlastnost-digitální-úkon-umožňuje-činit-úkon-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;umožňuje-činit-úkon">
 <h4>Vztah (asociace): umožňuje činit úkon</h4>
 <dl>
 <dt>Jméno</dt>
@@ -943,12 +953,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-elektronický-formulář">Elektronický formulář</a></dd>
+<dd><a href="#konceptuální-třída-elektronický-formulář-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;elektronický-formulář">Elektronický formulář</a></dd>
 <dt>Význam</dt>
 <dd>Koncept umožňuje činit úkon je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/umožňuje-činit-úkon">umožňuje činit úkon</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-úkon-služby-veřejné-správy">
+<section id="konceptuální-třída-úkon-služby-veřejné-správy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;agendový&#x2F;104&#x2F;pojem&#x2F;úkon-služby-veřejné-správy">
 <h3>Úkon služby veřejné správy</h3>
 <dl>
 <dt>Popis</dt>
@@ -957,7 +967,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Úkon služby veřejné správy je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/agendový/104/pojem/úkon-služby-veřejné-správy">Úkon služby veřejné správy</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-úkon-služby-veřejné-správy-má-identifikátor-úkonu-služby">
+<section id="konceptuální-vlastnost-úkon-služby-veřejné-správy-má-identifikátor-úkonu-služby-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;agendový&#x2F;104&#x2F;pojem&#x2F;má-identifikátor-úkonu-služby">
 <h4>Má identifikátor úkonu služby</h4>
 <dl>
 <dt>Jméno</dt>
@@ -971,7 +981,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept Má identifikátor úkonu služby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-úkonu-služby">Má identifikátor úkonu služby</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-úkon-služby-veřejné-správy-má-název-úkonu-služby">
+<section id="konceptuální-vlastnost-úkon-služby-veřejné-správy-má-název-úkonu-služby-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;agendový&#x2F;104&#x2F;pojem&#x2F;má-název-úkonu-služby">
 <h4>Má název úkonu služby</h4>
 <dl>
 <dt>Jméno</dt>
@@ -986,7 +996,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Má název úkonu služby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/agendový/104/pojem/má-název-úkonu-služby">Má název úkonu služby</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-služba-veřejné-správy">
+<section id="konceptuální-třída-služba-veřejné-správy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;služba-veřejné-správy">
 <h3>Služba veřejné správy</h3>
 <dl>
 <dt>Popis</dt>
@@ -995,7 +1005,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Služba veřejné správy je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy">Služba veřejné správy</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-služba-veřejné-správy-má-identifikátor-služby">
+<section id="konceptuální-vlastnost-služba-veřejné-správy-má-identifikátor-služby-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;agendový&#x2F;104&#x2F;pojem&#x2F;má-identifikátor-služby">
 <h4>Má identifikátor služby</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1009,7 +1019,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept Má identifikátor služby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby">Má identifikátor služby</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-služba-veřejné-správy-má-název-služby">
+<section id="konceptuální-vlastnost-služba-veřejné-správy-má-název-služby-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;agendový&#x2F;104&#x2F;pojem&#x2F;má-název-služby">
 <h4>Má název služby</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1023,7 +1033,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept Má název služby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/agendový/104/pojem/má-název-služby">Má název služby</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-služba-veřejné-správy-umožňuje-činit-úkon-služby">
+<section id="konceptuální-vlastnost-služba-veřejné-správy-umožňuje-činit-úkon-služby-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;umožňuje-činit-úkon-služby">
 <h4>Vztah (asociace): umožňuje činit úkon služby</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1033,12 +1043,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-elektronický-formulář">Elektronický formulář</a></dd>
+<dd><a href="#konceptuální-třída-elektronický-formulář-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;elektronický-formulář">Elektronický formulář</a></dd>
 <dt>Význam</dt>
 <dd>Koncept umožňuje činit úkon služby je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/umožňuje-činit-úkon-služby">umožňuje činit úkon služby</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-agenda">
+<section id="konceptuální-třída-agenda-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;agenda">
 <h3>Agenda</h3>
 <dl>
 <dt>Popis</dt>
@@ -1047,7 +1057,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Agenda je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda">Agenda</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-agenda-má-kód-agendy">
+<section id="konceptuální-vlastnost-agenda-má-kód-agendy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;má-kód-agendy">
 <h4>Má kód agendy</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1061,7 +1071,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept Má kód agendy je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy">Má kód agendy</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-agenda-má-název-agendy">
+<section id="konceptuální-vlastnost-agenda-má-název-agendy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;má-název-agendy">
 <h4>Má název agendy</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1075,7 +1085,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept Má název agendy je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-agendy">Má název agendy</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-agenda-umožňuje-činit-úkon-služby-agendy">
+<section id="konceptuální-vlastnost-agenda-umožňuje-činit-úkon-služby-agendy-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;umožňuje-činit-úkon-služby-agendy">
 <h4>Vztah (asociace): umožňuje činit úkon služby agendy</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1085,12 +1095,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-elektronický-formulář">Elektronický formulář</a></dd>
+<dd><a href="#konceptuální-třída-elektronický-formulář-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;elektronický-formulář">Elektronický formulář</a></dd>
 <dt>Význam</dt>
 <dd>Koncept umožňuje činit úkon služby agendy je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/umožňuje-činit-úkon-služby-agendy">umožňuje činit úkon služby agendy</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-typ-média">
+<section id="konceptuální-třída-typ-média-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;digitální-objekty&#x2F;pojem&#x2F;typ-média">
 <h3>Typ média</h3>
 <dl>
 <dt>Popis</dt>
@@ -1099,7 +1109,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Typ média je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/digitální-objekty/pojem/typ-média">Typ média</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-typ-média-má-typ-média">
+<section id="konceptuální-vlastnost-typ-média-má-typ-média-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;digitální-objekty&#x2F;pojem&#x2F;má-typ-média">
 <h4>Vztah (asociace): má typ média</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1111,12 +1121,12 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-digitální-objekt">Digitální objekt</a></dd>
+<dd><a href="#konceptuální-třída-digitální-objekt-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;digitální-objekty&#x2F;pojem&#x2F;digitální-objekt">Digitální objekt</a></dd>
 <dt>Význam</dt>
 <dd>Koncept má typ média je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/digitální-objekty/pojem/má-typ-média">má typ média</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-oprávnění-k-zastupování">
+<section id="konceptuální-třída-oprávnění-k-zastupování-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;oprávnění-k-zastupování">
 <h3>Oprávnění k zastupování</h3>
 <dl>
 <dt>Popis</dt>
@@ -1125,7 +1135,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dd>Koncept Oprávnění k zastupování je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/oprávnění-k-zastupování">Oprávnění k zastupování</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-oprávnění-k-zastupování-identifikátor-oprávnění-k-zastupování">
+<section id="konceptuální-vlastnost-oprávnění-k-zastupování-identifikátor-oprávnění-k-zastupování-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;identifikátor-oprávnění-k-zastupování">
 <h4>identifikátor oprávnění k zastupování</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1137,7 +1147,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept identifikátor oprávnění k zastupování je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/identifikátor-oprávnění-k-zastupování">identifikátor oprávnění k zastupování</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-oprávnění-k-zastupování-použité-oprávnění-k-zastupování">
+<section id="konceptuální-vlastnost-oprávnění-k-zastupování-použité-oprávnění-k-zastupování-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;použité-oprávnění-k-zastupování">
 <h4>Vztah (asociace): použité oprávnění k zastupování</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1147,11 +1157,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a></dd>
+<dd><a href="#konceptuální-třída-dokument-vytvořený-elektronickým-formulářem-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a></dd>
 <dt>Význam</dt>
 <dd>Koncept použité oprávnění k zastupování je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/použité-oprávnění-k-zastupování">použité oprávnění k zastupování</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-oprávnění-k-zastupování-zastoupený">
+<section id="konceptuální-vlastnost-oprávnění-k-zastupování-zastoupený-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;zastoupený">
 <h4>Vztah (asociace): zastoupený</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1161,11 +1171,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-osoba-ve-vztahu-k-dokumentu">Osoba ve vztahu k dokumentu</a></dd>
+<dd><a href="#konceptuální-třída-osoba-ve-vztahu-k-dokumentu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;osoba-ve-vztahu-k-dokumentu">Osoba ve vztahu k dokumentu</a></dd>
 <dt>Význam</dt>
 <dd>Koncept zastoupený je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/zastoupený">zastoupený</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-oprávnění-k-zastupování-zástupce">
+<section id="konceptuální-vlastnost-oprávnění-k-zastupování-zástupce-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-formuláře&#x2F;pojem&#x2F;zástupce">
 <h4>Vztah (asociace): zástupce</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1175,11 +1185,11 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>1 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu">Fyzická osoba jako osoba ve vztahu k dokumentu</a></dd>
+<dd><a href="#konceptuální-třída-fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;standard-pro-elektronické-dokumenty&#x2F;pojem&#x2F;fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu">Fyzická osoba jako osoba ve vztahu k dokumentu</a></dd>
 <dt>Význam</dt>
 <dd>Koncept zástupce je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/zástupce">zástupce</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-oprávnění-k-zastupování-vytvořeno-na-základě-šablony">
+<section id="konceptuální-vlastnost-oprávnění-k-zastupování-vytvořeno-na-základě-šablony-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;datový-slovník-registru-zastoupení&#x2F;pojem&#x2F;vytvořeno-na-základě-šablony">
 <h4>Vztah (asociace): vytvořeno na základě šablony</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1189,19 +1199,19 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - 1</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-šablona">Šablona</a></dd>
+<dd><a href="#konceptuální-třída-šablona-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;datový-slovník-registru-zastoupení&#x2F;pojem&#x2F;šablona">Šablona</a></dd>
 <dt>Význam</dt>
 <dd>Koncept vytvořeno na základě šablony je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/vytvořeno-na-základě-šablony">vytvořeno na základě šablony</a>.</dd>
 </section>
 </section>
-<section id="konceptuální-třída-šablona">
+<section id="konceptuální-třída-šablona-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;datový-slovník-registru-zastoupení&#x2F;pojem&#x2F;šablona">
 <h3>Šablona</h3>
 <dl>
 <dt>Význam</dt>
 <dd>Koncept Šablona je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/šablona">Šablona</a>.</dd>
 </dl>
 
-<section id="konceptuální-vlastnost-šablona-kód-šablony">
+<section id="konceptuální-vlastnost-šablona-kód-šablony-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;datový-slovník-registru-zastoupení&#x2F;pojem&#x2F;kód-šablony">
 <h4>kód šablony</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1213,7 +1223,7 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Význam</dt>
 <dd>Koncept kód šablony je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/kód-šablony">kód šablony</a>.</dd>
 </section>
-<section id="konceptuální-vlastnost-šablona-vytvořeno-na-základě-šablony">
+<section id="konceptuální-vlastnost-šablona-vytvořeno-na-základě-šablony-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;generický&#x2F;datový-slovník-registru-zastoupení&#x2F;pojem&#x2F;vytvořeno-na-základě-šablony">
 <h4>Vztah (asociace): vytvořeno na základě šablony</h4>
 <dl>
 <dt>Jméno</dt>
@@ -1223,10 +1233,20 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <dt>Kardinalita</dt>
 <dd>0 - ∞</dd>
 <dt>Typ</dt>
-<dd><a href="#konceptuální-třída-oprávnění-k-zastupování">Oprávnění k zastupování</a></dd>
+<dd><a href="#konceptuální-třída-oprávnění-k-zastupování-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;111&#x2F;2009&#x2F;pojem&#x2F;oprávnění-k-zastupování">Oprávnění k zastupování</a></dd>
 <dt>Význam</dt>
 <dd>Koncept vytvořeno na základě šablony je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/vytvořeno-na-základě-šablony">vytvořeno na základě šablony</a>.</dd>
 </section>
+</section>
+<section id="konceptuální-třída-způsob-provedení-digitálního-úkonu-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;legislativní&#x2F;sbírka&#x2F;12&#x2F;2020&#x2F;pojem&#x2F;způsob-provedení-digitálního-úkonu">
+<h3>Způsob provedení digitálního úkonu</h3>
+<dl>
+<dt>Význam</dt>
+<dd>Koncept Způsob provedení digitálního úkonu je definován v <a href="https://slovník.gov.cz/">sémantickém slovníku pojmů</a> jako <a href="https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/způsob-provedení-digitálního-úkonu">Způsob provedení digitálního úkonu</a>.</dd>
+<dt>Nadřazený typ</dt>
+<dd><a href="#konceptuální-třída-položka-číselníku-https:&#x2F;&#x2F;slovník.gov.cz&#x2F;datový&#x2F;číselníky&#x2F;pojem&#x2F;položka-číselníku">Položka číselníku</a></dd>
+</dl>
+
 </section>
 
 </section>
@@ -1234,34 +1254,1902 @@ V této sekci jsou definovány veškeré koncepty, třídy a asociace, potřebn�
 <h2>Specifikace struktury pro Dokument vytvořený elektronickým formulářem</h2>
 <p>Datová struktura pro Dokument vytvořený elektronickým formulářem. </p>
 
+
+
+
+
+
+
+
+
 <section>
 <h3>Přehled XML struktury</h3>
 <p>
-  Popis XSD zachycující strukturu pro <i>Dokument vytvořený elektronickým formulářem</i> je definováno
-  v souboru <a href=""><code></code></a>.
+  Tato sekce popisuje XSD zachycující strukturu pro <i>Dokument vytvořený elektronickým formulářem</i>, jež je definováno
+  v souboru <a href="./schema.xsd"><code>./schema.xsd</code></a>.
 </p>
 
-  <dt>Namespace</dt>
-  <dd><a href="https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04">https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04</a> (prefix: formuláře)</dd>
-
-<dt>Importy</dt>
-  <dd>
-    <strong>Prefix:</strong> [object Promise]<br>
-    <strong>Namespace:</strong> [object Promise]<br>
-    <strong>Schema Location:</strong> https:&#x2F;&#x2F;ofn.gov.cz&#x2F;společné-části-elektronických-dokumentů&#x2F;2024-10-04&#x2F;osoba-ve-vztahu-k-dokumentu&#x2F;schema.xsd
-  </dd>
-  <dd>
-    <strong>Prefix:</strong> [object Promise]<br>
-    <strong>Namespace:</strong> [object Promise]<br>
-    <strong>Schema Location:</strong> https:&#x2F;&#x2F;ofn.gov.cz&#x2F;společné-části-elektronických-dokumentů&#x2F;2024-10-04&#x2F;fyzická-osoba-jako-osoba-ve-vztahu-k-dokumentu&#x2F;schema.xsd
-  </dd>
-
+  <dt>Definováno v namespace</dt>
+  <dd><code>http://dia.gov.cz/ns/dokumenty-z-formularu-ZoPDS</code> (preferovaný prefix: <code>formuláře</code>)</dd>
 
 <section>
-  <h4>Element <code>dokument</code></h4>
+<h4>Importy</h4>
+<p>
+  Seznam schémat, jež jsou tímto schématem importovány a použity.
+</p>
+  <table class="def">
+    <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace</th>
+        <th>Lokace schématu</th>
+        <th>Dokumentace</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code></code>osoby</code></td>
+            <td><a href="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby">http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby</a></td>
+          <td><a href="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoba-ve-vztahu-k-dokumentu/schema.xsd">https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoba-ve-vztahu-k-dokumentu/schema.xsd</a></td>
+          <td><a href="../../společné-části-elektronických-dokumentů/2024-10-04/">Společné části elektronických dokumentů</a></td>
+        </tr>
+        <tr>
+            <td><code></code>osoby</code></td>
+            <td><a href="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby">http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby</a></td>
+          <td><a href="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba-ve-vztahu-k-dokumentu/schema.xsd">https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/fyzická-osoba-ve-vztahu-k-dokumentu/schema.xsd</a></td>
+          <td><a href="../../společné-části-elektronických-dokumentů/2024-10-04/">Společné části elektronických dokumentů</a></td>
+        </tr>
+    </tbody>
+  </table>
 </section>
 
+<section>
+  <h4>Kořenové entity XSD schématu</h4>
+  <ul>
+      <li> element <a href="#element-formuláře:dokument"><code>dokument</code></a></li>
+
+
+      <li> komplexní typ <a href="#type-formuláře:dokument"><code>dokument</code></a></li>
+  </ul>
 </section>
+
+
+
+
+<section id="element-formuláře:dokument">
+  <h4>Kořenový element <code>&lt;dokument&gt;</code></h4>
+  
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-formuláře:dokument"><code>formuláře:dokument</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  </section>
+
+
+
+<section id="type-formuláře:dokument">
+  <h4>Kořenový komplexní typ <code>dokument</code></h4>
+
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Dokument vytvořený elektronickým formulářem
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-třída-dokument-vytvořený-elektronickým-formulářem-https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/dokument-vytvořený-elektronickým-formulářem">Dokument vytvořený elektronickým formulářem</a>.</dd>
+
+
+      <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+              sekvence [1..1]
+              <ul>
+                  <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:jid"><code>&lt;jid&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+              </ul>
+      </li>
+      <li>
+          element <a href="#element-formuláře:je_odpovědí_na_dokument"><code>&lt;je_odpovědí_na_dokument&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:odesílatel"><code>&lt;odesílatel&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:příjemce"><code>&lt;příjemce&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:uživatel_služby"><code>&lt;uživatel_služby&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:použité_zastupování"><code>&lt;použité_zastupování&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:k_rukám"><code>&lt;k_rukám&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:vyplněn_v_isvs"><code>&lt;vyplněn_v_isvs&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:způsob_provedení_úkonu"><code>&lt;způsob_provedení_úkonu&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:byl_vytvořen_formulářem"><code>&lt;byl_vytvořen_formulářem&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:počet_příloh"><code>&lt;počet_příloh&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:příloha"><code>&lt;příloha&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-formuláře:věc"><code>&lt;věc&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:doručit_osvědčení_do_datové_schránky"><code>&lt;doručit_osvědčení_do_datové_schránky&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:služba_v_přenesené_působnosti"><code>&lt;služba_v_přenesené_působnosti&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+</section>
+<section id="element-formuláře:jid">
+  <h4>Element <code>&lt;jid&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      řetězcová podoba jednoznačného identifikátoru
+
+       - 
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-jednoznačný-identifikátor-řetězcová-podoba-jednoznačného-identifikátoru-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/řetězcová-podoba-jednoznačného-identifikátoru">řetězcová podoba jednoznačného identifikátoru</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#string"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+    <dt>Příklady dat</dt>
+      <dd>b862f126-df4e-4265-b476-8542f9645cf8</dd>
+</section>
+<section id="element-formuláře:je_odpovědí_na_dokument">
+  <h4>Element <code>&lt;je_odpovědí_na_dokument&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      je odpovědí na dokument
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-dokument-je-odpovědí-na-dokument-https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/je-odpovědí-na-dokument">je odpovědí na dokument</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>0..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Dokument veřejnoprávního původce
+
+       - 
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-třída-dokument-veřejnoprávního-původce-https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/dokument-veřejnoprávního-původce">Dokument veřejnoprávního původce</a>.</dd>
+
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+              sekvence [1..1]
+              <ul>
+                  <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:jid"><code>&lt;jid&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+              </ul>
+      </li>
+      <li>
+              sekvence [0..1]
+              <ul>
+                  <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:evidenční_číslo"><code>&lt;evidenční_číslo&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+              </ul>
+      </li>
+      <li>
+          element <a href="#element-formuláře:číslo_jednací"><code>&lt;číslo_jednací&gt;</code></a> [0..1]
+      </li>
+      <li>
+              sekvence [0..1]
+              <ul>
+                  <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:spisová_značka"><code>&lt;spisová_značka&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+              </ul>
+      </li>
+  </ul>
+
+
+  </div>
+
+  
+</section>
+<section id="element-formuláře:jid">
+  <h4>Element <code>&lt;je_odpovědí_na_dokument&gt;</code> / <code>&lt;jid&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      řetězcová podoba jednoznačného identifikátoru
+
+       - 
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-jednoznačný-identifikátor-řetězcová-podoba-jednoznačného-identifikátoru-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/řetězcová-podoba-jednoznačného-identifikátoru">řetězcová podoba jednoznačného identifikátoru</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:je_odpovědí_na_dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#string"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+    <dt>Příklady dat</dt>
+      <dd>b862f126-df4e-4265-b476-8542f9645cf8</dd>
+</section>
+<section id="element-formuláře:evidenční_číslo">
+  <h4>Element <code>&lt;je_odpovědí_na_dokument&gt;</code> / <code>&lt;evidenční_číslo&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      řetězcová podoba evidenčního čísla
+
+       - 
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-evidenční-číslo-ze-samostatné-evidence-dokumentů-řetězcová-podoba-evidenčního-čísla-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/řetězcová-podoba-evidenčního-čísla">řetězcová podoba evidenčního čísla</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:je_odpovědí_na_dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#string"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:číslo_jednací">
+  <h4>Element <code>&lt;je_odpovědí_na_dokument&gt;</code> / <code>&lt;číslo_jednací&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      číslo jednací
+
+       - 
+
+      Číslo jednací obsahuje označení nebo zkratku označení veřejnoprávního původce, pořadové číslo zápisu dokumentu v základní evidenční pomůcce a označení určeného časového období, kterým je zpravidla kalendářní rok, popřípadě dále označení nebo zkratku označení organizační součásti veřejnoprávního původce nebo jiné znaky charakterizující skutečnosti související s dokumentem. Číslo jednací může být rovněž odvozeno ze spisové značky s uvedením pořadového čísla dokumentu ve spisu nebo čísla listu dokumentu ve spisu.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-dokument-veřejnoprávního-původce-číslo-jednací-https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/má-číslo-jednací">číslo jednací</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>0..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:je_odpovědí_na_dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#string"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:spisová_značka">
+  <h4>Element <code>&lt;je_odpovědí_na_dokument&gt;</code> / <code>&lt;spisová_značka&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      spisová značka
+
+       - 
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-spis-spisová-značka-https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/má-spisovou-značku">spisová značka</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:je_odpovědí_na_dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#string"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:odesílatel">
+  <h4>Element <code>&lt;odesílatel&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      odesílatel
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-osoba-ve-vztahu-k-dokumentu-odesílatel-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/odesílatel">odesílatel</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby#osoba"><code>osoby:osoba</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:příjemce">
+  <h4>Element <code>&lt;příjemce&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      příjemce
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-osoba-ve-vztahu-k-dokumentu-příjemce-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/příjemce">příjemce</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby#osoba"><code>osoby:osoba</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:uživatel_služby">
+  <h4>Element <code>&lt;uživatel_služby&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      uživatel služby
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-osoba-ve-vztahu-k-dokumentu-uživatel-služby-https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/uživatel-služby">uživatel služby</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby#osoba"><code>osoby:osoba</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:použité_zastupování">
+  <h4>Element <code>&lt;použité_zastupování&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      použité oprávnění k zastupování
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-oprávnění-k-zastupování-použité-oprávnění-k-zastupování-https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/použité-oprávnění-k-zastupování">použité oprávnění k zastupování</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>0..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Oprávnění k zastupování
+
+       - 
+
+      Referenčními údaji o právech a povinnostech osob jsou dále údaje o některých právech fyzických a právnických osob k zastupování jiných fyzických a právnických osob v rámci agendy orgánu veřejné moci (dále jen „oprávnění k zastupování“)
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-třída-oprávnění-k-zastupování-https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/oprávnění-k-zastupování">Oprávnění k zastupování</a>.</dd>
+
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:okz"><code>&lt;okz&gt;</code></a> [1..1]
+      </li>
+      <li>
+              sekvence [0..1]
+              <ul>
+                  <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:kód_šablony"><code>&lt;kód_šablony&gt;</code></a> [0..1]
+      </li>
+  </ul>
+
+              </ul>
+      </li>
+      <li>
+          element <a href="#element-formuláře:zastoupený"><code>&lt;zastoupený&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:zástupce"><code>&lt;zástupce&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </div>
+
+  
+</section>
+<section id="element-formuláře:okz">
+  <h4>Element <code>&lt;použité_zastupování&gt;</code> / <code>&lt;okz&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      identifikátor oprávnění k zastupování
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-oprávnění-k-zastupování-identifikátor-oprávnění-k-zastupování-https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/identifikátor-oprávnění-k-zastupování">identifikátor oprávnění k zastupování</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:použité_zastupování"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+      <dt>Obsah</dt>
+        <dd>
+        Obsahem elementu je jednoduchý typ <code>xs:string</code> s omezením na hodnoty dané regulárním výrazem <code>[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}</code>.
+        </dd>
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:kód_šablony">
+  <h4>Element <code>&lt;použité_zastupování&gt;</code> / <code>&lt;kód_šablony&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      kód šablony
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-šablona-kód-šablony-https://slovník.gov.cz/generický/datový-slovník-registru-zastoupení/pojem/kód-šablony">kód šablony</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>0..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:použité_zastupování"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+      <dt>Obsah</dt>
+        <dd>
+        Obsahem elementu je jednoduchý typ <code>xs:string</code> s omezením na hodnoty dané regulárním výrazem <code>[a-zA-Z]{3}-\d-\d</code>.
+        </dd>
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:zastoupený">
+  <h4>Element <code>&lt;použité_zastupování&gt;</code> / <code>&lt;zastoupený&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      zastoupený
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-oprávnění-k-zastupování-zastoupený-https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/zastoupený">zastoupený</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:použité_zastupování"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby#osoba"><code>osoby:osoba</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:zástupce">
+  <h4>Element <code>&lt;použité_zastupování&gt;</code> / <code>&lt;zástupce&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      zástupce
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-oprávnění-k-zastupování-zástupce-https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/zástupce">zástupce</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:použité_zastupování"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+
+    
+
+        <dt>Název</dt>
+        <dd>
+          <code>osoby:fyzická_osoba_ve_vztahu_k_dokumentu</code>
+        </dd>
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:k_rukám">
+  <h4>Element <code>&lt;k_rukám&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      k rukám
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-dokument-k-rukám-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/k-rukám">k rukám</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>0..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#string"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:vyplněn_v_isvs">
+  <h4>Element <code>&lt;vyplněn_v_isvs&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      byl vyplněn v isvs
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-informační-systém-veřejné-správy-byl-vyplněn-v-isvs-https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/byl-vyplněn-v-isvs">byl vyplněn v isvs</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Informační systém veřejné správy
+
+       - 
+
+      Informačním systémem veřejné správy funkční celek nebo jeho část zabezpečující cílevědomou a systematickou informační činnost pro účely výkonu veřejné správy nebo plnění jiných funkcí státu anebo dalších veřejnoprávních korporací. Každý informační systém veřejné správy zahrnuje data, která jsou uspořádána tak, aby bylo možné jejich zpracování a zpřístupnění, provozní údaje a dále technické a programové prostředky, případně jiné nástroje umožňující výkon informačních činností
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-třída-informační-systém-veřejné-správy-https://slovník.gov.cz/legislativní/sbírka/365/2000/pojem/informační-systém-veřejné-správy">Informační systém veřejné správy</a>.</dd>
+
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:kód"><code>&lt;kód&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:název"><code>&lt;název&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </div>
+
+  
+</section>
+<section id="element-formuláře:kód">
+  <h4>Element <code>&lt;vyplněn_v_isvs&gt;</code> / <code>&lt;kód&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Má identifikátor ISVS
+
+       - 
+
+      Jednoznačná identifikace ISVS v rámci RPP.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-informační-systém-veřejné-správy-má-identifikátor-isvs-https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-isvs">Má identifikátor ISVS</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:vyplněn_v_isvs"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+      <dt>Obsah</dt>
+        <dd>
+        Obsahem elementu je jednoduchý typ <code>xs:string</code> s omezením na hodnoty dané regulárním výrazem <code>\d{1,6}</code>.
+        </dd>
+
+    
+
+
+    
+  </div>
+
+  
+    <dt>Příklady dat</dt>
+      <dd>246</dd>
+</section>
+<section id="element-formuláře:název">
+  <h4>Element <code>&lt;vyplněn_v_isvs&gt;</code> / <code>&lt;název&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      název ISVS
+
+       - 
+
+      Název ISVS, který používá správce ISVS.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-informační-systém-veřejné-správy-název-isvs-https://slovník.gov.cz/legislativní/sbírka/329/2020/pojem/název-isvs">název ISVS</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:vyplněn_v_isvs"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementue je <i>Řetězec s označením jazyka</i>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:způsob_provedení_úkonu">
+  <h4>Element <code>&lt;způsob_provedení_úkonu&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      má způsob provedení digitálního úkonu
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-způsob-povedení-digitálního-úkonu-má-způsob-provedení-digitálního-úkonu-https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/má-způsob-provedení-digitálního-úkonu">má způsob provedení digitálního úkonu</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Způsob provedení digitálního úkonu
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-třída-způsob-provedení-digitálního-úkonu-https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/způsob-provedení-digitálního-úkonu">Způsob provedení digitálního úkonu</a>.</dd>
+
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:kód"><code>&lt;kód&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:název"><code>&lt;název&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </div>
+
+  
+</section>
+<section id="element-formuláře:kód">
+  <h4>Element <code>&lt;způsob_provedení_úkonu&gt;</code> / <code>&lt;kód&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      kód položky číselníku
+
+       - 
+
+      Unikátní kód položky číselníku v rámci číselníku, do kterého položka patří.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-položka-číselníku-kód-položky-číselníku-https://slovník.gov.cz/datový/číselníky/pojem/kód-položky-číselníku">kód položky číselníku</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:způsob_provedení_úkonu"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#string"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:název">
+  <h4>Element <code>&lt;způsob_provedení_úkonu&gt;</code> / <code>&lt;název&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      plný název položky číselníku
+
+       - 
+
+      Plný (tj. úplný) název (hodnota) položky číselníku.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-položka-číselníku-plný-název-položky-číselníku-https://slovník.gov.cz/datový/číselníky/pojem/plný-název-položky-číselníku">plný název položky číselníku</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:způsob_provedení_úkonu"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementue je <i>Řetězec s označením jazyka</i>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:byl_vytvořen_formulářem">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      byl vytvořen formulářem
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-elektronický-formulář-byl-vytvořen-formulářem-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/byl-vytvořen-formulářem">byl vytvořen formulářem</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>0..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Elektronický formulář
+
+       - 
+
+      Elektronické formuláře, které po prokázání totožnosti uživatele služby s využitím elektronické identifikace zajistí automatizované doplnění údajů nezbytných pro poskytnutí digitální služby vedených v základním registru nebo agendovém informačním systému, které jsou orgánu veřejné moci zpřístupněné pro výkon agendy, nebo využívaných orgánem veřejné moci na základě souhlasu uživatele služby.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-třída-elektronický-formulář-https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/elektronický-formulář">Elektronický formulář</a>.</dd>
+
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:identifikátor"><code>&lt;identifikátor&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:název"><code>&lt;název&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:verze"><code>&lt;verze&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:úkon"><code>&lt;úkon&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:služba"><code>&lt;služba&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:agenda"><code>&lt;agenda&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </div>
+
+  
+</section>
+<section id="element-formuláře:identifikátor">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;identifikátor&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      má identifikátor formuláře
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-elektronický-formulář-má-identifikátor-formuláře-https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/má-identifikátor-formuláře">má identifikátor formuláře</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>0..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:byl_vytvořen_formulářem"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#string"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:název">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;název&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      název formuláře
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-elektronický-formulář-název-formuláře-https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/název-formuláře">název formuláře</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>0..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:byl_vytvořen_formulářem"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementue je <i>Řetězec s označením jazyka</i>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:verze">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;verze&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      verze
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-elektronický-formulář-verze-https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/verze">verze</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>0..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:byl_vytvořen_formulářem"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#string"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:úkon">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;úkon&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      umožňuje činit úkon
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-digitální-úkon-umožňuje-činit-úkon-https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/umožňuje-činit-úkon">umožňuje činit úkon</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:byl_vytvořen_formulářem"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Digitální úkon
+
+       - 
+
+      Digitálním úkonem je úkon vykonávaný uživatelem služby vůči orgánu veřejné moci v rámci agendy a vedený v katalogu služeb jako úkon v elektronické podobě.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-třída-digitální-úkon-https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/digitální-úkon">Digitální úkon</a>.</dd>
+
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:kód"><code>&lt;kód&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:název"><code>&lt;název&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </div>
+
+  
+</section>
+<section id="element-formuláře:kód">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;úkon&gt;</code> / <code>&lt;kód&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Má identifikátor úkonu služby
+
+       - 
+
+      Automaticky (stejně jako v případě služby VS) generovaný kód sloužící pro databázové zpracování údajů.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-úkon-služby-veřejné-správy-má-identifikátor-úkonu-služby-https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-úkonu-služby">Má identifikátor úkonu služby</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:úkon"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+      <dt>Obsah</dt>
+        <dd>
+        Obsahem elementu je jednoduchý typ <code>xs:string</code> s omezením na hodnoty dané regulárním výrazem <code>U\d{1,8}</code>.
+        </dd>
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:název">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;úkon&gt;</code> / <code>&lt;název&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Má název úkonu služby
+
+       - 
+
+      Podobně jako u služby se jedná o srozumitelný a výstižný název úkonu, aby bylo klientovi jasné, co je účelem úkonu. Název úkonu by měl výstižně popsat konkrétní krok (např. podání žádosti, výzva k doložení/doplnění žádosti, atd.).
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-úkon-služby-veřejné-správy-má-název-úkonu-služby-https://slovník.gov.cz/agendový/104/pojem/má-název-úkonu-služby">Má název úkonu služby</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:úkon"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementue je <i>Řetězec s označením jazyka</i>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:služba">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;služba&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      umožňuje činit úkon služby
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-služba-veřejné-správy-umožňuje-činit-úkon-služby-https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/umožňuje-činit-úkon-služby">umožňuje činit úkon služby</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:byl_vytvořen_formulářem"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Služba veřejné správy
+
+       - 
+
+      Služba veřejné správy představuje funkci (činnost) úřadu, která je vědomě poskytnuta konkrétním OVM konkrétnímu příjemci služby podle příslušného právního předpisu tak, že přináší příjemci vnímanou hodnotu, ať už v podobě benefitu nebo splnění zákonné povinnosti. Evidují se pouze takové služby VS, během nichž dochází k interakci mezi OVM a klientem či naopak, nikoli k interakci mezi OVM a OVM. Na službu VS lze také pohlížet jako na dosažení práva či naplnění povinnosti klienta, které nelze splnit jinak než interakcí či sérií interakcí mezi klientem a OVM. Služba se dělí podle toho, zdali je iniciována klientem nebo vykonávaná z moci úřední. Každá služba se skládá z nejméně jednoho úkonu.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-třída-služba-veřejné-správy-https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy">Služba veřejné správy</a>.</dd>
+
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:kód"><code>&lt;kód&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:název"><code>&lt;název&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </div>
+
+  
+</section>
+<section id="element-formuláře:kód">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;služba&gt;</code> / <code>&lt;kód&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Má identifikátor služby
+
+       - 
+
+      Automaticky (stejně jako v případě agendy nebo činnosti) generovaný kód sloužící pro databázové zpracování údajů.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-služba-veřejné-správy-má-identifikátor-služby-https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby">Má identifikátor služby</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:služba"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+      <dt>Obsah</dt>
+        <dd>
+        Obsahem elementu je jednoduchý typ <code>xs:string</code> s omezením na hodnoty dané regulárním výrazem <code>S\d{1,6}</code>.
+        </dd>
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:název">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;služba&gt;</code> / <code>&lt;název&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Má název služby
+
+       - 
+
+      Název by měl klientovi stručně a jasně vystihnout, o jakou službu se jedná. Důležité je, aby byl nezaměnitelný s jinou službou, ale stále velmi jednoduchý, srozumitelný a zapamatovatelný. Měřítkem je, že název služby je používaný (bude používán) v běžném hovoru lidí.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-služba-veřejné-správy-má-název-služby-https://slovník.gov.cz/agendový/104/pojem/má-název-služby">Má název služby</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:služba"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementue je <i>Řetězec s označením jazyka</i>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:agenda">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;agenda&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      umožňuje činit úkon služby agendy
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-agenda-umožňuje-činit-úkon-služby-agendy-https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/umožňuje-činit-úkon-služby-agendy">umožňuje činit úkon služby agendy</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:byl_vytvořen_formulářem"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Agenda
+
+       - 
+
+      Ucelená oblast působnosti orgánu veřejné moci nebo ucelená oblast působení soukromoprávního uživatele údajů.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-třída-agenda-https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda">Agenda</a>.</dd>
+
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:kód"><code>&lt;kód&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:název"><code>&lt;název&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </div>
+
+  
+</section>
+<section id="element-formuláře:kód">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;agenda&gt;</code> / <code>&lt;kód&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Má kód agendy
+
+       - 
+
+      Kód agendy je veřejným identifikátorem, který je jednoznačně přiřazen záznamu o agendě v číselníku agend v registru práv a povinností.
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-agenda-má-kód-agendy-https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy">Má kód agendy</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:agenda"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+      <dt>Obsah</dt>
+        <dd>
+        Obsahem elementu je jednoduchý typ <code>xs:string</code> s omezením na hodnoty dané regulárním výrazem <code>A\d{1,6}</code>.
+        </dd>
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:název">
+  <h4>Element <code>&lt;byl_vytvořen_formulářem&gt;</code> / <code>&lt;agenda&gt;</code> / <code>&lt;název&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Má název agendy
+
+       - 
+
+      Název agendy je referenčním údajem o agendě vedený v Registru práv a povinností
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-agenda-má-název-agendy-https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-agendy">Má název agendy</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:agenda"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementue je <i>Řetězec s označením jazyka</i>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:počet_příloh">
+  <h4>Element <code>&lt;počet_příloh&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      počet příloh
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-elektronický-dokument-počet-příloh-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/počet-příloh">počet příloh</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#integer"><code>xs:integer</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:příloha">
+  <h4>Element <code>&lt;příloha&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      obsahuje přílohu
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-příloha-obsahuje-přílohu-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/obsahuje-přílohu">obsahuje přílohu</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>0..*</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      Příloha
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-třída-příloha-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/příloha">Příloha</a>.</dd>
+
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-formuláře:název"><code>&lt;název&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:název_souboru"><code>&lt;název_souboru&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:typ_média"><code>&lt;typ_média&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-formuláře:obsah"><code>&lt;obsah&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </div>
+
+  
+</section>
+<section id="element-formuláře:název">
+  <h4>Element <code>&lt;příloha&gt;</code> / <code>&lt;název&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      název přílohy
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-příloha-název-přílohy-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/název-přílohy">název přílohy</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:příloha"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementue je <i>Řetězec s označením jazyka</i>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:název_souboru">
+  <h4>Element <code>&lt;příloha&gt;</code> / <code>&lt;název_souboru&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      název souboru přílohy
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-příloha-název-souboru-přílohy-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/název-souboru-přílohy">název souboru přílohy</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:příloha"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#string"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:typ_média">
+  <h4>Element <code>&lt;příloha&gt;</code> / <code>&lt;typ_média&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      má typ média
+
+       - 
+
+      Určuje, o jaký typ digitálního objektu se jedná ve smyslu typu digitálního média a jeho konkrétního formátu (např. datový soubor, obrázek, video, audio, apod.).
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-typ-média-má-typ-média-https://slovník.gov.cz/generický/digitální-objekty/pojem/má-typ-média">má typ média</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:příloha"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#anyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:obsah">
+  <h4>Element <code>&lt;příloha&gt;</code> / <code>&lt;obsah&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      obsah přílohy
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-příloha-obsah-přílohy-https://slovník.gov.cz/generický/standard-pro-elektronické-dokumenty/pojem/obsah-přílohy">obsah přílohy</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#element-formuláře:příloha"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#base64Binary"><code>xs:base64Binary</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:věc">
+  <h4>Element <code>&lt;věc&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      stručný obsah dokumentu
+
+       - 
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-dokument-stručný-obsah-dokumentu-https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/má-stručný-obsah-dokumentu">stručný obsah dokumentu</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>0..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementue je <i>Řetězec s označením jazyka</i>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:doručit_osvědčení_do_datové_schránky">
+  <h4>Element <code>&lt;doručit_osvědčení_do_datové_schránky&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      doručit osvědčení do datové schránky
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-doručit-osvědčení-do-datové-schránky-https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/doručit-osvědčení-do-datové-schránky">doručit osvědčení do datové schránky</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#boolean"><code>xs:boolean</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+<section id="element-formuláře:služba_v_přenesené_působnosti">
+  <h4>Element <code>&lt;služba_v_přenesené_působnosti&gt;</code></h4>
+      <dt>Význam</dt>
+    <dd style="font-style: italic;">
+      služba v přenesené působnosti
+
+      
+
+      
+      </dd>
+    <dd>V konceptuálním odpovídá pojmu <a href="#konceptuální-vlastnost-dokument-vytvořený-elektronickým-formulářem-služba-v-přenesené-působnosti-https://slovník.gov.cz/generický/standard-pro-elektronické-formuláře/pojem/služba-v-přenesené-působnosti">služba v přenesené působnosti</a>.</dd>
+
+
+    <dt>Kardinalita elementu v nadřazeném kontejneru</dt>
+    <dd>1..1</dd>
+    <dt>Nadřazený element</dt>
+    <dd><a href="#type-formuláře:dokument"></a></dd>
+
+  
+    <dt>Typ elementu</dt>
+      <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="https://www.w3.org/TR/xmlschema-2/#boolean"><code>xs:boolean</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+  
+</section>
+
+
+</section>
+</section>
+
+<section>
+  <h2>Poděkování</h2>
+  <p>
+    Tato specifikace vznikla v pracovní skupině ve složení Jakub Klímek, Alice Binderová, Lenka Kováčová, Robert Piffl, Petr Tiller, Tomáš Šedivec a Jan Petr.
+  </p>
 </section>
 
     </body>

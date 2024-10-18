@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:místa="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místa">
-  <xsl:import href="../místo/lowering.xslt"/>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:osoby="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/osoby" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:místa="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/mista">
+  <xsl:import href="../místa/lowering.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" indent="yes"/>
   <xsl:param name="subj" select="'s'"/>
   <xsl:param name="pred" select="'p'"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:osoby="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/osoby" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:místa="https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/místa">
-  <xsl:import href="../místo/lowering.xslt"/>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:osoby="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/mista" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:místa="http://dia.gov.cz/ns/spolecne-casti-elektronickych-dokumentu/mista">
+  <xsl:import href="../místa/lowering.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" indent="yes"/>
   <xsl:param name="subj" select="'s'"/>
   <xsl:param name="pred" select="'p'"/>
@@ -62,9 +62,9 @@
       </osoby:další_jména>
     </xsl:for-each>
     <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/příjmení-fyzické-osoby&#34;]">
-      <osoby:příjmení_fyzické_osoby>
+      <osoby:příjmení>
         <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
-      </osoby:příjmení_fyzické_osoby>
+      </osoby:příjmení>
     </xsl:for-each>
     <xsl:for-each select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/datum-narození&#34;]">
       <osoby:datum_narození>

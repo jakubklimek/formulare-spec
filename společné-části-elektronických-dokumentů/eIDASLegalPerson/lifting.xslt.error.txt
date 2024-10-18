@@ -1,0 +1,13 @@
+Cannot extract namespace from property https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/identifikační-kód-právnické-osoby-uvedený-v-prováděcím-nařízení-komise-eu-č.-1247-2012.
+
+Error: Cannot extract namespace from property https://slovník.gov.cz/generický/eu-1501-2015-e-idas-prováděcí/pojem/identifikační-kód-právnické-osoby-uvedený-v-prováděcím-nařízení-komise-eu-č.-1247-2012.
+    at c.iriToQName (https://xn--slovnk-7va.gov.cz/generujeme/static/js/main.f764d44c.js:2:1515718)
+    at c.propertyToMatchCheckType (https://xn--slovnk-7va.gov.cz/generujeme/static/js/main.f764d44c.js:2:1516126)
+    at c.propertyToMatch (https://xn--slovnk-7va.gov.cz/generujeme/static/js/main.f764d44c.js:2:1515436)
+    at Array.map (<anonymous>)
+    at c.classToTemplate (https://xn--slovnk-7va.gov.cz/generujeme/static/js/main.f764d44c.js:2:1515003)
+    at Array.map (<anonymous>)
+    at c.fromRoots (https://xn--slovnk-7va.gov.cz/generujeme/static/js/main.f764d44c.js:2:1513011)
+    at https://xn--slovnk-7va.gov.cz/generujeme/static/js/main.f764d44c.js:2:1512312
+    at p.generateToObject (https://xn--slovnk-7va.gov.cz/generujeme/static/js/main.f764d44c.js:2:1494236)
+    at async p.generateToStream (https://xn--slovnk-7va.gov.cz/generujeme/static/js/main.f764d44c.js:2:1493508)
